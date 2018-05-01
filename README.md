@@ -35,6 +35,7 @@ Project Mangers will work with Product Owner regarding deadlines for "group defi
 * Challenge statement
 * Wireframes/Prototype
 * Styleguide
+* Component Style Guide (stylegist)
 * Useability testing/results
 * Comprehensive README
 * App
