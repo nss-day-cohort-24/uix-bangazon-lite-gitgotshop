@@ -15,17 +15,28 @@ Your group will need to decide on a style guide for this application. Make sure 
 
 Your team will decide on the data needed and how it is organized.
 
+
+**End of Day 1** Your team should have the following completed:
+* Interviews, persona, and challenge statement
+* Repo and README.md started
+* File structure
+* Style guide/design
+* Data structure
+
+Project Mangers will work with Product Owner regarding deadlines for "group defined" mini deliverables.
+
 ## Technology Requirements
 * React
 * JSON server
 * CSS library
 
-## Deliverables
+## Final Deliverables
 * Persona
 * Challenge statement
 * Wireframes/Prototype
 * Styleguide
 * Useability testing/results
-* Product
+* Comprehensive README
+* App
 
 
