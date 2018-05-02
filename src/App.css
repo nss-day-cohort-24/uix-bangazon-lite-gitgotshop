@@ -54,6 +54,11 @@ nav input {
 }
 
 /* Buttons */
+.minezy:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .btn-red {
   -webkit-border-radius: 10;
   -moz-border-radius: 10;
@@ -67,7 +72,8 @@ nav input {
 }
 
 .btn-red:hover {
-  background: #eb6a95;
+  background-color: #c4114b;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -83,8 +89,9 @@ nav input {
   text-decoration: none;
 }
 
-.btn-red:hover {
-  background: #eb6a95;
+.btn-white:hover {
+  background-color: #ffffff;
+  color: #c4114b;
   text-decoration: none;
 }
 
@@ -101,7 +108,8 @@ nav input {
 }
 
 .btn-blue:hover {
-  background: #373955;
+  background: #222653;
+  color: #ffffff;
   text-decoration: none;
 }
 
