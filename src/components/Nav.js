@@ -23,7 +23,7 @@ class Nav extends Component {
                         </div>
                         <div className="align-items-center">
                             <NavLink className="mx-2 btn-white" to='/Profile'>Profile</NavLink>
-                            <NavLink className="mx-2 btn-white" to='/Cart'>Cart</NavLink>
+                            <NavLink className="mx-2 cart" to='/Cart'><i class="fas fa-shopping-cart fa-lg"></i></NavLink>
                         </div>
                     </nav>
                     <div>
