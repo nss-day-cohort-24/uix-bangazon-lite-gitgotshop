@@ -9,18 +9,18 @@ class Product extends Component {
     render() {
         return (
             <div className="d-flex flex-row justify-content-center flex-wrap">
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />                
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />                
+                <ProductCard src={lindsay} name="LINDSAY" link="/SingleProduct" id="" />
+                <ProductCard src={lindsay} name="LINDSAY" link="/SingleProduct" id="" />
+                <ProductCard src={lindsay} name="LINDSAY" link="/SingleProduct" id="" />
+                <ProductCard src={lindsay} name="LINDSAY" link="/SingleProduct" id="" />
+                <ProductCard src={lindsay} name="LINDSAY" link="/SingleProduct" id="" />
+                <ProductCard src={lindsay} name="LINDSAY" link="/SingleProduct" id="" />
+                <ProductCard src={lindsay} name="LINDSAY" link="/SingleProduct" id="" />                
+                <ProductCard src={lindsay} name="LINDSAY" link="/SingleProduct" id="" />
+                <ProductCard src={lindsay} name="LINDSAY" link="/SingleProduct" id="" />
+                <ProductCard src={lindsay} name="LINDSAY" link="/SingleProduct" id="" />
+                <ProductCard src={lindsay} name="LINDSAY" link="/SingleProduct" id="" />
+                <ProductCard src={lindsay} name="LINDSAY" link="/SingleProduct" id="" />                
             </div>
         );
     }

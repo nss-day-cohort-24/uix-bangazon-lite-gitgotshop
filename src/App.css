@@ -45,23 +45,6 @@ nav input {
   color: white;
 }
 
-.btn-white {
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
-  border-radius: 5px;
-  font-family: 'Montserrat', sans-serif;
-  color: white;
-  font-size: 15px;
-  padding: 5px 10px 5px 10px;
-  border: solid white 1px;
-  text-decoration: none;
-}
-
-.btn-red:hover {
-  background: #eb6a95;
-  text-decoration: none;
-}
-
 /* Home */
 
 .margin-neg {
@@ -88,8 +71,52 @@ nav input {
   text-decoration: none;
 }
 
+.btn-white {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px 5px 10px;
+  border: solid white 1px;
+  text-decoration: none;
+}
+
+.btn-red:hover {
+  background: #eb6a95;
+  text-decoration: none;
+}
+
+.btn-blue {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: #222653;
+  font-size: 15px;
+  padding: 5px 10px 5px 10px;
+  border: solid #222653 1px;
+  text-decoration: none;
+}
+
+.btn-blue:hover {
+  background: #373955;
+  text-decoration: none;
+}
+
 /* Product Card */
 
 .product-card {
   width: 20%;
+}
+
+/* Single Product Page */
+.prod-overview {
+  width: 60%;
+}
+
+.prod-pic {
+  width: 40%;
+  height: 40%;
 }

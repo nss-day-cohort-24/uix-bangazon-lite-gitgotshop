@@ -8,6 +8,7 @@ import Home from '../pages/Home.js';
 import Profile from '../pages/Profile.js';
 import Cart from '../pages/Cart.js';
 import Products from '../pages/Products.js';
+import SingleProduct from '../pages/SingleProduct.js';
 
 class Nav extends Component {
 
@@ -31,7 +32,8 @@ class Nav extends Component {
                         <Route exact path='/' component={Home} />
                         <Route path='/Profile' component={Profile} />
                         <Route path='/Cart' component={Cart} />
-                        <Route path="/Products" component={Products} />                    
+                        <Route path="/Products" component={Products} />  
+                        <Route path="/SingleProduct" component={SingleProduct} />
                     </div>
                 </div>
             </Router>
