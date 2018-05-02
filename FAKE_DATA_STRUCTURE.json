@@ -2,7 +2,7 @@
 
 {
     "products": [
-        {"userID": 1, 
+        {"sellerID": 1, 
         "name.firstName": "firstName", 
         "name.lastName": "lastName", 
         "name.jobTitle": "jobTitle"},
