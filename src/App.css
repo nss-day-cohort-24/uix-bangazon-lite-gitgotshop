@@ -1,28 +1,122 @@
-.App {
-  text-align: center;
-}
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+/* Main */
+h1 {
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: bold;
+  font-size: 4rem;
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: #595b5c;
 }
 
-.App-intro {
-  font-size: large;
+.bold {
+  font-weight: bold; 
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.gray-txt {
+  color: #595b5c;
+}
+
+/* Nav */
+
+nav {
+  background-color: #C4114B;
+}
+
+nav a {
+  color: white;
+  font-family: 'Montserrat', sans-serif;  
+}
+
+nav input {
+  background-color: #DD7899;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.cart {
+  color: white;
+}
+
+/* Home */
+
+.margin-neg {
+  position: absolute;
+  top: 40%;
+  width: 85%;
+}
+
+/* Buttons */
+.btn-red {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: #c4114b;
+  font-size: 15px;
+  padding: 5px 10px 5px 10px;
+  border: solid #c4114b 1px;
+  text-decoration: none;
+}
+
+.btn-red:hover {
+  background: #eb6a95;
+  text-decoration: none;
+}
+
+.btn-white {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px 5px 10px;
+  border: solid white 1px;
+  text-decoration: none;
+}
+
+.btn-red:hover {
+  background: #eb6a95;
+  text-decoration: none;
+}
+
+.btn-blue {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: #222653;
+  font-size: 15px;
+  padding: 5px 10px 5px 10px;
+  border: solid #222653 1px;
+  text-decoration: none;
+}
+
+.btn-blue:hover {
+  background: #373955;
+  text-decoration: none;
+}
+
+/* Product Card */
+
+.product-card {
+  width: 20%;
+}
+
+/* Single Product Page */
+.prod-overview {
+  width: 60%;
+}
+
+.prod-pic {
+  width: 40%;
+  height: 40%;
 }
