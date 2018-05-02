@@ -19,7 +19,7 @@ class Nav extends Component {
                 <div>
                     <nav className="d-flex flex-row justify-content-between px-3 py-3">
                         <div className="align-items-center">
-                            <NavLink className="mr-3" to='/'>MINEZY</NavLink>
+                            <NavLink className="mr-3 minezy" to='/'>MINEZY</NavLink>
                             <input type="text" placeholder="search" />
                         </div>
                         <div className="align-items-center">
