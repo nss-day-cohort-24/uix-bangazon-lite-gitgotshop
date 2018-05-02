@@ -1,5 +1,5 @@
 # DATA DRIVEN MARKETING
-![Minzy - your local data-driven marketing](public/Minzy_logo1.png "Minzy - your local data-driven marketing")
+![Minzy - your local data-driven marketing](public/Minzy_logo.png "Minzy - your local data-driven marketing")
 
 # MINZY
 ## data-driven marketing
