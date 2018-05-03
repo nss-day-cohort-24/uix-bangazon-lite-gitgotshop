@@ -41,6 +41,31 @@ nav input {
   color: white;
 }
 
+#log-btn {
+  background-color: #C4114B;
+  border: solid white 1px;
+  border-radius: 5px;
+  color: white;
+  height: 2.1em;
+}
+
+.form-modal {
+  display: inline;
+}
+
+#log-modal {
+  font-family: 'Montserrat', sans-serif;  
+}
+
+.modal-edges {
+  border: none;
+  color: #2294D2;
+}
+
+.modal-input-field {
+  margin: .5em;
+}
+
 .cart {
   color: white;
 }

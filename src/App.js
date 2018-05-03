@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Nav from './components/Nav.js';
-import Generate from './Generate';
 import RandomData from './Customers.js';
 
 class App extends Component {
@@ -40,6 +39,17 @@ class App extends Component {
     }).then(res => res.json())
     .catch(error => console.error('Error:', error))
     .then(response => console.log('Success:', response));
+
+    this.state = {
+      user: null
+    }
+    this.updateUser = this.updateUser.bind(this);
+  }
+
+  updateUser(user) {
+    this.setState({
+      user: user
+    });
   }
 
   render() {
@@ -47,9 +57,9 @@ class App extends Component {
     return (
       <div>
        <Nav />
-       <Generate />
        {/* <RandomData /> */}
        <button onClick={this.blah.bind(this)}>TEST</button>
+        <Nav updateUser={this.updateUser} />
       </div>
     );
   }
