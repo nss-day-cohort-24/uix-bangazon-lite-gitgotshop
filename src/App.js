@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import Nav from './components/Nav.js';
+var faker= require('faker');
 // import Generate from './Generate';
-import RandomData from './Customers.js';
+// import RandomData from './Customers.js';
 
 class App extends Component {
   constructor(props) {
@@ -21,12 +22,16 @@ class App extends Component {
       });
   }
 
+
   blah(){
     let data = {
-      "first_name": "MAD",
-      "last_name": "MAN",
-      "phone": "Who dis",
-      "avatar": "( ͡° ͜ʖ ͡°)"
+      "username": faker.name.firstName(),
+      "passsword": faker.internet.password() ,
+      "phone": faker.phone.phoneNumberFormat(),
+      "email": faker.internet.email(),
+      "address": faker.address.streetAddress(),
+      "paymentOption": faker.random.number(),
+      "paymentHistory": ""
     }
 
     console.log("BLAH");

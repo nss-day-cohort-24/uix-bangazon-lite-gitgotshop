@@ -92,6 +92,33 @@
       "phone": "Who dis",
       "avatar": "( ͡° ͜ʖ ͡°)",
       "id": 8
+    },
+    {
+      "first_name": "Jamal",
+      "last_name": "MAN",
+      "phone": "Who dis",
+      "avatar": "( ͡° ͜ʖ ͡°)",
+      "id": 9
+    },
+    {
+      "username": "Alysha",
+      "passsword": "dO19mjzRJXthbZy",
+      "phone": "826-149-6963",
+      "email": "Geovanni.Dickinson@gmail.com",
+      "address": "4880 Burdette Mountains",
+      "paymentOption": "(851) 359-4998",
+      "paymentHistory": "",
+      "id": 10
+    },
+    {
+      "username": "Kavon",
+      "passsword": "YmA7OA65ANfV01w",
+      "phone": "970-363-7496",
+      "email": "Rodolfo.Huel72@hotmail.com",
+      "address": "0626 Tressie Meadows",
+      "paymentOption": 34996,
+      "paymentHistory": "",
+      "id": 11
     }
   ]
 }
