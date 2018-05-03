@@ -8,6 +8,8 @@ import Home from '../pages/Home.js';
 import Profile from '../pages/Profile.js';
 import Cart from '../pages/Cart.js';
 import Products from '../pages/Products.js';
+// import SignInModal from './SignInModal';
+import FormModal from './FormModal';
 
 class Nav extends Component {
 
@@ -24,6 +26,7 @@ class Nav extends Component {
                         <div className="align-items-center">
                             <NavLink className="mx-2 btn-white" to='/Products'>Products</NavLink>                            
                             <NavLink className="mx-2 btn-white" to='/Profile'>Profile</NavLink>
+                            <FormModal />
                             <NavLink className="mx-2 cart" to='/Cart'><i class="fas fa-shopping-cart fa-lg"></i></NavLink>
                         </div>
                     </nav>
