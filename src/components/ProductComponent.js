@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import ProductCard from '../components/ProductCard.js';
 import lindsay from '../img/Products/lindsay.jpg'
+import Ben from '../img/Products/Ben.png';
 
 class Product extends Component {
 
@@ -9,18 +10,18 @@ class Product extends Component {
     render() {
         return (
             <div className="d-flex flex-row justify-content-center flex-wrap">
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />                
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />
-                <ProductCard src={lindsay} name="LINDSAY" link="" id="" />                
+                <ProductCard src={Ben} name="BEN" link="/SingleProduct" id="" />
+                <ProductCard src={Ben} name="BEN" link="/SingleProduct" id="" />
+                <ProductCard src={Ben} name="BEN" link="/SingleProduct" id="" />
+                <ProductCard src={Ben} name="BEN" link="/SingleProduct" id="" />
+                <ProductCard src={lindsay} name="LINDSAY" link="/SingleProduct" id="" />
+                <ProductCard src={lindsay} name="LINDSAY" link="/SingleProduct" id="" />
+                <ProductCard src={lindsay} name="LINDSAY" link="/SingleProduct" id="" />                
+                <ProductCard src={lindsay} name="LINDSAY" link="/SingleProduct" id="" />
+                <ProductCard src={lindsay} name="LINDSAY" link="/SingleProduct" id="" />
+                <ProductCard src={lindsay} name="LINDSAY" link="/SingleProduct" id="" />
+                <ProductCard src={lindsay} name="LINDSAY" link="/SingleProduct" id="" />
+                <ProductCard src={lindsay} name="LINDSAY" link="/SingleProduct" id="" />                
             </div>
         );
     }

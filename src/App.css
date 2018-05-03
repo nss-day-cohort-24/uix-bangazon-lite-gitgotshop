@@ -70,32 +70,20 @@ nav input {
   color: white;
 }
 
-.btn-white {
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
-  border-radius: 5px;
-  font-family: 'Montserrat', sans-serif;
-  color: white;
-  font-size: 15px;
-  padding: 5px 10px 5px 10px;
-  border: solid white 1px;
-  text-decoration: none;
-}
-
-.btn-red:hover {
-  background: #eb6a95;
-  text-decoration: none;
-}
-
 /* Home */
 
 .margin-neg {
   position: absolute;
-  top: 40%;
+  top: 30%;
   width: 85%;
 }
 
 /* Buttons */
+.minezy:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .btn-red {
   -webkit-border-radius: 10;
   -moz-border-radius: 10;
@@ -109,7 +97,44 @@ nav input {
 }
 
 .btn-red:hover {
-  background: #eb6a95;
+  background-color: #c4114b;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-white {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px 5px 10px;
+  border: solid white 1px;
+  text-decoration: none;
+}
+
+.btn-white:hover {
+  background-color: #ffffff;
+  color: #c4114b;
+  text-decoration: none;
+}
+
+.btn-blue {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: #222653;
+  font-size: 15px;
+  padding: 5px 10px 5px 10px;
+  border: solid #222653 1px;
+  text-decoration: none;
+}
+
+.btn-blue:hover {
+  background: #222653;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -117,4 +142,14 @@ nav input {
 
 .product-card {
   width: 20%;
+}
+
+/* Single Product Page */
+.prod-overview {
+  width: 60%;
+}
+
+.prod-pic {
+  width: 40%;
+  height: 40%;
 }
