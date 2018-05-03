@@ -1,6 +1,6 @@
 
 ![Minzy - your local data-driven marketing](public/Minezy_logo.png "Minzy - your local data-driven marketing")
-## DATA-DRIVEN MARKETING
+# DATA-DRIVEN MARKETING
 
 ## HOW TO USE MINEZY
 1. Inside your terminal, type and enter `npm install`
