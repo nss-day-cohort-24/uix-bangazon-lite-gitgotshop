@@ -143,7 +143,7 @@ nav input {
 .product-card {
   width: 20%;
 }
-<<<<<<< HEAD
+
 /* profile */
 
 i.fa{
@@ -213,8 +213,7 @@ img#Upload-photo{
 
 .credit-card-box .panel-heading img {
   min-width: 180px;
-=======
-
+}
 /* Single Product Page */
 .prod-overview {
   width: 60%;
@@ -223,5 +222,5 @@ img#Upload-photo{
 .prod-pic {
   width: 40%;
   height: 40%;
->>>>>>> design
+
 }
