@@ -23,10 +23,11 @@ class Nav extends Component {
         this.signout = this.signout.bind(this);
     }
 
-    updateAuth(status) {
-        console.log("updateAuth status", status);
+    updateAuth(user) {
+        console.log("updateAuth user", user);
+        this.props.updateUser(user);
         this.setState({
-            authed: status
+            authed: true
         });
     }
 

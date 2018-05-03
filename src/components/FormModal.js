@@ -36,7 +36,7 @@ class FormModal extends React.Component {
           authed: true
         })
 
-        this.props.updateAuth(true);
+        this.props.updateAuth(user);
       }
     }
   }
