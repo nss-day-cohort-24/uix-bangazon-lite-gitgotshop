@@ -20,12 +20,20 @@ class Nav extends Component {
             authed: false
         }
         this.updateAuth = this.updateAuth.bind(this);
+        this.signout = this.signout.bind(this);
     }
 
     updateAuth(status) {
         console.log("updateAuth status", status);
         this.setState({
             authed: status
+        });
+    }
+
+    signout() {
+        console.log("signed out");
+        this.setState({
+            authed: false
         });
     }
 
@@ -45,6 +53,7 @@ class Nav extends Component {
                                 <div className="align-items-center">
                                     <NavLink className="mx-2 btn-white" to='/Products'>Products</NavLink>
                                     <NavLink className="mx-2 btn-white" to='/Profile'>Profile</NavLink>
+                                    <a className="mx-2 btn-white" href="" onClick={this.signout}>Sign out</a>
                                     <NavLink className="mx-2 cart" to='/Cart'><i class="fas fa-shopping-cart fa-lg"></i></NavLink>
                                 </div>
                             </nav>
