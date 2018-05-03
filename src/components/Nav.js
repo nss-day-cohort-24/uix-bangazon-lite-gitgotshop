@@ -8,6 +8,9 @@ import Home from '../pages/Home.js';
 import Profile from '../pages/Profile.js';
 import Cart from '../pages/Cart.js';
 import Products from '../pages/Products.js';
+// import SignInModal from './SignInModal';
+import FormModal from './FormModal';
+import SingleProduct from '../pages/SingleProduct.js';
 
 class Nav extends Component {
 
@@ -18,12 +21,13 @@ class Nav extends Component {
                 <div>
                     <nav className="d-flex flex-row justify-content-between px-3 py-3">
                         <div className="align-items-center">
-                            <NavLink className="mr-3" to='/'>MINEZY</NavLink>
+                            <NavLink className="mr-3 minezy" to='/'>MINEZY</NavLink>
                             <input type="text" placeholder="search" />
                         </div>
                         <div className="align-items-center">
                             <NavLink className="mx-2 btn-white" to='/Products'>Products</NavLink>                            
                             <NavLink className="mx-2 btn-white" to='/Profile'>Profile</NavLink>
+                            <FormModal />
                             <NavLink className="mx-2 cart" to='/Cart'><i class="fas fa-shopping-cart fa-lg"></i></NavLink>
                         </div>
                     </nav>
@@ -31,7 +35,8 @@ class Nav extends Component {
                         <Route exact path='/' component={Home} />
                         <Route path='/Profile' component={Profile} />
                         <Route path='/Cart' component={Cart} />
-                        <Route path="/Products" component={Products} />                    
+                        <Route path="/Products" component={Products} />  
+                        <Route path="/SingleProduct" component={SingleProduct} />
                     </div>
                 </div>
             </Router>

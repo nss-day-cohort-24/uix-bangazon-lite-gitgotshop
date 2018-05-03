@@ -41,8 +41,65 @@ nav input {
   color: white;
 }
 
+#log-btn {
+  background-color: #C4114B;
+  border: solid white 1px;
+  border-radius: 5px;
+  color: white;
+  height: 2.1em;
+}
+
+.form-modal {
+  display: inline;
+}
+
+#log-modal {
+  font-family: 'Montserrat', sans-serif;  
+}
+
+.modal-edges {
+  border: none;
+  color: #2294D2;
+}
+
+.modal-input-field {
+  margin: .5em;
+}
+
 .cart {
   color: white;
+}
+
+/* Home */
+
+.margin-neg {
+  position: absolute;
+  top: 30%;
+  width: 85%;
+}
+
+/* Buttons */
+.minezy:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.btn-red {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: #c4114b;
+  font-size: 15px;
+  padding: 5px 10px 5px 10px;
+  border: solid #c4114b 1px;
+  text-decoration: none;
+}
+
+.btn-red:hover {
+  background-color: #c4114b;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .btn-white {
@@ -57,34 +114,27 @@ nav input {
   text-decoration: none;
 }
 
-.btn-red:hover {
-  background: #eb6a95;
+.btn-white:hover {
+  background-color: #ffffff;
+  color: #c4114b;
   text-decoration: none;
 }
 
-/* Home */
-
-.margin-neg {
-  position: absolute;
-  top: 40%;
-  width: 85%;
-}
-
-/* Buttons */
-.btn-red {
+.btn-blue {
   -webkit-border-radius: 10;
   -moz-border-radius: 10;
   border-radius: 5px;
   font-family: 'Montserrat', sans-serif;
-  color: #c4114b;
+  color: #222653;
   font-size: 15px;
   padding: 5px 10px 5px 10px;
-  border: solid #c4114b 1px;
+  border: solid #222653 1px;
   text-decoration: none;
 }
 
-.btn-red:hover {
-  background: #eb6a95;
+.btn-blue:hover {
+  background: #222653;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -93,6 +143,7 @@ nav input {
 .product-card {
   width: 20%;
 }
+<<<<<<< HEAD
 /* profile */
 
 i.fa{
@@ -162,4 +213,15 @@ img#Upload-photo{
 
 .credit-card-box .panel-heading img {
   min-width: 180px;
+=======
+
+/* Single Product Page */
+.prod-overview {
+  width: 60%;
+}
+
+.prod-pic {
+  width: 40%;
+  height: 40%;
+>>>>>>> design
 }
