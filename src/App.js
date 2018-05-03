@@ -56,7 +56,6 @@ class App extends Component {
     this.getStuff()
     return (
       <div>
-       <Nav />
        {/* <RandomData /> */}
        <button onClick={this.blah.bind(this)}>TEST</button>
         <Nav updateUser={this.updateUser} />
