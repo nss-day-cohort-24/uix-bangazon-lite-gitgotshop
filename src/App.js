@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Nav from './components/Nav.js';
+import Generate from './Generate';
 import RandomData from './Customers.js';
 
 class App extends Component {
@@ -46,6 +47,7 @@ class App extends Component {
     return (
       <div>
        <Nav />
+       <Generate />
        {/* <RandomData /> */}
        <button onClick={this.blah.bind(this)}>TEST</button>
       </div>
