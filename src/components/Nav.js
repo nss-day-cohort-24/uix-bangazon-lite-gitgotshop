@@ -17,7 +17,8 @@ class Nav extends Component {
         super(props);
 
         this.state = {
-            authed: false
+            authed: false,
+            user: {}
         }
         this.updateAuth = this.updateAuth.bind(this);
         this.signout = this.signout.bind(this);
@@ -26,9 +27,9 @@ class Nav extends Component {
     updateAuth(user) {
         console.log("updateAuth user", user);
         this.setState({
-            authed: true
+            authed: true,
+            user: user
         });
-        this.props.updateUser(user);
     }
 
     signout() {
