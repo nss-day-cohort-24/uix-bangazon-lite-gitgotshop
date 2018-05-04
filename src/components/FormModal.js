@@ -6,7 +6,8 @@ class FormModal extends React.Component {
     super(props);
     this.state = {
       modal: false,
-      authed: false
+      authed: false,
+
     };
 
     this.toggle = this.toggle.bind(this);
@@ -21,25 +22,35 @@ class FormModal extends React.Component {
   }
 
   authentication = () => {
-    let user = parseInt(document.getElementById("user").value);
-    let pass = parseInt(document.getElementById("pass").value);
+    let user = document.getElementById("user").value;
+    let pass = document.getElementById("pass").value;
+
 
     this.setState({
-      modal: !this.state.modal
+      modal: !this.state.modal,
     })
 
-    if(user = "Chaddd") {
-      if (pass = "getgot") {
-        console.log("you're authed")
-        
-        this.setState({
-          authed: true
-        })
+    
+  
+    fetch(`http://localhost:3000/users?username=${user}&&passsword=${pass}`)
+      .then((data) => {
+        console.log('we made it here, gurlllll', user, pass);
+        console.log("data", data);
+        return data.json();
+      }).then((userArray) => {
+        if (userArray.length === 0) {
+          console.log("NO USERS");
+          this.setState({
+            fieldErrors: true
+          });
+        } 
+        else {
+          this.props.updateAuth(user);       
+        }
+      })
+  };
 
-        this.props.updateAuth(user);
-      }
-    }
-  }
+  
 
   render() {
     return (
