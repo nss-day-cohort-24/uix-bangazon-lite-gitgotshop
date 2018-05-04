@@ -1,136 +1,6 @@
 {
   "users": [
     {
-      "id": 0,
-      "first_name": "Kaci",
-      "last_name": "Kathryn",
-      "phone": "733-123-9395",
-      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/dhilipsiva/128.jpg",
-      "title": "Senior Communications Agent",
-      "email": "Karley_Funk9@gmail.com",
-      "password": "ybb2WufeyCwsfAt",
-      "account": "67856512",
-      "DOB": "2018-03-09T20:57:26.195Z",
-      "City of Birth": "South Reynoldbury"
-    },
-    {
-      "id": 1,
-      "first_name": "Nat",
-      "last_name": "Tabitha",
-      "phone": "847-623-2444",
-      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/aaronkwhite/128.jpg",
-      "title": "Central Solutions Producer",
-      "email": "Damion_Botsford2@hotmail.com",
-      "password": "r_Sm0_66RBDEUZk",
-      "account": "52758722",
-      "DOB": "2017-05-23T19:22:22.987Z",
-      "City of Birth": "Goodwinland"
-    },
-    {
-      "id": 2,
-      "first_name": "Arvilla",
-      "last_name": "Jedediah",
-      "phone": "475-164-4960",
-      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/jarsen/128.jpg",
-      "title": "Lead Tactics Engineer",
-      "email": "Tyrell_Heidenreich@hotmail.com",
-      "password": "eqYz5vUVvw0_mup",
-      "account": "96891336",
-      "DOB": "2017-05-12T11:20:56.993Z",
-      "City of Birth": "Port Karianemouth"
-    },
-    {
-      "id": 3,
-      "first_name": "Tevin",
-      "last_name": "Kenton",
-      "phone": "444-185-6939",
-      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/falling_soul/128.jpg",
-      "title": "Principal Identity Liaison",
-      "email": "Paolo98@yahoo.com",
-      "password": "A1cUzkpYjyHXUJS",
-      "account": "15712809",
-      "DOB": "2017-06-25T02:49:35.025Z",
-      "City of Birth": "Parisianhaven"
-    },
-    {
-      "id": 4,
-      "first_name": "Camren",
-      "last_name": "Garry",
-      "phone": "167-208-8776",
-      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/posterjob/128.jpg",
-      "title": "Human Optimization Strategist",
-      "email": "Leo35@hotmail.com",
-      "password": "YtlbH80J8sSnDHv",
-      "account": "67843943",
-      "DOB": "2017-09-17T17:28:33.382Z",
-      "City of Birth": "Port Domenic"
-    },
-    {
-      "first_name": "MAD",
-      "last_name": "MAN",
-      "phone": "Who dis",
-      "avatar": "( ͡° ͜ʖ ͡°)",
-      "id": 5
-    },
-    {
-      "first_name": "MAD",
-      "last_name": "MAN",
-      "phone": "Who dis",
-      "avatar": "( ͡° ͜ʖ ͡°)",
-      "id": 6
-    },
-    {
-      "first_name": "MAD",
-      "last_name": "MAN",
-      "phone": "Who dis",
-      "avatar": "( ͡° ͜ʖ ͡°)",
-      "id": 7
-    },
-    {
-      "first_name": "MAD",
-      "last_name": "MAN",
-      "phone": "Who dis",
-      "avatar": "( ͡° ͜ʖ ͡°)",
-      "id": 8
-    },
-    {
-      "first_name": "Jamal",
-      "last_name": "MAN",
-      "phone": "Who dis",
-      "avatar": "( ͡° ͜ʖ ͡°)",
-      "id": 9
-    },
-    {
-      "username": "Alysha",
-      "passsword": "dO19mjzRJXthbZy",
-      "phone": "826-149-6963",
-      "email": "Geovanni.Dickinson@gmail.com",
-      "address": "4880 Burdette Mountains",
-      "paymentOption": "(851) 359-4998",
-      "paymentHistory": "",
-      "id": 10
-    },
-    {
-      "username": "Kavon",
-      "passsword": "YmA7OA65ANfV01w",
-      "phone": "970-363-7496",
-      "email": "Rodolfo.Huel72@hotmail.com",
-      "address": "0626 Tressie Meadows",
-      "paymentOption": 34996,
-      "paymentHistory": "",
-      "id": 11
-    },
-    {
-      "username": "Gina",
-      "passsword": "SQqTORq6RuG_v30",
-      "phone": "464-876-3227",
-      "email": "Kylie.Mueller47@yahoo.com",
-      "address": "2928 Lynch Extension",
-      "paymentOption": 96842,
-      "paymentHistory": "",
-      "id": 12
-    },
-    {
       "username": "Savion",
       "password": "b5Ke3AMh6XLJSUp",
       "phone": "255-254-1468",
@@ -153,6 +23,246 @@
       "seller": false,
       "favorites": "",
       "id": 14
+    },
+    {
+      "username": "Seamus",
+      "password": "4xE8o6AZa20caEn",
+      "phone": "573-608-9740",
+      "email": "Tara.Brekke37@hotmail.com",
+      "address": "6130 Alisha Glen",
+      "paymentOption": 22831,
+      "paymentHistory": "",
+      "seller": false,
+      "favorites": "",
+      "id": 26
+    },
+    {
+      "username": "Dejuan",
+      "password": "Nve_3FvBHrjrJQ2",
+      "phone": "118-251-9708",
+      "email": "Kaia59@gmail.com",
+      "address": "68076 Hettie Union",
+      "paymentOption": 57877,
+      "paymentHistory": "",
+      "seller": true,
+      "favorites": "",
+      "id": 27
+    },
+    {
+      "username": "Hank",
+      "password": "BM3itkVxZ0NOTep",
+      "phone": "453-990-6043",
+      "email": "Mia_Ward@hotmail.com",
+      "address": "4808 Nelda Square",
+      "paymentOption": 42960,
+      "paymentHistory": "",
+      "seller": true,
+      "favorites": "",
+      "id": 28
+    },
+    {
+      "username": "Earnest",
+      "password": "wAVqLVBw1E1TdJz",
+      "phone": "625-724-2585",
+      "email": "Kristian_Klein@gmail.com",
+      "address": "274 Kulas Knolls",
+      "paymentOption": 17617,
+      "paymentHistory": "",
+      "seller": false,
+      "favorites": "",
+      "id": 29
+    },
+    {
+      "username": "Jovani",
+      "password": "IkI8TcVWjEjZA27",
+      "phone": "510-809-3805",
+      "email": "Alize17@gmail.com",
+      "address": "93528 Crooks Harbors",
+      "paymentOption": 7843,
+      "paymentHistory": "",
+      "seller": true,
+      "favorites": "",
+      "id": 30
+    },
+    {
+      "username": "Willard",
+      "password": "XZsR3dEa2ykjYIp",
+      "phone": "573-029-9327",
+      "email": "Alta12@yahoo.com",
+      "address": "95557 Keshaun Views",
+      "paymentOption": 96258,
+      "paymentHistory": "",
+      "seller": false,
+      "favorites": "",
+      "id": 31
+    },
+    {
+      "username": "Mabel",
+      "password": "VAmOjKWuEcUHu6P",
+      "phone": "584-516-4734",
+      "email": "Liliane.Effertz@hotmail.com",
+      "address": "5395 Parker Creek",
+      "paymentOption": 80714,
+      "paymentHistory": "",
+      "seller": false,
+      "favorites": "",
+      "id": 32
+    },
+    {
+      "username": "Jevon",
+      "password": "XtoDyZfru4_Xl7m",
+      "phone": "771-375-7607",
+      "email": "Lucy.Olson@hotmail.com",
+      "address": "607 Wilton Forks",
+      "paymentOption": 10670,
+      "paymentHistory": "",
+      "seller": false,
+      "favorites": "",
+      "id": 33
+    },
+    {
+      "username": "Alexandrine",
+      "password": "hdW_bT0sISjv5z1",
+      "phone": "989-712-6991",
+      "email": "Jerrod.Ruecker@gmail.com",
+      "address": "47782 Fay Fall",
+      "paymentOption": 84932,
+      "paymentHistory": "",
+      "seller": false,
+      "favorites": "",
+      "id": 34
+    },
+    {
+      "username": "Daphnee",
+      "password": "OpJOa4uRjQZLSQ7",
+      "phone": "224-816-5458",
+      "email": "Helga_Nienow@hotmail.com",
+      "address": "2432 Thea Haven",
+      "paymentOption": 95567,
+      "paymentHistory": "",
+      "seller": false,
+      "favorites": "",
+      "id": 35
+    },
+    {
+      "username": "Jedidiah",
+      "password": "B3IJ26uPOqlyMKf",
+      "phone": "158-187-3685",
+      "email": "Drew.Batz@yahoo.com",
+      "address": "238 Ondricka Burgs",
+      "paymentOption": 47172,
+      "paymentHistory": "",
+      "seller": true,
+      "favorites": "",
+      "id": 36
+    },
+    {
+      "username": "Cydney",
+      "password": "fjqXBCnrb5evtPg",
+      "phone": "568-737-2184",
+      "email": "Verna.Bayer20@gmail.com",
+      "address": "14404 Lea Rue",
+      "paymentOption": 90349,
+      "paymentHistory": "",
+      "seller": false,
+      "favorites": "",
+      "id": 37
+    },
+    {
+      "username": "Summer",
+      "password": "5RjAegYzlZXTAUv",
+      "phone": "010-099-5091",
+      "email": "Vivianne.Ruecker@hotmail.com",
+      "address": "8412 Titus Valley",
+      "paymentOption": 51771,
+      "paymentHistory": "",
+      "seller": false,
+      "favorites": "",
+      "id": 38
+    },
+    {
+      "username": "Celia",
+      "password": "7rApouvzlxHlmV6",
+      "phone": "112-817-2328",
+      "email": "Marina_Runte88@hotmail.com",
+      "address": "9151 Quitzon Motorway",
+      "paymentOption": 54804,
+      "paymentHistory": "",
+      "seller": true,
+      "favorites": "",
+      "id": 39
+    },
+    {
+      "username": "Giuseppe",
+      "password": "TxcjhI75hV5HqJR",
+      "phone": "386-298-5849",
+      "email": "Chesley58@hotmail.com",
+      "address": "736 Justice Views",
+      "paymentOption": 53804,
+      "paymentHistory": "",
+      "seller": false,
+      "favorites": "",
+      "id": 40
+    },
+    {
+      "username": "Cayla",
+      "password": "yVe1jtbsVwdSQaY",
+      "phone": "651-402-7171",
+      "email": "Aaron.Zieme7@gmail.com",
+      "address": "8125 Alvis Walks",
+      "paymentOption": 12422,
+      "paymentHistory": "",
+      "seller": false,
+      "favorites": "",
+      "id": 41
+    },
+    {
+      "username": "Steve",
+      "password": "FmO0DK9vaeM6gqL",
+      "phone": "354-057-0773",
+      "email": "Leola_Brown@gmail.com",
+      "address": "73673 Runolfsson Manors",
+      "paymentOption": 65041,
+      "paymentHistory": "",
+      "seller": false,
+      "favorites": "",
+      "id": 42
+    },
+    {
+      "username": "Amani",
+      "password": "4UCQKRQXdFSEnoE",
+      "phone": "136-306-1291",
+      "email": "Jammie.Reynolds@gmail.com",
+      "address": "9227 Carey Throughway",
+      "paymentOption": 71717,
+      "paymentHistory": "",
+      "seller": false,
+      "favorites": "",
+      "id": 43
+    },
+    {
+      "username": "Fern",
+      "password": "szOIjT13Ium1VS0",
+      "phone": "115-069-8967",
+      "email": "Green.Bernier24@gmail.com",
+      "address": "89148 Jones View",
+      "paymentOption": 922,
+      "paymentHistory": "",
+      "seller": true,
+      "favorites": "",
+      "id": 44
+    },
+    {
+      "username": "Taya",
+      "password": "48zvTG_pdxkAU7S",
+      "phone": "080-247-1790",
+      "email": "Shemar.Muller3@yahoo.com",
+      "address": "14082 Imelda Lodge",
+      "paymentOption": 72151,
+      "paymentHistory": "",
+      "seller": false,
+      "favorites": "",
+      "id": 45
     }
   ],
   "Products": [
@@ -209,24 +319,6 @@
       "desc": "Data from Las Vegas",
       "data": "LasVegas.json",
       "id": 6
-    },
-    {
-      "name": "",
-      "product": "",
-      "sellerID": 0,
-      "price": "",
-      "desc": "",
-      "data": "",
-      "id": 7
-    },
-    {
-      "name": "",
-      "product": "",
-      "sellerID": 0,
-      "price": "",
-      "desc": "",
-      "data": "",
-      "id": 8
     }
   ]
 }

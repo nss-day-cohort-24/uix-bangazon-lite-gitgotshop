@@ -8,17 +8,16 @@ import MakeProduct from './components/NewProduct'
 
 
 class App extends Component {
-  
-  
   render() {
     return (
       <div>
        <Nav />
-       <MakeProduct />
-       <AddUser />
+       {/* <MakeProduct />
+       <AddUser /> */}
       </div>
     );
   }
+
 }
 
 export default App;
