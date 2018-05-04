@@ -7,8 +7,7 @@ class FormModal extends React.Component {
     this.state = {
       modal: false,
       authed: false,
-      user: null,
-      pass: null
+
     };
 
     this.toggle = this.toggle.bind(this);
@@ -23,57 +22,35 @@ class FormModal extends React.Component {
   }
 
   authentication = () => {
-    let user = parseInt(document.getElementById("user").value);
-    let pass = parseInt(document.getElementById("pass").value);
+    let user = document.getElementById("user").value;
+    let pass = document.getElementById("pass").value;
+
 
     this.setState({
       modal: !this.state.modal,
-      user: user,
-      pass: pass
     })
 
-    // if(user = "Chaddd") {
-    //   if (pass = "getgot") {
-    //     console.log("you're authed")
-        
-    //     this.setState({
-    //       authed: true
-    //     })
-
-    //     this.props.updateAuth(user);
-    //   }
-    // }
-
-    // this is the code that it needs to be
-    fetch(`http://localhost:3000/profiles?first_name=${this.state.user}&&password=${this.state.password}`)
+    
+  
+    fetch(`http://localhost:3000/users?username=${user}&&passsword=${pass}`)
       .then((data) => {
-        this.props.updateAuth(user);        
+        console.log('we made it here, gurlllll', user, pass);
+        console.log("data", data);
         return data.json();
+      }).then((userArray) => {
+        if (userArray.length === 0) {
+          console.log("NO USERS");
+          this.setState({
+            fieldErrors: true
+          });
+        } 
+        else {
+          this.props.updateAuth(user);       
+        }
       })
-      
-  //     .then((userArray) => {
-  //       if (userArray.length === 0) {
-  //         console.log("NO USERS");
-  //         this.setState({
-  //           fieldErrors: true
-  //         });
-  //       } 
-  //       else {
-  //         this.setState({
-  //           user: userArray[0],
-  //           userAuthed: true,
-  //           fields: {
-  //             email: '',
-  //             password: ''
-  //           }
-  //         });
-  //       }
-  //       console.log(this.state.user);
-  //     })
-  //   evt.preventDefault();
-  // };
+  };
 
-  }
+  
 
   render() {
     return (
