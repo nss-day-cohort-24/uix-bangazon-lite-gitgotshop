@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Nav from './components/Nav.js';
 // import Generate from './Generate';
-import RandomData from './Customers.js';
+// import RandomData from './Customers.js';
 import Products from './Product_map';
 import AddUser from './AddUser';
 import faker from 'faker';
