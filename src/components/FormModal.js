@@ -6,7 +6,9 @@ class FormModal extends React.Component {
     super(props);
     this.state = {
       modal: false,
-      authed: false
+      authed: false,
+      user: null,
+      pass: null
     };
 
     this.toggle = this.toggle.bind(this);
@@ -25,20 +27,52 @@ class FormModal extends React.Component {
     let pass = parseInt(document.getElementById("pass").value);
 
     this.setState({
-      modal: !this.state.modal
+      modal: !this.state.modal,
+      user: user,
+      pass: pass
     })
 
-    if(user = "Chaddd") {
-      if (pass = "getgot") {
-        console.log("you're authed")
+    // if(user = "Chaddd") {
+    //   if (pass = "getgot") {
+    //     console.log("you're authed")
         
-        this.setState({
-          authed: true
-        })
+    //     this.setState({
+    //       authed: true
+    //     })
 
-        this.props.updateAuth(user);
-      }
-    }
+    //     this.props.updateAuth(user);
+    //   }
+    // }
+
+    // this is the code that it needs to be
+    fetch(`http://localhost:3000/profiles?first_name=${this.state.user}&&password=${this.state.password}`)
+      .then((data) => {
+        this.props.updateAuth(user);        
+        return data.json();
+      })
+      
+  //     .then((userArray) => {
+  //       if (userArray.length === 0) {
+  //         console.log("NO USERS");
+  //         this.setState({
+  //           fieldErrors: true
+  //         });
+  //       } 
+  //       else {
+  //         this.setState({
+  //           user: userArray[0],
+  //           userAuthed: true,
+  //           fields: {
+  //             email: '',
+  //             password: ''
+  //           }
+  //         });
+  //       }
+  //       console.log(this.state.user);
+  //     })
+  //   evt.preventDefault();
+  // };
+
   }
 
   render() {
