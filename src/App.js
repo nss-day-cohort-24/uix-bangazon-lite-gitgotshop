@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Nav from './components/Nav.js';
-var faker= require('faker');
-// import Generate from './Generate';
-// import RandomData from './Customers.js';
+import AddUser from './AddUser';
+import faker from 'faker';
 
 class App extends Component {
   constructor(props) {
@@ -74,7 +73,6 @@ class App extends Component {
   }
 
   render() {
-    this.getStuff()
     return (
       <div>
        <Nav />
@@ -82,6 +80,7 @@ class App extends Component {
        {/* <RandomData /> */}
        <button onClick={this.blah.bind(this)}>TEST</button>
        <button onClick={this.makeProduct.bind(this)}>Make New Product Randomly</button>
+       <AddUser />
       </div>
     );
   }
