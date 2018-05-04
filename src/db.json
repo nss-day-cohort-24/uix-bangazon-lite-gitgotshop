@@ -1,5 +1,5 @@
 {
-  "profiles": [
+  "users": [
     {
       "id": 0,
       "first_name": "Kaci",
@@ -129,6 +129,30 @@
       "paymentOption": 96842,
       "paymentHistory": "",
       "id": 12
+    },
+    {
+      "username": "Savion",
+      "password": "b5Ke3AMh6XLJSUp",
+      "phone": "255-254-1468",
+      "email": "Chadrick36@gmail.com",
+      "address": "29764 Joey Plaza",
+      "paymentOption": 27145,
+      "paymentHistory": "",
+      "seller": true,
+      "favorites": "",
+      "id": 13
+    },
+    {
+      "username": "Brent",
+      "password": "UFG_dhERbYPQVOc",
+      "phone": "826-563-8957",
+      "email": "Aniyah27@hotmail.com",
+      "address": "398 Purdy Field",
+      "paymentOption": 44409,
+      "paymentHistory": "",
+      "seller": false,
+      "favorites": "",
+      "id": 14
     }
   ],
   "Products": [
@@ -185,6 +209,24 @@
       "desc": "Data from Las Vegas",
       "data": "LasVegas.json",
       "id": 6
+    },
+    {
+      "name": "",
+      "product": "",
+      "sellerID": 0,
+      "price": "",
+      "desc": "",
+      "data": "",
+      "id": 7
+    },
+    {
+      "name": "",
+      "product": "",
+      "sellerID": 0,
+      "price": "",
+      "desc": "",
+      "data": "",
+      "id": 8
     }
   ]
 }
