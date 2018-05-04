@@ -29,7 +29,7 @@ class Profile extends Component {
                 <fieldset>
                               {/* first name */}
                                                     <div class="form-group">
-                                                        <div class="col-md-8 p-0">
+                                                        <div class="col-md-8 p-2">
                                                             <div class="input-group">
                                                                 <div class="input-group-addon">
                                                                     {/* <i class="fa fa-user"></i> */}
@@ -40,7 +40,7 @@ class Profile extends Component {
                                                     </div>
                                     {/* Last name */}
                                                     <div class="form-group">
-                                                        <div class="col-md-8 p-0">
+                                                        <div class="col-md-8 p-2">
                                                             <div class="input-group">
                                                                 <div class="input-group-addon">
                                                                     {/* <i class="fa fa-male"></i> */}
@@ -51,7 +51,7 @@ class Profile extends Component {
                                                     </div>
                                   
                                                     <div class="form-group">
-                                                        <div class="col-md-8 p-0">
+                                                        <div class="col-md-8 p-2">
                                                             <div class="input-group">
                                                                 <div class="input-group-addon">
                                                            
@@ -62,13 +62,13 @@ class Profile extends Component {
                                                     </div>
                                     {/* permanent address */}
                                                 <div class="form-group">
-                                                    <div class="col-md-8 p-0">
+                                                    <div class="col-md-8 p-2">
                                                         <input id="Permanent Address" name="Permanent Address" type="text" placeholder="Permanent Address" class="form-control input-md "/>
                                                     </div>
                                                 </div>
                                                 <div className="row">
                                                     <div class="form-group">
-                                                        <div class="col-md-8p-">
+                                                        <div class="col-md-8 p-2">
                                                           <input id="Permanent Address" name="Permanent Address" type="number" placeholder="zip-code" class="form-control input-md "/>
                                                          </div>
                                                     </div>
