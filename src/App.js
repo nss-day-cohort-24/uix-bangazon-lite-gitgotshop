@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 import Nav from './components/Nav.js';
+// import Generate from './Generate';
+import RandomData from './Customers.js';
+import Products from './Product_map';
 import AddUser from './AddUser';
 import faker from 'faker';
+
 
 class App extends Component {
   constructor(props) {
@@ -79,6 +83,7 @@ class App extends Component {
        {/* <Generate /> */}
        {/* <RandomData /> */}
        <button onClick={this.blah.bind(this)}>TEST</button>
+       <Products />
        <button onClick={this.makeProduct.bind(this)}>Make New Product Randomly</button>
        <AddUser />
       </div>
