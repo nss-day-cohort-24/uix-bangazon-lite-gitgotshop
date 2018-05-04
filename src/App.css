@@ -144,6 +144,21 @@ nav input {
   width: 20%;
 }
 
+/* profile */
+
+
+
+#main-profile{
+  margin-top:50px;
+  border-radius: 2px;
+  border:1 solid rgb(207, 209, 209);
+  
+}
+img.round-circle{
+  width: 200px;
+  height: 220px;
+  /* border-radius: 50%; */
+}
 /* Single Product Page */
 .prod-overview {
   width: 60%;
@@ -152,6 +167,22 @@ nav input {
 .prod-pic {
   width: 40%;
   height: 40%;
+
+}
+
+.fieldset{
+   padding-top: 5%;
+  border-radius: 5px;
+}
+
+
+div.text-center.paym{
+  margin-top: 25px;
+}
+
+.input {
+  font-family: 'Montserrat', sans-serif;
+}
 }
 
 .cart-prod-pic {
