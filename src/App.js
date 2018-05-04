@@ -1,30 +1,23 @@
 import React, { Component } from 'react';
 import './App.css';
 import Nav from './components/Nav.js';
+import Products from './Product_map';
+import AddUser from './AddUser';
+import faker from 'faker';
+import MakeProduct from './components/newProduct'
+
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      user: null
-    }
-    this.updateUser = this.updateUser.bind(this);
-  }
-
-  updateUser(user) {
-    this.setState({
-      user: user
-    });
-  }
-
   render() {
     return (
       <div>
-        <Nav updateUser={this.updateUser} />
+       <Nav />
+       {/* <MakeProduct />
+       <AddUser /> */}
       </div>
     );
   }
+
 }
 
 export default App;
