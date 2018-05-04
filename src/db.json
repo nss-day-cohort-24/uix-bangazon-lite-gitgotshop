@@ -176,6 +176,15 @@
       "price": "62267 Quigley Centers",
       "disc": 39339,
       "id": 5
+    },
+    {
+      "name": "Las Vegas",
+      "product": "",
+      "sellerID": 0,
+      "price": "$3,000",
+      "desc": "Data from Las Vegas",
+      "data": "LasVegas.json",
+      "id": 6
     }
   ]
 }
