@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button } from 'reactstrap';
 
 class Products extends Component {
 
@@ -11,7 +12,7 @@ class Products extends Component {
             error: null,
             data: {}
         }
-        
+        this.getAnotherClicked=this.getAnotherClicked.bind(this);
     }
 
     componentDidMount() {
@@ -30,11 +31,11 @@ class Products extends Component {
         let selectedDataSet;
         dataSet.push({
             id: dataSet.id,
-            region: dataSet.region,
-            seller: dataSet.sellerID,
-            buyer: dataSet.buyerID,
-            product: dataSet.productID,
-            description: dataSet.description
+            region: dataSet.name,
+            seller: dataSet.userID,
+            product: dataSet.product,
+            description: dataSet.disc,
+            price: dataSet.price
         });
         this.setState({
             productsLoaded: false,
@@ -75,7 +76,7 @@ class Products extends Component {
         if(error) {
             return (
                 <div>
-                    <div> Error: {error.message}</div>
+                    <div> Error: fck my life it's not working</div>
                 </div>
             )
         } else if(!productsLoaded) {
