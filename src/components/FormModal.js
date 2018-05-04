@@ -5,16 +5,40 @@ class FormModal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      modal: false
+      modal: false,
+      authed: false
     };
 
     this.toggle = this.toggle.bind(this);
+    this.authentication = this.authentication.bind(this);
+
   }
 
   toggle() {
     this.setState({
       modal: !this.state.modal
     });
+  }
+
+  authentication = () => {
+    let user = parseInt(document.getElementById("user").value);
+    let pass = parseInt(document.getElementById("pass").value);
+
+    this.setState({
+      modal: !this.state.modal
+    })
+
+    if(user = "Chaddd") {
+      if (pass = "getgot") {
+        console.log("you're authed")
+        
+        this.setState({
+          authed: true
+        })
+
+        this.props.updateAuth(user);
+      }
+    }
   }
 
   render() {
@@ -29,16 +53,16 @@ class FormModal extends React.Component {
               <div className="container">
                 <div className="row">
                   <div className="col">
-                    <input type="text" name="firstname" placeholder="Username" className="modal-input-field"></input>
+                    <input id="user" type="text" name="firstname" placeholder="Username" className="modal-input-field"></input>
                     <br/>
-                    <input type="text" name="firstname" placeholder="Password" className="modal-input-field"></input>
+                    <input id="pass" type="text" name="firstname" placeholder="Password" className="modal-input-field"></input>
                   </div>
                 </div>
               </div>
             </form>
           </ModalBody>
           <ModalFooter className="modal-edges">
-            <Button color="secondary" onClick={this.toggle}>Submit</Button>{' '}
+            <Button color="secondary" onClick={this.authentication.bind(this)}>Submit</Button>{' '}
             {/* <Button color="secondary" onClick={this.toggle}>Cancel</Button> */}
           </ModalFooter>
         </Modal>

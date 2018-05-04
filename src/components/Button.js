@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 
 /**
- * Buttons can be btn-red or btn-white in their props.class
+ * Buttons can be btn-red, btn-blue or btn-white in their props.class
  * 
  * Author @lindsay (https://github.com/mulhollen)
  */

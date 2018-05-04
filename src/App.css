@@ -183,3 +183,31 @@ div.text-center.paym{
 .input {
   font-family: 'Montserrat', sans-serif;
 }
+}
+
+.cart-prod-pic {
+  height: 100px;
+  width: 100px;
+}
+
+.cart-prod-overview {
+  width: 45%;
+  justify-content: space-between;
+  padding-bottom: 2em;
+  border-bottom: solid 1px #595b5c;
+}
+
+.subtotal-overview {
+  width: 45%;
+}
+
+.subtotal-price {
+  justify-content: space-between;
+}
+
+.subtotal {
+  flex-direction: column;
+  float: right;
+  width: 40%;
+  border-bottom: solid 1px #595b5c;
+}
