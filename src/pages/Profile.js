@@ -8,7 +8,7 @@ class Profile extends Component {
             <div>
             <div class ="container" id="main-profile"> 
                 <div class="row">
-                    <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="col-sm-4 col-md-4 col-lg-4 p-0">
                          <div class="col-md-1">
                                 <div class="col-md-2 hidden-xs">
                                     <img className="round-circle" src={main1} alt="photo" />
@@ -21,9 +21,9 @@ class Profile extends Component {
                                  </div> 
                             </div>
                     </div>
-                   <div class="col-sm-6 col-md-6 col-lg-6 central" >
+                   <div class="col-sm-6 col-md-6 col-lg-6 p-0 central" >
                     
-                   <div class = "col-8 " > 
+                   <div class = "col-8 p-0" > 
                          <legend class="text-center">SIGN UP</legend> 
                    <form class="form-horizontal">
                 <fieldset>
@@ -34,7 +34,7 @@ class Profile extends Component {
                                                                 <div class="input-group-addon">
                                                                     {/* <i class="fa fa-user"></i> */}
                                                                     </div>
-                                                                <input id="Name (Full name)" name="Name (Full name)" type="text" placeholder="First Name" class="form-control input-md"/>
+                                                                <input id="Name (Full name)" name="Name (Full name)" type="text" placeholder="First Name" class="form-control input-md input"/>
                                                             </div>
                                                     </div>
                                                     </div>
@@ -45,7 +45,7 @@ class Profile extends Component {
                                                                 <div class="input-group-addon">
                                                                     {/* <i class="fa fa-male"></i> */}
                                                                 </div>
-                                                                <input id="Father" name="Father" type="text" placeholder="Last Name" class="form-control input-md"/>
+                                                                <input id="Father" name="Father" type="text" placeholder="Last Name" class="form-control input-md input"/>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -56,25 +56,25 @@ class Profile extends Component {
                                                                 <div class="input-group-addon">
                                                            
                                                             </div>
-                                                                <input id="Phone number " name="Phone number " type="text" placeholder="Phone number " class="form-control input-md"/>
+                                                                <input id="Phone number " name="Phone number " type="text" placeholder="Phone number " class="form-control input-md input"/>
                                                                 </div>
                                                    </div>
                                                     </div>
                                     {/* permanent address */}
                                                 <div class="form-group">
                                                     <div class="col-md-8 p-0">
-                                                        <input id="Permanent Address" name="Permanent Address" type="text" placeholder="Permanent Address" class="form-control input-md "/>
+                                                        <input id="Permanent Address" name="Permanent Address" type="text" placeholder="Permanent Address" class="form-control input-md input"/>
                                                     </div>
                                                 </div>
                                                 <div className="row">
                                                     <div class="form-group">
-                                                        <div class="col-md-8p-">
-                                                          <input id="Permanent Address" name="Permanent Address" type="number" placeholder="zip-code" class="form-control input-md "/>
+                                                        <div class="col-md-8">
+                                                          <input id="Permanent Address" name="Permanent Address" type="number" placeholder="zip-code" class="form-control input-md input"/>
                                                          </div>
                                                     </div>
                                                     <div class="form-group">       
                                                             <div class="col-md-6">
-                                                                <input id="Permanent Address" name="Permanent Address" type="text" placeholder="state" class="form-control input-md "/>
+                                                                <input id="Permanent Address" name="Permanent Address" type="text" placeholder="state" class="form-control input-md input"/>
                                                             </div>
                                                     </div>
                                                 </div>
@@ -87,12 +87,12 @@ class Profile extends Component {
                            
                     <div class = "container" > 
                         <div class="row">
-                     <div class="col-xs-4 col-md-8">
+                     <div class="col-xs-4 col-md-8 p-0">
                          <legend class="paym">PAYMENT METHOD</legend> 
                             <div class="panel panel-default credit-card-box">
                                 <div class="panel-heading display-table">
                                     <div class="row display-tr">
-                                        <h6 class="panel-title display-td">Payment Details</h6>
+
                                         <div class="display-td">
                                             <img class="img-responsive pull-right"src="http://i76.imgup.net/accepted_c22e0.png"/>
                                                 </div>
@@ -106,23 +106,23 @@ class Profile extends Component {
                                                         <label for="cardNumber">CARD NUMBER</label>
                                                         <div class="input-group">
                                                            
-                                                            <input type="tel" class="form-control " name="cardNumber" placeholder="Valid Card Number" autocomplete="cc-number"required autofocus/>
+                                                            <input type="tel" class="form-control input" name="cardNumber" placeholder="Valid Card Number" autocomplete="cc-number"required autofocus/>
                                                         
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-xs-4 col-sm-4 cardex p-0">
+                                                <div class="col-xs-5 col-sm-5 cardex p-0">
                                                     <div class="form-group">
-                                                        <label for="cardExpiry"><span class="hidden-xs"> </span><span class="visible-xs-inline">DATE</span></label>
-                                                        <input type="tel" class="form-control" name="cardExpiry" placeholder="MM / YY" autocomplete="cc-exp" required/>
+                                                        <label for="cardExpiry"><span class="hidden-xs"> </span><span class="visible-xs-inline">EXPIRATION DATE</span></label>
+                                                        <input type="tel" class="form-control input" name="cardExpiry" placeholder="MM / YY" autocomplete="cc-exp" required/>
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-8 col-sm-4 pull-right">
                                                     <div class="form-group">
                                                         <label for="cardCVC">CV CODE</label>
-                                                        <input type="tel" class="form-control" name="cardCVC" placeholder="CVC" autocomplete="cc-csc" required/>
+                                                        <input type="tel" class="form-control input" name="cardCVC" placeholder="CVC" autocomplete="cc-csc" required/>
                                                     </div>
                                                 </div>
                                             </div>
