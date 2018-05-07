@@ -3,7 +3,11 @@ import './NewProduct.css';
 import { Button, Form, FormGroup, Input, Modal } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-class ProductFormTemplate extends Component {
+class ProductFormTemplate extends React.Component {
+    constructor(props){
+        super(props)
+        this.state = {isModalOpen: false}
+    }
 
     makeProduct(){
         let data = {
@@ -30,6 +34,9 @@ class ProductFormTemplate extends Component {
     render(){ 
         return(
         <div className="container make-product-div">
+        <div>
+            <Button onClick={()=> this.openModal()}>Open modal</Button>
+            <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
         <Form>
             <div className="row">
               <div className="col-6">
@@ -44,8 +51,17 @@ class ProductFormTemplate extends Component {
             </div>
             </div>
         </Form>
+        </Modal>
+        </div>
       </div>
     )
-}}
+}
+openModal() {
+    this.setState({isModalOpen: true})
+}
+closeModal() {
+    this.setState({ isModalOpen: false})
+}
+}
 
 export default ProductFormTemplate;
