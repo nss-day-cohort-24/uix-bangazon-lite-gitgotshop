@@ -26,17 +26,9 @@ class Seller extends Component {
     render() {
         let objResult = this.state.userProducts;
         let productDataObject = objResult.map((data, index) => (
-            <div key={index} className="d-flex flex-row justify-content-center flex-wrap">
-               <ProductCard src={Ben} name="read more" link="/SingleProduct" id="" />
-               <div className="ml-5">
-               <br/>
-                   <h2>{data.name}</h2>
-                   <h3>{data.price}</h3>
-                   <p className="my-4">{data.disc}</p>
-                   <div className="d-flex flex-row">
-                   </div>                        
-               </div>
-           </div>
+            <div className="d-flex flex-row justify-content-center flex-wrap">
+                <ProductCard src={Ben} link="/SingleProduct" id="" name={data.name} price={data.price} disc={data.disc} />
+            </div>
         ))
         return(
             <div>
