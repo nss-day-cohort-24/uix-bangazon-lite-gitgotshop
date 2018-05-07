@@ -86,12 +86,13 @@ class Product extends Component {
     
                 let data = this.state.objResult;
 
-                let productDataObject = objResult.map((data, index) => (
+                let productDataObject = objResult.map((data,index) => (
 
              <div className="d-flex flex-row justify-content-center flex-wrap">
                 <ProductCard src={Ben} link="/SingleProduct" id="" name={data.name} price={data.price} disc={data.disc} />
             </div>
         ))
+        console.log("PRODUCT DATA OBJECT", productDataObject);
         return(
             <div>{productDataObject}</div>
         )
