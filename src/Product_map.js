@@ -30,12 +30,13 @@ class Products extends Component {
 
         let selectedDataSet;
         dataSet.push({
-            id: dataSet.id,
-            region: dataSet.name,
-            seller: dataSet.userID,
+            name: dataSet.name,
             product: dataSet.product,
-            description: dataSet.disc,
-            price: dataSet.price
+            userId: "345-803-2588",
+            data: "Velda_Witting@gmail.com",
+            price: "9804 Simonis Ways",
+            disc: 62207,
+            id: 1
         });
         this.setState({
             productsLoaded: false,
@@ -46,10 +47,8 @@ class Products extends Component {
 
     }
 
-
-
     getProductData() {
-        fetch("localhost:3000/products")
+        fetch("http://localhost:3000/Products")
         .then(res => res.json())
         .then(
             (result) => {
@@ -63,7 +62,8 @@ class Products extends Component {
                 this.setState({
                     isLoaded: true,
                     error: error
-                })
+                });
+                console.log("ERRROR HERE");
             })
     }
 
@@ -84,7 +84,8 @@ class Products extends Component {
         } else{
 
 
-// .MAP THE OBJRESULT 
+            let data = this.state.objResult;
+        // .MAP THE OBJRESULT 
             let productDataObject = objResult.map((data, index) => (
 
                 <div>
@@ -96,8 +97,6 @@ class Products extends Component {
                         <h3>{data.price}</h3>
                         <p className="my-4">{data.description}</p>
                         <div className="d-flex flex-row">
-                            <Button class="btn-red mr-2" link="" name="Add to cart" />
-                            <Button class="btn-blue ml-2" link="" name="Add to wishlist" />
                         </div>                        
                     </div>
                 </div>
