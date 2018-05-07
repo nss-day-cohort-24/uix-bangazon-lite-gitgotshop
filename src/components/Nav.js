@@ -54,7 +54,7 @@ class Nav extends Component {
                                     <input type="text" placeholder="search" />
                                 </div>
                                 <div className="align-items-center">
-                                    <NavLink className="mx-2 btn-white" to='/Seller'>Sell Products</NavLink>
+                                    <NavLink className="mx-2 btn-white" to='/Seller'>My Inventory</NavLink>
                                     <NavLink className="mx-2 btn-white" to='/Products'>Products</NavLink>
                                     <NavLink className="mx-2 btn-white" to='/Profile'>Profile</NavLink>
                                     <a className="mx-2 btn-white" href="" onClick={this.props.signout}>Sign out</a>
