@@ -3,6 +3,52 @@ import '../App.css';
 import main1 from '../img/avatar.png';
 import Button from '../components/Button.js';
 class Profile extends Component {
+  constructor(props){
+      super(props);
+
+  this.state={
+    firstName:'',
+    lastName:'',
+    phone:'',
+    address1:'',
+    address2:'',
+    zipCode:'',
+    cardNumber:'',
+    cardExpiry:'',
+    cardCVC:''
+  };
+  change=e=>{
+    this.props.onChange({[e.target.name]: e.target.value});
+    this.setState({
+    [  e.target.name]:e.target.value
+  });
+};
+onSubmit=e=>{
+  e.preventDefault();
+  this.setState({
+    firstName:'',
+    lastName:'',
+    phone:'',
+    address1:'',
+    address2:'',
+    zipCode:'',
+    cardNumber:'',
+    cardExpiry:'',
+    cardCVC:''
+  });
+  this.props.onChange({
+    firstName:'',
+    lastName:'',
+    phone:'',
+    address1:'',
+    address2:'',
+    zipCode:'',
+    cardNumber:'',
+    cardExpiry:'',
+    cardCVC:''
+  });
+};
+  };
     render() {
         return (
             <div>
@@ -23,7 +69,7 @@ class Profile extends Component {
             <form className="form-horizontal">
                 <fieldset>
               <form id="contactForm">
-                <p><label></label><input className="form-control" name="firstName" id="fname" placeholder="First Name" required/></p>
+                <p><label></label><input className="form-control" name="firstName" id="fname" placeholder="First Name" required value={this.state.firstName} onChange={e => this.change(e)}/></p>
                 <p><label></label><input className ="form-control" name = "lastName" id = "lname" placeholder = "Last Name" required/></p>
                 <p><label></label><input className="form-control" name="phone" id="phone" placeholder="Phone Number"/></p>
                 <p><label></label><input className="form-control" name="address1" id="Address Line1" placeholder="Address Line 1"/></p>
@@ -49,7 +95,7 @@ class Profile extends Component {
                         </div>
                      </div>
              <div className="text-center">
-                <Button class="btn-red mr-4 " link="" name="Submit" />
+                <Button class="btn-red mr-4 " link="" name="Submit" onClick={e => this.onSubmit(e)}/>
              </div>
         </form>
     </fieldset>
