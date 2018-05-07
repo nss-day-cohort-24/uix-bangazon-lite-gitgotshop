@@ -6,8 +6,8 @@ class FormModal extends React.Component {
     super(props);
     this.state = {
       modal: false,
-      authed: false,
-
+      user: "",
+      pass: ""
     };
 
     this.toggle = this.toggle.bind(this);
@@ -16,36 +16,28 @@ class FormModal extends React.Component {
   }
 
   toggle() {
-    this.setState({
-      modal: !this.state.modal
-    });
+    this.setState(state => ({ modal: !state.modal }))
   }
 
   authentication = () => {
-    let user = document.getElementById("user").value;
-    let pass = document.getElementById("pass").value;
+    let user = this.state.user;
+    let pass = this.state.pass;
 
-
-    this.setState({
-      modal: !this.state.modal,
-    })
-
-    
-  
     fetch(`http://localhost:3000/users?username=${user}&&passsword=${pass}`)
       .then((data) => {
-        console.log('we made it here, gurlllll', user, pass);
+        // console.log('we made it here, gurlllll', user, pass);
         console.log("data", data);
         return data.json();
       }).then((userArray) => {
         if (userArray.length === 0) {
           console.log("NO USERS");
           this.setState({
-            fieldErrors: true
+            // fieldErrors: true
           });
         } 
         else {
-          this.props.updateAuth(user);       
+          this.setState({modal: false})
+          this.props.updateAuth(userArray[0]);
         }
       })
   };
@@ -64,9 +56,9 @@ class FormModal extends React.Component {
               <div className="container">
                 <div className="row">
                   <div className="col">
-                    <input id="user" type="text" name="firstname" placeholder="Username" className="modal-input-field"></input>
+                    <input id="user" type="text" name="firstname" placeholder="Username" className="modal-input-field" onChange={event => this.setState({ user: event.target.value })} value={this.state.user}></input>
                     <br/>
-                    <input id="pass" type="text" name="firstname" placeholder="Password" className="modal-input-field"></input>
+                    <input id="pass" type="text" name="firstname" placeholder="Password" className="modal-input-field" onChange={event => this.setState({ pass: event.target.value})} value={this.state.pass}></input>
                   </div>
                 </div>
               </div>
