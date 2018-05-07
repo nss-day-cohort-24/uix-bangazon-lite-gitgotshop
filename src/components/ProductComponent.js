@@ -86,9 +86,9 @@ class Product extends Component {
     
                 let data = this.state.objResult;
 
-                let productDataObject = objResult.map((data, index) => (
+                let productDataObject = objResult.map((data,index) => (
 
-             <div className="d-flex flex-row justify-content-center flex-wrap">
+            <div key={index} className="d-flex flex-row justify-content-center flex-wrap">
                 <ProductCard src={Ben} name="read more" link="/SingleProduct" id="" />
                 <div className="ml-5">
                 <br/>
@@ -100,6 +100,7 @@ class Product extends Component {
                 </div>
             </div>
         ))
+        console.log("PRODUCT DATA OBJECT", productDataObject);
         return(
             <div>{productDataObject}</div>
         )
