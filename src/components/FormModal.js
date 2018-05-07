@@ -5,17 +5,44 @@ class FormModal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      modal: false
+      modal: false,
+      user: "",
+      pass: ""
     };
 
     this.toggle = this.toggle.bind(this);
+    this.authentication = this.authentication.bind(this);
+
   }
 
   toggle() {
-    this.setState({
-      modal: !this.state.modal
-    });
+    this.setState(state => ({ modal: !state.modal }))
   }
+
+  authentication = () => {
+    let user = this.state.user;
+    let pass = this.state.pass;
+
+    fetch(`http://localhost:3000/users?username=${user}&&passsword=${pass}`)
+      .then((data) => {
+        // console.log('we made it here, gurlllll', user, pass);
+        console.log("data", data);
+        return data.json();
+      }).then((userArray) => {
+        if (userArray.length === 0) {
+          console.log("NO USERS");
+          this.setState({
+            // fieldErrors: true
+          });
+        } 
+        else {
+          this.setState({modal: false})
+          this.props.updateAuth(userArray[0]);
+        }
+      })
+  };
+
+  
 
   render() {
     return (
@@ -29,16 +56,16 @@ class FormModal extends React.Component {
               <div className="container">
                 <div className="row">
                   <div className="col">
-                    <input type="text" name="firstname" placeholder="Username" className="modal-input-field"></input>
+                    <input id="user" type="text" name="firstname" placeholder="Username" className="modal-input-field" onChange={event => this.setState({ user: event.target.value })} value={this.state.user}></input>
                     <br/>
-                    <input type="text" name="firstname" placeholder="Password" className="modal-input-field"></input>
+                    <input id="pass" type="text" name="firstname" placeholder="Password" className="modal-input-field" onChange={event => this.setState({ pass: event.target.value})} value={this.state.pass}></input>
                   </div>
                 </div>
               </div>
             </form>
           </ModalBody>
           <ModalFooter className="modal-edges">
-            <Button color="secondary" onClick={this.toggle}>Submit</Button>{' '}
+            <Button color="secondary" onClick={this.authentication.bind(this)}>Submit</Button>{' '}
             {/* <Button color="secondary" onClick={this.toggle}>Cancel</Button> */}
           </ModalFooter>
         </Modal>
