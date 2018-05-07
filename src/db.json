@@ -23,6 +23,54 @@
       "seller": false,
       "favorites": "",
       "id": 14
+    },
+    {
+      "username": "Adolph",
+      "password": "O7bUW11fCWwK9Cd",
+      "phone": "504-690-9593",
+      "email": "Jonathan.Walter@gmail.com",
+      "address": "91888 Larkin Valley",
+      "paymentOption": 99636,
+      "paymentHistory": "",
+      "seller": true,
+      "favorites": "",
+      "id": 15
+    },
+    {
+      "username": "Garett",
+      "password": "36f0ooAVNzczh38",
+      "phone": "496-497-2858",
+      "email": "Dominic48@yahoo.com",
+      "address": "3837 Taylor Tunnel",
+      "paymentOption": 12640,
+      "paymentHistory": "",
+      "seller": true,
+      "favorites": "",
+      "id": 16
+    },
+    {
+      "username": "Saul",
+      "password": "td9X4EbJqS7YCw1",
+      "phone": "757-911-5358",
+      "email": "Savanna83@gmail.com",
+      "address": "4039 Oberbrunner Overpass",
+      "paymentOption": 32206,
+      "paymentHistory": "",
+      "seller": false,
+      "favorites": "",
+      "id": 17
+    },
+    {
+      "username": "Gail",
+      "password": "zwwxM44jOVsQ_Nb",
+      "phone": "694-686-6673",
+      "email": "Christa.Windler@hotmail.com",
+      "address": "7885 Collins Field",
+      "paymentOption": 46909,
+      "paymentHistory": "",
+      "seller": true,
+      "favorites": "",
+      "id": 18
     }
   ],
   "Products": [
