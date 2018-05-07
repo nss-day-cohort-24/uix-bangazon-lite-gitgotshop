@@ -7,6 +7,8 @@ class ProductFormTemplate extends React.Component {
     constructor(props){
         super(props)
         this.state = {isModalOpen: false}
+        this.closeModal = this.closeModal.bind(this);
+
     }
 
     makeProduct(){
@@ -34,25 +36,26 @@ class ProductFormTemplate extends React.Component {
     render(){ 
         return(
         <div className="container make-product-div">
-        <div>
-            <Button onClick={()=> this.openModal()}>Open modal</Button>
-            <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
-        <Form>
-            <div className="row">
-              <div className="col-6">
-
-                
-              <h1 className="productH1">Create New Product</h1>
-              <Input ref="cityName" type="text" placeholder="City Name"/>
-              <Input ref="price" type="text" placeholder="Price"/>
-              <Input ref="desc" type="text" placeholder="Description"/>
-              <Input ref="data" type="text" placeholder="Data Product"/>
-              <Button onClick={this.makeProduct.bind(this)}>Make New Product</Button>
+            <div>
+                <Button onClick={()=> this.openModal()}>Open modal</Button>
+                <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
+                <Form className="p-5">
+                <div className="row">
+                    <div className="d-flex flex-column mx-auto">
+                        <h1 className="productH1 h1 text-center">Create&nbsp;New&nbsp;Product</h1>
+                        <Input className="my-3" ref="cityName" type="text" placeholder="City Name"/>
+                        <Input className="my-3" ref="price" type="text" placeholder="Price"/>
+                        <Input className="my-3" ref="desc" type="text" placeholder="Description"/>
+                        <Input className="my-3" ref="data" type="text" placeholder="Data Product"/>
+                        <div className="flex-row mx-auto">
+                            <Button className="my-3 mr-1 btn-red" onClick={this.closeModal}>Cancel</Button>                        
+                            <Button className="my-3 ml-1 btn-blue" onClick={this.makeProduct.bind(this)}>Make New Product</Button>
+                        </div>
+                    </div>
+                </div>
+                </Form>
+                </Modal>
             </div>
-            </div>
-        </Form>
-        </Modal>
-        </div>
       </div>
     )
 }
