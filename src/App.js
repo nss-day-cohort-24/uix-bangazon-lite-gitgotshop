@@ -12,8 +12,6 @@ class App extends Component {
     return (
       <div>
        <Nav />
-       {/* <MakeProduct />
-       <AddUser /> */}
       </div>
     );
   }
