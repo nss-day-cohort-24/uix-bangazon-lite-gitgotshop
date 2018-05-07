@@ -46,7 +46,6 @@ class AddUser extends Component {
   }
 
   render() {
-    this.addUser()
     return (
       <div>
        <button onClick={this.addUser.bind(this)}>TEST addUser</button>
