@@ -103,5 +103,50 @@
       "id": 3,
       "seller": "yes"
     }
+
+  ],
+  "Cart": [
+    {
+      "product": "G1NP4Wb61lLYxaH",
+      "id": 14
+    },
+    {
+      "name": "Nashville, TN",
+      "price": "$5,000",
+      "id": 15
+    },
+    {
+      "name": "San Fransisco, CA",
+      "price": "$7,500",
+      "userId": 13,
+      "id": 16
+    }
+  ],
+  "Wishlist": [
+    {
+      "product": "DU7DGCT82zHc9X9",
+      "id": 13
+    },
+    {
+      "name": "Nashville, TN",
+      "price": "$5,000",
+      "id": 14
+    },
+    {
+      "name": "Nashville, TN",
+      "price": "$5,000",
+      "id": 15
+    },
+    {
+      "name": "Boston, MA",
+      "price": "$8,000",
+      "id": 16
+    },
+    {
+      "name": "San Fransisco, CA",
+      "price": "$7,500",
+      "userId": 13,
+      "id": 17
+    }
   ]
 }
