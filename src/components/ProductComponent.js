@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import ProductCard from '../components/ProductCard.js';
 import Ben from '../img/Products/Ben.png';
+import Button from '../components/Button.js';
 
 class Product extends Component {
 
@@ -12,9 +13,16 @@ class Product extends Component {
                 productsLoaded: false,
                 objResult: [],
                 error: null,
-                data: {}
+                data: {},
+                printSingle: false,
+                singleProduct: [],
+                prodObj : {
+                    name: "",
+                    price: ""
+                }
             }
             this.getAnotherClicked=this.getAnotherClicked.bind(this);
+            this.printSingle = this.printSingle.bind(this);
         }
     
         componentDidMount() {
@@ -23,13 +31,9 @@ class Product extends Component {
         }
     
         getAnotherClicked(e) {
-            
             console.log("getAnotherClicked", this.props);
-    
+
             let dataSet = this.state.objResult;
-    
-    //.PUSH DATA IS SUBJECT TO THE TABLE DATA NEEDED FOR STATE 
-    
             dataSet.push({
                 name: dataSet.name,
                 product: dataSet.product,
@@ -45,9 +49,27 @@ class Product extends Component {
                 error: null
             },
             this.getProductData());
-    
         }
     
+
+        printSingle(event){
+            
+            var productArray = this.state.objResult;
+            var productID = event.target.id;
+            
+            for(var i = 0; i < productArray.length; i++){
+                if(productArray[i].id === parseInt(productID)){
+                    // console.log("productArray", productArray[i]);
+                    // console.log("matched productID to event target ID");
+                    this.setState({
+                        printSingle: true,
+                        singleProduct: productArray[i]
+                    })
+                }
+            }
+            
+        }
+
         getProductData() {
             fetch("http://localhost:3000/Products")
             .then(res => res.json())
@@ -67,11 +89,53 @@ class Product extends Component {
                     console.log("ERROR HERE");
                 })
         }
-    
+        
+        // prod needs to set state
+        // seller id needs to become seller id
+    addCart(singleProd) {
+        console.log("this.props.user", this.props.user);
+
+
+        let data = {
+            "name": singleProd.name,
+            "price": singleProd.price,
+            "userId": this.props.user
+        }
+        fetch('http://localhost:3000/Cart', {
+            method: 'POST', // or 'PUT'
+            body: JSON.stringify(data), // data can be `string` or {object}!
+            headers: new Headers({
+                'Content-Type': 'application/json'
+            })
+        }).then(res => res.json())
+            .catch(error => console.error('Error:', error))
+            .then(response => console.log('Success:', response));
+
+        
+    }
+            
+    addWishlist(singleProd) {
+        
+        let data = {
+            "name": singleProd.name,
+            "price": singleProd.price,
+            "userId": this.props.user
+        }
+        fetch('http://localhost:3000/Wishlist', {
+            method: 'POST', // or 'PUT'
+            body: JSON.stringify(data), // data can be `string` or {object}!
+            headers: new Headers({
+                'Content-Type': 'application/json'
+            })
+        }).then(res => res.json())
+            .catch(error => console.error('Error:', error))
+            .then(response => console.log('Success:', response));
+
+        }
     
     
         render() {
-            let {error, productsLoaded, objResult} = this.state;
+            let {error, productsLoaded, objResult, printSingle, singleProduct} = this.state;
     
             if(error) {
                 return (
@@ -81,22 +145,55 @@ class Product extends Component {
                 )
             } else if(!productsLoaded) {
                 return <div>Loading...</div>
-            } else{
-    
-    
-                let data = this.state.objResult;
 
+            } else if(productsLoaded && !printSingle){
+
+                let data = this.state.objResult;
                 let productDataObject = objResult.map((data,index) => (
 
-             <div className="d-flex flex-row justify-content-center flex-wrap">
-                <ProductCard src={Ben} link="/SingleProduct" id="" name={data.name} price={data.price} disc={data.disc} />
+             <div key={index} className="d-flex flex-row justify-content-center flex-wrap">
+                <div className="d-flex flex-row">
+                    <div className="my-4 justify-content-center">
+                        <img className="w-75" src={Ben} alt="" />
+                        <h3 id={data.id} className="my-2 readMore" onClick={this.printSingle}>Read More</h3>
+                        
+                    </div>
+                    <div className="">
+                        <br />
+                        <h2>{data.name}</h2>
+                        <h3>{data.price}</h3>
+                        <p className="my-4">{data.disc}</p>
+                    </div>
+                </div>
+
             </div>
         ))
         console.log("PRODUCT DATA OBJECT", productDataObject);
         return(
             <div>{productDataObject}</div>
         )
-    }}
+    }else if(productsLoaded && printSingle){
+
+        return(
+            <div>
+                {console.log("single prod render", singleProduct)}
+            <h1 className="gray-txt h3 text-center my-5 bold">Ben Atkins</h1>
+            <div className="d-flex mx-auto prod-overview">
+                <img className="prod-pic" src={Ben} alt="" />
+                <div className="ml-5">
+                    <h3>{singleProduct.name}</h3>
+                    <h3>{singleProduct.price}</h3>
+                    <p className="my-4">{singleProduct.disc}</p>
+                    <div className="d-flex flex-row">
+                        <button class="btn-red mr-2" id={singleProduct.id} onClick={() => this.addCart(singleProduct)} name="Add to cart" />
+                        <button class="btn-blue ml-2" id={singleProduct.id} onClick={() => this.addWishlist(singleProduct)} name="Add to wishlist" />
+                    </div>                        
+                </div>
+            </div>
+        </div>
+        )
+    }
+}
 }
 
 export default Product;

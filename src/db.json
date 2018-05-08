@@ -23,61 +23,13 @@
       "seller": false,
       "favorites": "",
       "id": 14
-    },
-    {
-      "username": "Adolph",
-      "password": "O7bUW11fCWwK9Cd",
-      "phone": "504-690-9593",
-      "email": "Jonathan.Walter@gmail.com",
-      "address": "91888 Larkin Valley",
-      "paymentOption": 99636,
-      "paymentHistory": "",
-      "seller": true,
-      "favorites": "",
-      "id": 15
-    },
-    {
-      "username": "Garett",
-      "password": "36f0ooAVNzczh38",
-      "phone": "496-497-2858",
-      "email": "Dominic48@yahoo.com",
-      "address": "3837 Taylor Tunnel",
-      "paymentOption": 12640,
-      "paymentHistory": "",
-      "seller": true,
-      "favorites": "",
-      "id": 16
-    },
-    {
-      "username": "Saul",
-      "password": "td9X4EbJqS7YCw1",
-      "phone": "757-911-5358",
-      "email": "Savanna83@gmail.com",
-      "address": "4039 Oberbrunner Overpass",
-      "paymentOption": 32206,
-      "paymentHistory": "",
-      "seller": false,
-      "favorites": "",
-      "id": 17
-    },
-    {
-      "username": "Gail",
-      "password": "zwwxM44jOVsQ_Nb",
-      "phone": "694-686-6673",
-      "email": "Christa.Windler@hotmail.com",
-      "address": "7885 Collins Field",
-      "paymentOption": 46909,
-      "paymentHistory": "",
-      "seller": true,
-      "favorites": "",
-      "id": 18
     }
   ],
   "Products": [
     {
       "name": "Nashville, TN",
       "product": "EthZeCm4nVXnWsU",
-      "sellerID": "13",
+      "userId": "345-803-2588",
       "data": "Velda_Witting@gmail.com",
       "price": "$5,000",
       "disc": "Nashville is the capital of the U.S. state of Tennessee and home to Vanderbilt University. ",
@@ -86,7 +38,7 @@
     {
       "name": "Boston, MA",
       "product": "DU7DGCT82zHc9X9",
-      "sellerID": "13",
+      "userId": "511-715-3988",
       "data": "Laurianne67@gmail.com",
       "price": "$8,000",
       "disc": "Boston is Massachusetts’ capital. Founded in 1630, it’s one of the oldest cities in the U.S. ",
@@ -95,12 +47,56 @@
     {
       "name": "San Fransisco, CA",
       "product": "G1NP4Wb61lLYxaH",
-      "sellerID": "15",
+      "userId": "155-866-3797",
       "data": "Johathan.Rutherford@yahoo.com",
       "price": "$7,500",
       "disc": "San Francisco is a hilly city surrounded by the Pacific Ocean and San Francisco Bay.",
       "id": 3,
       "seller": "yes"
+    }
+  ],
+  "Cart": [
+    {
+      "product": "G1NP4Wb61lLYxaH",
+      "id": 14
+    },
+    {
+      "name": "Nashville, TN",
+      "price": "$5,000",
+      "id": 15
+    },
+    {
+      "name": "San Fransisco, CA",
+      "price": "$7,500",
+      "userId": 13,
+      "id": 16
+    }
+  ],
+  "Wishlist": [
+    {
+      "product": "DU7DGCT82zHc9X9",
+      "id": 13
+    },
+    {
+      "name": "Nashville, TN",
+      "price": "$5,000",
+      "id": 14
+    },
+    {
+      "name": "Nashville, TN",
+      "price": "$5,000",
+      "id": 15
+    },
+    {
+      "name": "Boston, MA",
+      "price": "$8,000",
+      "id": 16
+    },
+    {
+      "name": "San Fransisco, CA",
+      "price": "$7,500",
+      "userId": 13,
+      "id": 17
     }
   ]
 }
