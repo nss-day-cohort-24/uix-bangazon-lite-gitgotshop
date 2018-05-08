@@ -23,10 +23,13 @@ class Home extends Component {
     
     render() {
         return (
+    
             <div>
-            {/* {console.log("home user", this.props.user)} */}
                 <h1 className="gray-txt h3 text-center my-5 bold">Our Data-driven Products</h1>
-                <ProductComponent user={this.props.user} />
+                <div>
+                    <ProductComponent user={this.props.user} className="product-card"/>
+                </div>
+
             </div>
         );
     }
