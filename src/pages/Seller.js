@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import MakeProduct from '../components/newProduct.js';
 import ProductCard from '../components/ProductCard.js';
 import Ben from '../img/Products/Ben.png';
+import { Jumbotron, Container } from 'reactstrap';
 
 class Seller extends Component {
     constructor(props){
@@ -33,8 +34,15 @@ class Seller extends Component {
         return(
             <div>
                 <h1 className="gray-txt h3 text-center my-5 bold">My Store Inventory</h1>
-                <div>{productDataObject}</div>
+             <Jumbotron fluid>
+              <Container> 
+                  <h2>Make a New Product</h2>
+                  <h4>Click the Button below to post new data to sell!</h4>
                 <MakeProduct />
+              </Container>  
+             </Jumbotron>
+                <div>{productDataObject}</div>
+                
             </div>
         )
     }

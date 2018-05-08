@@ -32,7 +32,7 @@
       "address": "91888 Larkin Valley",
       "paymentOption": 99636,
       "paymentHistory": "",
-      "seller": false,
+      "seller": true,
       "favorites": "",
       "id": 15
     },
@@ -76,7 +76,6 @@
   "Products": [
     {
       "name": "Nashville, TN",
-      "picture": "./Cities/Nashville.jpg",
       "product": "EthZeCm4nVXnWsU",
       "sellerID": "13",
       "data": "Velda_Witting@gmail.com",
@@ -96,7 +95,6 @@
     },
     {
       "name": "San Fransisco, CA",
-      "picture": "./Cities/SanFran.jpg",
       "product": "G1NP4Wb61lLYxaH",
       "sellerID": "15",
       "data": "Johathan.Rutherford@yahoo.com",
@@ -104,56 +102,6 @@
       "disc": "San Francisco is a hilly city surrounded by the Pacific Ocean and San Francisco Bay.",
       "id": 3,
       "seller": "yes"
-    },
-    {
-      "product": "",
-      "sellerID": 0,
-      "id": 4
-    }
-
-  ],
-  "Cart": [
-    {
-      "product": "G1NP4Wb61lLYxaH",
-      "id": 14
-    },
-    {
-      "name": "Nashville, TN",
-      "price": "$5,000",
-      "id": 15
-    },
-    {
-      "name": "San Fransisco, CA",
-      "price": "$7,500",
-      "userId": 13,
-      "id": 16
-    }
-  ],
-  "Wishlist": [
-    {
-      "product": "DU7DGCT82zHc9X9",
-      "id": 13
-    },
-    {
-      "name": "Nashville, TN",
-      "price": "$5,000",
-      "id": 14
-    },
-    {
-      "name": "Nashville, TN",
-      "price": "$5,000",
-      "id": 15
-    },
-    {
-      "name": "Boston, MA",
-      "price": "$8,000",
-      "id": 16
-    },
-    {
-      "name": "San Fransisco, CA",
-      "price": "$7,500",
-      "userId": 13,
-      "id": 17
     }
   ]
 }
