@@ -5,6 +5,7 @@ import {
     Route,
     Link,
 } from 'react-router-dom';
+import EditButton from './EditButton.js';
 
 
 
@@ -14,6 +15,7 @@ function ProductCard(props) {
                 <div className="my-4 justify-content-center">
                     <img className="w-75" src={props.src} alt="" />
                     <Link to={props.link}><h3 className="my-2">Read More</h3></Link>
+                    <EditButton />
                 </div>
                 <div className="">
                     <br />
