@@ -106,22 +106,9 @@ class Nav extends Component {
                                         <Route path="/SingleProduct" component={SingleProduct} />
                                     </div>
                                 </div>
-<<<<<<< HEAD
                             </Router>
                                 </div>)
                 }
-=======
-                            </nav>
-                            <div>
-                                <Route exact path='/' component={Home} />
-                                <Route path='/Profile' component={Profile} />
-                                <Route path='/Cart' render={(props) => <Cart user={this.props.user} />} />
-                                <Route path="/Products" component={Products} />
-                                <Route path="/SingleProduct" component={SingleProduct} />
-                            </div>
-                        </div>
-                    </Router>
->>>>>>> master
                 }
             }
 
