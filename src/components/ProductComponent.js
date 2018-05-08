@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import ProductCard from '../components/ProductCard.js';
-import City from '../img/Cities/Boston.jpg';
+// import City from '../img/Cities/Boston.jpg';
 import Button from '../components/Button.js';
 
 
