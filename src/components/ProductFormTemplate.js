@@ -13,7 +13,7 @@ class ProductFormTemplate extends React.Component {
 
     makeProduct(){
         let data = {
-          "name": this.refs.cityName.value,
+          "name": this.refs.cityName.textContent,
           "product": "" ,
           "sellerID": 0,
           "price": this.refs.price.value,
@@ -22,15 +22,16 @@ class ProductFormTemplate extends React.Component {
         }
     
     
-        fetch('http://localhost:3000/Products', {
-          method: 'POST', // or 'PUT'
-          body: JSON.stringify(data), // data can be `string` or {object}!
-          headers: new Headers({
-            'Content-Type': 'application/json'
-          })
-        }).then(res => res.json())
-        .catch(error => console.error('Error:', error))
-        .then(response => console.log('Success:', response));
+        // fetch('http://localhost:3000/Products', {
+        //   method: 'POST', // or 'PUT'
+        //   body: JSON.stringify(data), // data can be `string` or {object}!
+        //   headers: new Headers({
+        //     'Content-Type': 'application/json'
+        //   })
+        // }).then(res => res.json())
+        // .catch(error => console.error('Error:', error))
+        // .then(response => console.log('Success:', response));
+        console.log("DATA BUILDER", data);
       }
 
     render(){ 
