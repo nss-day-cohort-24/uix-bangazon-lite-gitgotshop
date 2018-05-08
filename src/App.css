@@ -3,7 +3,7 @@
 
 /* Main */
 h1 {
-  font-family: 'Montserrat', sans-serif; 
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 4rem;
   color: white;
@@ -16,7 +16,7 @@ h3 {
 }
 
 .bold {
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 .gray-txt {
@@ -31,7 +31,7 @@ nav {
 
 nav a {
   color: white;
-  font-family: 'Montserrat', sans-serif;  
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav input {
@@ -54,7 +54,7 @@ nav input {
 }
 
 #log-modal {
-  font-family: 'Montserrat', sans-serif;  
+  font-family: 'Montserrat', sans-serif;
 }
 
 .modal-edges {
@@ -149,24 +149,25 @@ nav input {
 /* profile */
 
 
-
-#main-profile{
-  margin-top:50px;
-  border-radius: 2px;
-  border:1 solid rgb(207, 209, 209);
-  
+.col-8{
+  margin-top: 40px;
 }
-img.round-circle{
-  width: 200px;
-  height: 220px;
-  /* border-radius: 50%; */
+img{
+  max-width: 200px;
+  max-height: 220px;
+  margin-top: 40px;
+  border-radius: 5px;
+}
+#Upload-photo{
+  margin-left:98px;
+  margin-top: 98px;
 }
 /* Single Product Page */
-.prod-overview {
-  width: 60%;
-}
+/* .prod-overview {
+  width: 60%;*/
+/* } */
 
-.prod-pic {
+/*.prod-pic {
   width: 40%;
   height: 40%;
 

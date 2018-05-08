@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import H1 from '../components/H1.js';
-import main from '../img/main_1.png';
+import main from '../img/2.png';
 
 
 class Home extends Component {
