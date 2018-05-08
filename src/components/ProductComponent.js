@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import { Card, CardImg, CardText, CardBody, CardLink, CardSubtitle } from 'reactstrap';
 import ProductCard from '../components/ProductCard.js';
 import Ben from '../img/Products/Ben.png';
 import Button from '../components/Button.js';
@@ -101,19 +102,35 @@ class Product extends Component {
                 let data = this.state.objResult;
                 let productDataObject = objResult.map((data,index) => (
 
-             <div key={index} className="d-flex flex-row justify-content-center flex-wrap">
-                <div className="flex-row">
-                    <div className="my-4 justify-content-center">
-                        <img className="w-75" src={Ben} alt="" />
-                        <h2 id={data.id} className="my-2 readMore" onClick={this.printSingle}>{data.name}</h2>
-                    </div>
-                    <div className="">
-                        <h3>{data.price}</h3>
-                        <p className="">{data.disc}</p>
-                    </div>
-                </div>
-
+            <div>
+                <Card key={index} className="d-flex justify-content-center flex-wrap my-4">
+                    <CardBody className="d-flex">
+                        <div className="my-4 justify-content-center">
+                            <h2 id={data.id} className="my-2 readMore" onClick={this.printSingle}>{data.name}</h2>
+                            <CardSubtitle>{data.price}</CardSubtitle>
+                        </div>
+                    </CardBody>
+                    <img className="prod-pic" src={Ben} alt="" />
+                    <CardBody>
+                        <CardText className="my-4">{data.disc}</CardText>
+                    </CardBody>
+                </Card>
             </div>
+
+            //  <div key={index} className="d-flex flex-row justify-content-center flex-wrap">
+            //     <div className="d-flex flex-row">
+            //         <div className="my-4 justify-content-center">
+            //             <img className="w-75" src={Ben} alt="" />
+            //             <h3 id={data.id} className="my-2 readMore" onClick={this.printSingle}>Read More</h3>
+            //         </div>
+            //         <div className="">
+            //             <br />
+            //             <h2>{data.name}</h2>
+            //             <h3>{data.price}</h3>
+            //             <p className="my-4">{data.disc}</p>
+            //         </div>
+            //     </div>
+            // </div>
         ))
         console.log("PRODUCT DATA OBJECT", productDataObject);
         return(
