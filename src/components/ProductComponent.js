@@ -92,13 +92,14 @@ class Product extends Component {
         
         // prod needs to set state
         // seller id needs to become seller id
-    addCart(singleProd, e) {
-        console.log("add cart singleProd", singleProd);
+    addCart(singleProd) {
+        console.log("this.props.user", this.props.user);
 
 
         let data = {
             "name": singleProd.name,
-            "price": singleProd.price
+            "price": singleProd.price,
+            "userId": this.props.user
         }
         fetch('http://localhost:3000/Cart', {
             method: 'POST', // or 'PUT'
@@ -117,7 +118,8 @@ class Product extends Component {
         
         let data = {
             "name": singleProd.name,
-            "price": singleProd.price
+            "price": singleProd.price,
+            "userId": this.props.user
         }
         fetch('http://localhost:3000/Wishlist', {
             method: 'POST', // or 'PUT'
