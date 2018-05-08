@@ -69,8 +69,9 @@
       "id": 15
     },
     {
-      "name": "Nashville, TN",
-      "price": "$5,000",
+      "name": "San Fransisco, CA",
+      "price": "$7,500",
+      "userId": 13,
       "id": 16
     },
     {
@@ -103,6 +104,22 @@
       "name": "Nashville, TN",
       "price": "$5,000",
       "id": 14
+    },
+    {
+      "name": "Nashville, TN",
+      "price": "$5,000",
+      "id": 15
+    },
+    {
+      "name": "Boston, MA",
+      "price": "$8,000",
+      "id": 16
+    },
+    {
+      "name": "San Fransisco, CA",
+      "price": "$7,500",
+      "userId": 13,
+      "id": 17
     }
   ]
 }
