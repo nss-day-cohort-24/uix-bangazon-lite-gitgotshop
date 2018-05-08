@@ -32,7 +32,7 @@ class Seller extends Component {
         ))
         return(
             <div>
-                <h3 className="mt-3 text-center">My Story Inventory</h3>
+                <h1 className="gray-txt h3 text-center my-5 bold">My Store Inventory</h1>
                 <div>{productDataObject}</div>
                 <MakeProduct />
             </div>
