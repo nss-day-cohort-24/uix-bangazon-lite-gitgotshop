@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import ProductCard from '../components/ProductCard.js';
 import Ben from '../img/Products/Ben.png';
+import SingleProduct from "../pages/SingleProduct";
 
 class Product extends Component {
 
@@ -12,14 +13,27 @@ class Product extends Component {
                 productsLoaded: false,
                 objResult: [],
                 error: null,
-                data: {}
+                data: {},
+                printSingle: false,
+                singleProductPrice: '',
+                singleProductInfo: '',
             }
             this.getAnotherClicked=this.getAnotherClicked.bind(this);
+            this.printSingle = this.printSingle.bind(this);
+            // this.passProduct = this.passProduct.bind(this);
         }
     
         componentDidMount() {
             console.log("did mount");
             this.getProductData();
+        }
+
+        // passProduct(){
+        //     console.log('pass product function working');
+        // }
+
+        printSingle(){
+            console.log("trying to print single product");
         }
     
         getAnotherClicked(e) {
@@ -57,12 +71,12 @@ class Product extends Component {
                         productsLoaded: true,
                         objResult: result
                     });
-                    console.log("product data object: ", this.setState.objResult);
+                    console.log("product data object: ", this.objResult);
                 },
                 (error) => {
                     this.setState({
                         isLoaded: true,
-                        error: error
+                        error: true
                     });
                     console.log("ERROR HERE");
                 })
@@ -71,7 +85,7 @@ class Product extends Component {
     
     
         render() {
-            let {error, productsLoaded, objResult} = this.state;
+            let {error, productsLoaded, objResult, printSingle} = this.state;
     
             if(error) {
                 return (
@@ -81,21 +95,40 @@ class Product extends Component {
                 )
             } else if(!productsLoaded) {
                 return <div>Loading...</div>
-            } else{
+            } else if(productsLoaded){
     
     
                 let data = this.state.objResult;
 
                 let productDataObject = objResult.map((data, index) => (
+                    <div key={index} className="d-flex flex-row justify-content-center flex-wrap">
 
-             <div className="d-flex flex-row justify-content-center flex-wrap">
-                <ProductCard src={Ben} link="/SingleProduct" id="" name={data.name} price={data.price} disc={data.disc} />
+                        <div className="d-flex flex-row">
+                            <div className="my-4 justify-content-center">
+                                <img className="w-75" src={Ben} alt="" />
+                                <h3 className="my-2" onClick={this.printSingle}>Read More</h3>
+                            </div>
+                            <div className="">
+                                <br />
+                                <h2>{data.name}</h2>
+                                <h3>{data.price}</h3>
+                                <p className="my-4">{data.disc}</p>
+                            </div>
+                        </div>
+                {/* <ProductCard src={Ben} index={index} id="" name={data.name} price={data.price} disc={data.disc} /> */}
             </div>
         ))
         return(
             <div>{productDataObject}</div>
         )
-    }}
+    }
 }
-
-export default Product;
+    // }else if(this.printSingle){
+    //     return(
+    //     <div>
+    //         <h1>THIS WILL BE A PRODUCT</h1>
+    //     </div>
+    //     )
+    // }
+}
+export default Product

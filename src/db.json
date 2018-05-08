@@ -54,5 +54,17 @@
       "id": 3,
       "seller": "yes"
     }
+  ],
+  "Cart": [
+    {
+      "product": "G1NP4Wb61lLYxaH",
+      "id": 14
+    }
+  ],
+  "Wishlist": [
+    {
+      "product": "DU7DGCT82zHc9X9",
+      "id": 13
+    }
   ]
 }
