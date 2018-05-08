@@ -10,6 +10,7 @@ import Cart from '../pages/Cart.js';
 import Products from '../pages/Products.js';
 import FormModal from './FormModal';
 import SingleProduct from '../pages/SingleProduct.js';
+import Seller from '../pages/Seller.js';
 
 class Nav extends Component {
 
@@ -53,6 +54,7 @@ class Nav extends Component {
                                     <input type="text" placeholder="search" />
                                 </div>
                                 <div className="align-items-center">
+                                    <NavLink className="mx-2 btn-white" to='/Seller'>My Inventory</NavLink>
                                     <NavLink className="mx-2 btn-white" to='/Products'>Products</NavLink>
                                     <NavLink className="mx-2 btn-white" to='/Profile'>Profile</NavLink>
                                     <a className="mx-2 btn-white" href="" onClick={this.props.signout}>Sign out</a>
@@ -62,8 +64,10 @@ class Nav extends Component {
                             <div>
                                 <Route exact path='/' component={Home} />
                                 <Route path='/Profile' component={Profile} />
+                                {/* <Route path='/Seller' component={Seller} user={this.props.user}/> */}
+                                <Route path='/Seller' render={(props) => <Seller user={this.props.user} />} />
                                 <Route path='/Cart' component={Cart} />
-                                <Route path="/Products" component={Products} />
+                                <Route path="/Products" render={(props) => <Products user={this.props.user} />}  />
                                 <Route path="/SingleProduct" component={SingleProduct} />
                             </div>
                         </div>

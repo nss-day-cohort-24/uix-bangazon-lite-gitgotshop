@@ -4,8 +4,6 @@ import Nav from './components/Nav.js';
 import Products from './Product_map';
 import AddUser from './AddUser';
 import faker from 'faker';
-import MakeProduct from './components/newProduct'
-
 
 class App extends Component {
 
@@ -30,9 +28,10 @@ this.setState({
 }
 
   render() {
+    console.log("USER",this.state.user);
     return (
       <div>
-       <Nav updateAuth={this.updateAuth} signout={this.signout} authed={this.state.authed} />
+       <Nav updateAuth={this.updateAuth} signout={this.signout} authed={this.state.authed} user={this.state.user.id}/>
       </div>
     );
   }
