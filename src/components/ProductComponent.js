@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import ProductCard from '../components/ProductCard.js';
-import Ben from '../img/Products/Ben.png';
+import City from '../img/Cities/Boston.jpg';
 import Button from '../components/Button.js';
 
 class Product extends Component {
@@ -98,13 +98,13 @@ class Product extends Component {
 
             } else if(productsLoaded && !printSingle){
 
-                let data = this.state.objResult;
-                let productDataObject = objResult.map((data,index) => (
+            let data = this.state.objResult;
+            let productDataObject = objResult.map((data,index) => (
 
              <div key={index} className="d-flex flex-row justify-content-center flex-wrap">
                 <div className="d-flex flex-row">
                     <div className="my-4 justify-content-center">
-                        <img className="w-75" src={Ben} alt="" />
+                        <img width={200} height={200} src={data.picture} alt="" />
                         <h3 id={data.id} className="my-2 readMore" onClick={this.printSingle}>Read More</h3>
                     </div>
                     <div className="">
@@ -126,7 +126,7 @@ class Product extends Component {
         <div>
             <h1 className="gray-txt h3 text-center my-5 bold">Ben Atkins</h1>
             <div className="d-flex mx-auto prod-overview">
-                <img className="prod-pic" src={Ben} alt="" />
+                <img className="prod-pic" src={singleProduct.picture} alt="" />
                 <div className="ml-5">
                     <h3>{singleProduct.name}</h3>
                     <h3>{singleProduct.price}</h3>

@@ -76,6 +76,7 @@
   "Products": [
     {
       "name": "Nashville, TN",
+      "picture": "./Cities/Nashville.jpg",
       "product": "EthZeCm4nVXnWsU",
       "sellerID": "13",
       "data": "Velda_Witting@gmail.com",
@@ -85,6 +86,7 @@
     },
     {
       "name": "Boston, MA",
+      "picture": "./Cities/Boston.jpg",
       "product": "DU7DGCT82zHc9X9",
       "sellerID": "13",
       "data": "Laurianne67@gmail.com",
@@ -94,6 +96,7 @@
     },
     {
       "name": "San Fransisco, CA",
+      "picture": "./Cities/Paris.jpg",
       "product": "G1NP4Wb61lLYxaH",
       "sellerID": "15",
       "data": "Johathan.Rutherford@yahoo.com",

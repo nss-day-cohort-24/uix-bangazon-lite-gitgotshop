@@ -8,7 +8,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <img className="w-100" src={main} alt="" />
+                <img className='img-fluid' src={main} alt="" />
                 <H1 />
             </div>
         );
