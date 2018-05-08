@@ -105,7 +105,7 @@ class Product extends Component {
                 <div className="d-flex flex-row">
                     <div className="my-4 justify-content-center">
                         <img className="w-75" src={Ben} alt="" />
-                        <h3 id={data.id} className="my-2" onClick={this.printSingle}>Read More</h3>
+                        <h3 id={data.id} className="my-2 readMore" onClick={this.printSingle}>Read More</h3>
                     </div>
                     <div className="">
                         <br />
