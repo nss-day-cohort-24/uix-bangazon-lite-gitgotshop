@@ -4,6 +4,13 @@ import { Container, Card, CardImg, CardText, CardBody, CardLink, CardSubtitle, R
 import ProductCard from '../components/ProductCard.js';
 import Button from '../components/Button.js';
 
+
+/**
+ * Main Products page.
+ */
+
+
+
 class Product extends Component {
 
         constructor(props){

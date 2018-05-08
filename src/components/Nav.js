@@ -12,35 +12,25 @@ import FormModal from './FormModal';
 import SingleProduct from '../pages/SingleProduct.js';
 import Seller from '../pages/Seller.js';
 
+/**
+ * Main site navigation. Loads a Search bar and 2 buttons (One to the 'Products' component, and the other to the 'Sign Up' modal.)
+ */
+
+
 class Nav extends Component {
 
-    // constructor(props) {
-    //     super(props);
 
-    //     this.state = {
-    //         authed: false,
-    //         user: {}
-    //     }
-    //     this.updateAuth = this.updateAuth.bind(this);
-    //     this.signout = this.signout.bind(this);
-    // }
 
-    // updateAuth(user) {
-    //     console.log("updateAuth user", user);
-    //     this.setState({
-    //         authed: true,
-    //         user: user
-    //     });
-    // }
 
-    // signout() {
-    //     console.log("signed out");
-    //     this.setState({
-    //         authed: false
-    //     });
-    // }
 
+
+
+    
     render() {
+
+
+
+
 
         return (
 
@@ -66,8 +56,9 @@ class Nav extends Component {
                                 <Route path='/Profile' component={Profile} />
                                 {/* <Route path='/Seller' component={Seller} user={this.props.user}/> */}
                                 <Route path='/Seller' render={(props) => <Seller user={this.props.user} />} />
-                                <Route path='/Cart' component={Cart} />
-                                <Route path="/Products" render={(props) => <Products user={this.props.user} />}  />
+                                <Route path='/Cart' render={(props) => <Cart user={this.props.user} />} />
+                                <Route path="/Products" component={Products} />
+
                                 <Route path="/SingleProduct" component={SingleProduct} />
                             </div>
                         </div>
@@ -89,7 +80,7 @@ class Nav extends Component {
                             <div>
                                 <Route exact path='/' component={Home} />
                                 <Route path='/Profile' component={Profile} />
-                                <Route path='/Cart' component={Cart} />
+                                <Route path='/Cart' render={(props) => <Cart user={this.props.user} />} />
                                 <Route path="/Products" component={Products} />
                                 <Route path="/SingleProduct" component={SingleProduct} />
                             </div>
