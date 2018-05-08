@@ -1,206 +1,117 @@
 {
   "users": [
     {
-      "username": "Alysha",
-      "passsword": "dO19mjzRJXthbZy",
-      "phone": "826-149-6963",
-      "email": "Geovanni.Dickinson@gmail.com",
-      "address": "4880 Burdette Mountains",
-      "paymentOption": "(851) 359-4998",
+      "username": "Savion",
+      "password": "b5Ke3AMh6XLJSUp",
+      "phone": "255-254-1468",
+      "email": "Chadrick36@gmail.com",
+      "address": "29764 Joey Plaza",
+      "paymentOption": 27145,
       "paymentHistory": "",
-      "id": 10,
-      "seller": "no"
-    },
-    {
-      "username": "Kavon",
-      "passsword": "YmA7OA65ANfV01w",
-      "phone": "970-363-7496",
-      "email": "Rodolfo.Huel72@hotmail.com",
-      "address": "0626 Tressie Meadows",
-      "paymentOption": 34996,
-      "paymentHistory": "",
-      "id": 11,
-      "seller": "yes"
-    },
-    {
-      "username": "Virgie",
-      "password": "ipKSkVtyKaWubdZ",
-      "phone": "948-745-4450",
-      "email": "Keagan_Bogisich92@gmail.com",
-      "address": "564 Libby Knolls",
-      "paymentOption": 24743,
-      "paymentHistory": "",
-      "seller": false,
-      "favorites": "",
-      "id": 12
-    },
-    {
-      "username": "Annalise",
-      "password": "NvQGFRZeIDEWgdF",
-      "phone": "961-397-8507",
-      "email": "Liam.Champlin3@hotmail.com",
-      "address": "5436 Kaitlyn Field",
-      "paymentOption": 63406,
-      "paymentHistory": "",
-      "seller": false,
+      "seller": true,
       "favorites": "",
       "id": 13
     },
     {
-      "username": "Valentine",
-      "password": "_6p5IR6IwRxSwFh",
-      "phone": "797-571-7258",
-      "email": "Delta23@yahoo.com",
-      "address": "0118 Russell Points",
-      "paymentOption": 19857,
+      "username": "Brent",
+      "password": "UFG_dhERbYPQVOc",
+      "phone": "826-563-8957",
+      "email": "Aniyah27@hotmail.com",
+      "address": "398 Purdy Field",
+      "paymentOption": 44409,
       "paymentHistory": "",
-      "seller": true,
+      "seller": false,
       "favorites": "",
       "id": 14
     },
     {
-      "username": "Bryon",
-      "password": "7Otu6ojNKdYWR01",
-      "phone": "177-183-9099",
-      "email": "Shyanne99@hotmail.com",
-      "address": "1116 Bogan Ports",
-      "paymentOption": 43433,
+      "username": "Shanie",
+      "password": "UZj3y9het0zI_ei",
+      "phone": "793-541-3505",
+      "email": "Madison_Steuber17@yahoo.com",
+      "address": "2751 Lockman Mews",
+      "paymentOption": 98843,
       "paymentHistory": "",
-      "seller": true,
+      "seller": false,
       "favorites": "",
+      "id": 15
+    }
+  ],
+  "Products": [
+    {
+      "name": "Nashville, TN",
+      "picture": "./Cities/Nashville.jpg",
+      "product": "EthZeCm4nVXnWsU",
+      "userId": "345-803-2588",
+      "data": "Velda_Witting@gmail.com",
+      "price": "$5,000",
+      "disc": "Nashville is the capital of the U.S. state of Tennessee and home to Vanderbilt University. ",
+      "id": 1
+    },
+    {
+      "name": "Boston, MA",
+      "picture": "./Cities/Boston.jpg",
+      "product": "DU7DGCT82zHc9X9",
+      "userId": "511-715-3988",
+      "data": "Laurianne67@gmail.com",
+      "price": "$8,000",
+      "disc": "Boston is Massachusetts’ capital. Founded in 1630, it’s one of the oldest cities in the U.S. ",
+      "id": 2
+    },
+    {
+      "name": "San Fransisco, CA",
+      "picture": "./Cities/SanFran.jpg",
+      "product": "G1NP4Wb61lLYxaH",
+      "userId": "155-866-3797",
+      "data": "Johathan.Rutherford@yahoo.com",
+      "price": "$7,500",
+      "disc": "San Francisco is a hilly city surrounded by the Pacific Ocean and San Francisco Bay.",
+      "id": 3,
+      "seller": "yes"
+    }
+  ],
+  "Cart": [
+    {
+      "product": "G1NP4Wb61lLYxaH",
+      "id": 14
+    },
+    {
+      "name": "Nashville, TN",
+      "price": "$5,000",
       "id": 15
     },
     {
-      "username": "Clifton",
-      "password": "YsUVdcZVfirCrYK",
-      "phone": "387-305-2018",
-      "email": "Jasen.Jerde@gmail.com",
-      "address": "308 Deckow Highway",
-      "paymentOption": 73607,
-      "paymentHistory": "",
-      "seller": false,
-      "favorites": "",
+      "name": "San Fransisco, CA",
+      "price": "$7,500",
+      "userId": 13,
+      "id": 16
+    }
+  ],
+  "Wishlist": [
+    {
+      "product": "DU7DGCT82zHc9X9",
+      "id": 13
+    },
+    {
+      "name": "Nashville, TN",
+      "price": "$5,000",
+      "id": 14
+    },
+    {
+      "name": "Nashville, TN",
+      "price": "$5,000",
+      "id": 15
+    },
+    {
+      "name": "Boston, MA",
+      "price": "$8,000",
       "id": 16
     },
     {
-      "username": "Casimir",
-      "password": "_kcVuXyHDMSalHw",
-      "phone": "546-883-8150",
-      "email": "Bessie_Gulgowski@yahoo.com",
-      "address": "593 Dietrich Trace",
-      "paymentOption": 1085,
-      "paymentHistory": "",
-      "seller": false,
-      "favorites": "",
+      "name": "San Fransisco, CA",
+      "price": "$7,500",
+      "userId": 13,
       "id": 17
-    },
-    {
-      "username": "Guido",
-      "password": "A2gkBZSZM1S7smv",
-      "phone": "341-581-5054",
-      "email": "Dennis52@yahoo.com",
-      "address": "2925 Wuckert Union",
-      "paymentOption": 53143,
-      "paymentHistory": "",
-      "seller": true,
-      "favorites": "",
-      "id": 18
-    },
-    {
-      "username": "Elyse",
-      "password": "FUzcu_BoURYH6MG",
-      "phone": "134-975-8697",
-      "email": "Sonia_Jaskolski25@gmail.com",
-      "address": "5985 Candace Well",
-      "paymentOption": 56883,
-      "paymentHistory": "",
-      "seller": false,
-      "favorites": "",
-      "id": 19
-    },
-    {
-      "username": "Dell",
-      "password": "BbV_ySBg7mrjDqY",
-      "phone": "537-579-7497",
-      "email": "Gabrielle_Sipes6@yahoo.com",
-      "address": "00572 Vandervort Turnpike",
-      "paymentOption": 7422,
-      "paymentHistory": "",
-      "seller": false,
-      "favorites": "",
-      "id": 20
-    },
-    {
-      "username": "Marcelo",
-      "password": "CYQuWxh7XweYJR7",
-      "phone": "741-132-7043",
-      "email": "Garnet.Wuckert13@gmail.com",
-      "address": "85557 Frederik Vista",
-      "paymentOption": 57763,
-      "paymentHistory": "",
-      "seller": false,
-      "favorites": "",
-      "id": 21
-    },
-    {
-      "username": "Kimberly",
-      "password": "scMEri_VntUJ9yk",
-      "phone": "009-068-3787",
-      "email": "Clair_VonRueden74@hotmail.com",
-      "address": "446 Ondricka Summit",
-      "paymentOption": 29444,
-      "paymentHistory": "",
-      "seller": false,
-      "favorites": "",
-      "id": 22
-    },
-    {
-      "username": "Elwin",
-      "password": "YguPfn3Z0wWn3FI",
-      "phone": "036-707-2959",
-      "email": "Kathryn_Spinka@hotmail.com",
-      "address": "71375 Schmeler Tunnel",
-      "paymentOption": 36211,
-      "paymentHistory": "",
-      "seller": true,
-      "favorites": "",
-      "id": 23
-    },
-    {
-      "username": "Samantha",
-      "password": "sij3SS1vUYfFrGo",
-      "phone": "826-524-0653",
-      "email": "Marion.Stoltenberg@yahoo.com",
-      "address": "11675 Rutherford Plaza",
-      "paymentOption": 47004,
-      "paymentHistory": "",
-      "seller": false,
-      "favorites": "",
-      "id": 24
-    },
-    {
-      "username": "Elvis",
-      "password": "orQNnyD1yfHYt1V",
-      "phone": "474-873-8835",
-      "email": "Kristin_Hahn@hotmail.com",
-      "address": "6380 Weimann Spring",
-      "paymentOption": 33713,
-      "paymentHistory": "",
-      "seller": true,
-      "favorites": "",
-      "id": 25
-    },
-    {
-      "username": "Seamus",
-      "password": "4xE8o6AZa20caEn",
-      "phone": "573-608-9740",
-      "email": "Tara.Brekke37@hotmail.com",
-      "address": "6130 Alisha Glen",
-      "paymentOption": 22831,
-      "paymentHistory": "",
-      "seller": false,
-      "favorites": "",
-      "id": 26
     }
   ]
 }
