@@ -102,16 +102,14 @@ class Product extends Component {
                 let productDataObject = objResult.map((data,index) => (
 
              <div key={index} className="d-flex flex-row justify-content-center flex-wrap">
-                <div className="d-flex flex-row">
+                <div className="flex-row">
                     <div className="my-4 justify-content-center">
                         <img className="w-75" src={Ben} alt="" />
-                        <h3 id={data.id} className="my-2 readMore" onClick={this.printSingle}>Read More</h3>
+                        <h2 id={data.id} className="my-2 readMore" onClick={this.printSingle}>{data.name}</h2>
                     </div>
                     <div className="">
-                        <br />
-                        <h2>{data.name}</h2>
                         <h3>{data.price}</h3>
-                        <p className="my-4">{data.disc}</p>
+                        <p className="">{data.disc}</p>
                     </div>
                 </div>
 
