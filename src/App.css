@@ -89,6 +89,7 @@ nav input {
   -moz-border-radius: 10;
   border-radius: 5px;
   font-family: 'Montserrat', sans-serif;
+  background-color: white;
   color: #c4114b;
   font-size: 15px;
   padding: 5px 10px 5px 10px;
@@ -125,6 +126,7 @@ nav input {
   -moz-border-radius: 10;
   border-radius: 5px;
   font-family: 'Montserrat', sans-serif;
+  background-color: white;
   color: #222653;
   font-size: 15px;
   padding: 5px 10px 5px 10px;
