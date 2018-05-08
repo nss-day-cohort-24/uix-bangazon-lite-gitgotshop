@@ -9,7 +9,8 @@ class App extends Component {
 
   state = {
     authed: false,
-    user: {}
+    user: {},
+    showShoppingCart: false
 }
 
 updateAuth = (user)=> {
@@ -31,7 +32,7 @@ signout = ()=> {
     console.log("USER",this.state.user);
     return (
       <div>
-       <Nav updateAuth={this.updateAuth} signout={this.signout} authed={this.state.authed} user={this.state.user.id} seller={this.state.user.seller}/>
+        <Nav showShoppingCart={this.showShoppingCart} updateAuth={this.updateAuth} signout={this.signout} authed={this.state.authed} user={this.state.user.id} seller={this.state.user.seller}/>
       </div>
     );
   }

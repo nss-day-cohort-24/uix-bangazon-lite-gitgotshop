@@ -12,6 +12,11 @@ import FormModal from './FormModal';
 import SingleProduct from '../pages/SingleProduct.js';
 import Seller from '../pages/Seller.js';
 
+/**
+ * Main site navigation. Loads a Search bar and 2 buttons (One to the 'Products' component, and the other to the 'Sign Up' modal.)
+ */
+
+
 class Nav extends Component {
 
             render() {
@@ -101,9 +106,22 @@ class Nav extends Component {
                                         <Route path="/SingleProduct" component={SingleProduct} />
                                     </div>
                                 </div>
+<<<<<<< HEAD
                             </Router>
                                 </div>)
                 }
+=======
+                            </nav>
+                            <div>
+                                <Route exact path='/' component={Home} />
+                                <Route path='/Profile' component={Profile} />
+                                <Route path='/Cart' render={(props) => <Cart user={this.props.user} />} />
+                                <Route path="/Products" component={Products} />
+                                <Route path="/SingleProduct" component={SingleProduct} />
+                            </div>
+                        </div>
+                    </Router>
+>>>>>>> master
                 }
             }
 

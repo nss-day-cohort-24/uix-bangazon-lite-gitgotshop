@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 import '../App.css';
+import { Container, Card, CardImg, CardText, CardBody, CardLink, CardSubtitle, Row, Col } from 'reactstrap';
 import ProductCard from '../components/ProductCard.js';
-// import City from '../img/Cities/Boston.jpg';
 import Button from '../components/Button.js';
+
+
+/**
+ * Main Products page.
+ */
+
+
 
 class Product extends Component {
 
@@ -158,26 +165,25 @@ class Product extends Component {
             let data = this.state.objResult;
             let productDataObject = objResult.map((data,index) => (
 
-             <div key={index} className="d-flex flex-row justify-content-center flex-wrap">
-                <div className="d-flex flex-row">
-                    <div className="my-4 justify-content-center">
+                
+                    // <div className="card-width">
+                        <Card>
+                        <CardBody key={index} className="my-4">
                         <img width={200} height={200} src={data.picture} alt="" />
-                        <h3 id={data.id} className="my-2 readMore" onClick={this.printSingle}>Read More</h3>
-                        
-                    </div>
-                    <div className="">
-                        <br />
-                        <h2>{data.name}</h2>
-                        <h3>{data.price}</h3>
-                        <p className="my-4">{data.disc}</p>
-                    </div>
-                </div>
+                                <div>
+                                    <h2 id={data.id} className="my-2 readMore" onClick={this.printSingle}>{data.name}</h2>
+                                    <h3>{data.price}</h3>
+                                </div>
+                                <CardText>{data.disc}</CardText>
+                            </CardBody>
+                        </Card>
+                    // </div>
 
-            </div>
+
         ))
         console.log("PRODUCT DATA OBJECT", productDataObject);
         return(
-            <div>{productDataObject}</div>
+            <div className="island">{productDataObject}</div>
         )
     }else if(productsLoaded && printSingle){
 
