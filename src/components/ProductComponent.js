@@ -4,6 +4,13 @@ import ProductCard from '../components/ProductCard.js';
 import Ben from '../img/Products/Ben.png';
 import Button from '../components/Button.js';
 
+
+/**
+ * Main Products page.
+ */
+
+
+
 class Product extends Component {
 
         constructor(props){

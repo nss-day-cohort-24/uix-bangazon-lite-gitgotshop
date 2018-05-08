@@ -3,6 +3,12 @@ import './NewProduct.css';
 import { Button, Form, FormGroup, Input, Modal } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
+/**
+ * Clicking 'Add New Product' launches a modal with inputs fields for entering product details/information.
+ */
+
+
 class ProductFormTemplate extends React.Component {
     constructor(props){
         super(props)
@@ -37,7 +43,7 @@ class ProductFormTemplate extends React.Component {
         return(
         <div className="container make-product-div">
             <div>
-                <Button onClick={()=> this.openModal()}>Open modal</Button>
+                <Button onClick={()=> this.openModal()}>Add New Product</Button>
                 <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
                 <Form className="p-5">
                 <div className="row">

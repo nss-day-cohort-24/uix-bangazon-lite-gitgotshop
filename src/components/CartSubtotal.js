@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import '../App.css';
 
+/**
+ * Products that have been added to the Shopping Cart.
+ */
 
 class CartSubtotal extends Component {
     render() {

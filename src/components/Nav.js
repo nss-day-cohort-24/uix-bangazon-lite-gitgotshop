@@ -12,6 +12,11 @@ import FormModal from './FormModal';
 import SingleProduct from '../pages/SingleProduct.js';
 import Seller from '../pages/Seller.js';
 
+/**
+ * Main site navigation. Loads a Search bar and 2 buttons (One to the 'Products' component, and the other to the 'Sign Up' modal.)
+ */
+
+
 class Nav extends Component {
 
     // constructor(props) {
