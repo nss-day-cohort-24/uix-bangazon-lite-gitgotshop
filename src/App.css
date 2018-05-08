@@ -167,8 +167,9 @@ img.round-circle{
 }
 
 .prod-pic {
-  width: 40%;
-  height: 40%;
+  width: 20%;
+  height: 20%;
+  margin-left: 1.3rem;
 
 }
 
