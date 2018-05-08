@@ -12,14 +12,14 @@ class ProductFormTemplate extends React.Component {
     }
 
     makeProduct(){
-        let data = {
-          "name": this.refs.cityName.textContent,
-          "product": "" ,
-          "sellerID": 0,
-          "price": this.refs.price.value,
-          "desc": this.refs.desc.value,
-          "data": this.refs.data.value
-        }
+        // let data = {
+        //   "name": this.refs.cityName,
+        //   "product": "" ,
+        //   "sellerID": 0,
+        //   "price": this.refs.price.value,
+        //   "desc": this.refs.desc.value,
+        //   "data": this.refs.data.value
+        // }
     
     
         // fetch('http://localhost:3000/Products', {
@@ -31,7 +31,7 @@ class ProductFormTemplate extends React.Component {
         // }).then(res => res.json())
         // .catch(error => console.error('Error:', error))
         // .then(response => console.log('Success:', response));
-        console.log("DATA BUILDER", data);
+        console.log("DATA BUILDER", this.refs.testing.value);
       }
 
     render(){ 
@@ -40,7 +40,13 @@ class ProductFormTemplate extends React.Component {
             <div>
                 <Button className="btn-primary" onClick={()=> this.openModal()}>New Product</Button>
                 <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
-                <Form className="p-5">
+                <Form>
+                    <div>
+                        <input ref="testing" type="text"/>
+                        <button onClick={this.makeProduct.bind(this)}>TEST BTN</button>
+                    </div>
+                </Form>
+                {/* <Form className="p-5">
                 <div className="row">
                     <div className="d-flex flex-column mx-auto">
                         <h1 className="productH1 h1 text-center">Create&nbsp;New&nbsp;Product</h1>
@@ -54,7 +60,7 @@ class ProductFormTemplate extends React.Component {
                         </div>
                     </div>
                 </div>
-                </Form>
+                </Form> */}
                 </Modal>
             </div>
       </div>
