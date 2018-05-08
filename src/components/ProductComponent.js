@@ -2,11 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import ProductCard from '../components/ProductCard.js';
 import Ben from '../img/Products/Ben.png';
-<<<<<<< HEAD
-import SingleProduct from "../pages/SingleProduct";
-=======
 import Button from '../components/Button.js';
->>>>>>> master
 
 class Product extends Component {
 
@@ -19,18 +15,9 @@ class Product extends Component {
                 error: null,
                 data: {},
                 printSingle: false,
-<<<<<<< HEAD
-                singleProductPrice: '',
-                singleProductInfo: '',
             }
             this.getAnotherClicked=this.getAnotherClicked.bind(this);
             this.printSingle = this.printSingle.bind(this);
-            // this.passProduct = this.passProduct.bind(this);
-=======
-            }
-            this.getAnotherClicked=this.getAnotherClicked.bind(this);
-            this.printSingle = this.printSingle.bind(this);
->>>>>>> master
         }
     
         componentDidMount() {
@@ -106,11 +93,7 @@ class Product extends Component {
     
     
         render() {
-<<<<<<< HEAD
-            let {error, productsLoaded, objResult, printSingle} = this.state;
-=======
             let {error, productsLoaded, objResult, printSingle, singleProduct} = this.state;
->>>>>>> master
     
             if(error) {
                 return (
@@ -174,5 +157,5 @@ class Product extends Component {
     //     </div>
     //     )
     // }
-}
+// }
 export default Product
