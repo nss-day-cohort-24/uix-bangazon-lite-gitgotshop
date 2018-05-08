@@ -43,7 +43,7 @@ class ProductFormTemplate extends React.Component {
         return(
         <div className="container make-product-div">
             <div>
-                <Button onClick={()=> this.openModal()}>Add New Product</Button>
+                <Button className="btn-primary" onClick={()=> this.openModal()}>New Product</Button>
                 <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
                 <Form className="p-5">
                 <div className="row">

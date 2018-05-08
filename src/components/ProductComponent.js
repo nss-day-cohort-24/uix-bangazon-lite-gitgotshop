@@ -30,6 +30,7 @@ class Product extends Component {
             }
             this.getAnotherClicked=this.getAnotherClicked.bind(this);
             this.printSingle = this.printSingle.bind(this);
+            this.printAll = this.printAll.bind(this);
         }
     
         componentDidMount() {
@@ -77,6 +78,12 @@ class Product extends Component {
             
         }
 
+        printAll() {
+            this.setState({
+                printSingle: false
+            })
+        }
+
         getProductData() {
             fetch("http://localhost:3000/Products")
             .then(res => res.json())
@@ -99,13 +106,14 @@ class Product extends Component {
         
         // prod needs to set state
         // seller id needs to become seller id
-    addCart(singleProd, e) {
-        console.log("add cart singleProd", singleProd);
+    addCart(singleProd) {
+        console.log("this.props.user", this.props.user);
 
 
         let data = {
             "name": singleProd.name,
-            "price": singleProd.price
+            "price": singleProd.price,
+            "userId": this.props.user
         }
         fetch('http://localhost:3000/Cart', {
             method: 'POST', // or 'PUT'
@@ -124,7 +132,8 @@ class Product extends Component {
         
         let data = {
             "name": singleProd.name,
-            "price": singleProd.price
+            "price": singleProd.price,
+            "userId": this.props.user
         }
         fetch('http://localhost:3000/Wishlist', {
             method: 'POST', // or 'PUT'
@@ -182,6 +191,7 @@ class Product extends Component {
         return(
             <div>
                 {console.log("single prod render", singleProduct)}
+            <button class="btn-blue" onClick={this.printAll}>Back</button>
             <h1 className="gray-txt h3 text-center my-5 bold">Ben Atkins</h1>
             <div className="d-flex mx-auto prod-overview">
                 <img className="prod-pic" src={singleProduct.picture} alt="" />
@@ -190,8 +200,8 @@ class Product extends Component {
                     <h3>{singleProduct.price}</h3>
                     <p className="my-4">{singleProduct.disc}</p>
                     <div className="d-flex flex-row">
-                        <button class="btn-red mr-2" id={singleProduct.id} onClick={() => this.addCart(singleProduct)} name="Add to cart" />
-                        <button class="btn-blue ml-2" id={singleProduct.id} onClick={() => this.addWishlist(singleProduct)} name="Add to wishlist" />
+                            <button class="btn-red mr-2" id={singleProduct.id} onClick={() => this.addCart(singleProduct)} name="Add to cart">Add to cart</button>
+                            <button class="btn-blue ml-2" id={singleProduct.id} onClick={() => this.addWishlist(singleProduct)} name="Add to wishlist">Add to wishlist</button>
                     </div>                        
                 </div>
             </div>
