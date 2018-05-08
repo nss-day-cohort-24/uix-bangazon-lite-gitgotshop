@@ -89,6 +89,7 @@ nav input {
   -moz-border-radius: 10;
   border-radius: 5px;
   font-family: 'Montserrat', sans-serif;
+  background-color: white;
   color: #c4114b;
   font-size: 15px;
   padding: 5px 10px 5px 10px;
@@ -125,6 +126,7 @@ nav input {
   -moz-border-radius: 10;
   border-radius: 5px;
   font-family: 'Montserrat', sans-serif;
+  background-color: white;
   color: #222653;
   font-size: 15px;
   padding: 5px 10px 5px 10px;
@@ -144,39 +146,71 @@ nav input {
   width: 20%;
 }
 
+/* profile */
+
+
+
+#main-profile{
+  margin-top:50px;
+  border-radius: 2px;
+  border:1 solid rgb(207, 209, 209);
+  
+}
+img.round-circle{
+  width: 200px;
+  height: 220px;
+  /* border-radius: 50%; */
+}
 /* Single Product Page */
 .prod-overview {
   width: 60%;
 }
 
 .prod-pic {
-  width: 40%;
-  height: 40%;
+  margin-right: auto;
+  width: 60%;
+  height: 60%;
 }
 
-.cart-prod-pic {
-  height: 100px;
-  width: 100px;
+.card-width{
+  width: 380px !important;
 }
 
-.cart-prod-overview {
-  width: 45%;
-  justify-content: space-between;
-  padding-bottom: 2em;
-  border-bottom: solid 1px #595b5c;
+.island {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2em;
 }
 
-.subtotal-overview {
-  width: 45%;
+.fieldset{
+  padding-top: 5%;
+  border-radius: 5px;
 }
 
-.subtotal-price {
-  justify-content: space-between;
+
+div.text-center.paym{
+  margin-top: 25px;
 }
 
-.subtotal {
-  flex-direction: column;
-  float: right;
-  width: 40%;
-  border-bottom: solid 1px #595b5c;
+
+.col-8{
+  margin-top: 40px;
+}
+/* img{
+  max-width: 200px;
+  max-height: 220px;
+  margin-top: 40px;
+  border-radius: 5px;
+} */
+
+
+#Upload-photo{
+  margin-left:98px;
+  margin-top: 98px;
+}
+
+
+.readMore:hover{
+  color: #c4114b;
+  text-decoration: underline;
 }
