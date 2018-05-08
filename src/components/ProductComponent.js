@@ -104,7 +104,7 @@ class Product extends Component {
 
             <div>
                 <Row className="flex-products">
-                    <Col sm="4">
+                    <Col sm="6">
                         <Card key={index} className="d-flex justify-content-center flex-wrap my-4">
                         <CardBody>
                             <img className="prod-pic" src={Ben} alt="" />
@@ -116,30 +116,7 @@ class Product extends Component {
                             </CardBody>
                         </Card>
                     </Col>
-                    <Col sm="4">
-                        <Card key={index} className="d-flex justify-content-center flex-wrap my-4">
-                        <CardBody>
-                            <img className="prod-pic" src={Ben} alt="" />
-                                <div className="my-4 justify-content-center">
-                                    <h2 id={data.id} className="my-2 readMore" onClick={this.printSingle}>{data.name}</h2>
-                                    <CardSubtitle>{data.price}</CardSubtitle>
-                                </div>
-                                <CardText className="my-4">{data.disc}</CardText>
-                            </CardBody>
-                        </Card>
-                    </Col>
-                    <Col sm="4">
-                        <Card key={index} className="d-flex justify-content-center flex-wrap my-4">
-                        <CardBody>
-                            <img className="prod-pic" src={Ben} alt="" />
-                                <div className="my-4 justify-content-center">
-                                    <h2 id={data.id} className="my-2 readMore" onClick={this.printSingle}>{data.name}</h2>
-                                    <CardSubtitle>{data.price}</CardSubtitle>
-                                </div>
-                                <CardText className="my-4">{data.disc}</CardText>
-                            </CardBody>
-                        </Card>
-                    </Col>
+
                 </Row>
             </div>
 
