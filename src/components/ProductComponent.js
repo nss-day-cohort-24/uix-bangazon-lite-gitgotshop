@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
-import { Card, CardImg, CardText, CardBody, CardLink, CardSubtitle } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardLink, CardSubtitle, Row, Col } from 'reactstrap';
 import ProductCard from '../components/ProductCard.js';
 import Ben from '../img/Products/Ben.png';
 import Button from '../components/Button.js';
@@ -103,18 +103,24 @@ class Product extends Component {
                 let productDataObject = objResult.map((data,index) => (
 
             <div>
+            
+              <Row>
+              <Col sm="4">
                 <Card key={index} className="d-flex justify-content-center flex-wrap my-4">
                     <CardBody className="d-flex">
+                        
+                    </CardBody>
+                    <img className="prod-pic" src={Ben} alt="" />
+                    <CardBody>
                         <div className="my-4 justify-content-center">
                             <h2 id={data.id} className="my-2 readMore" onClick={this.printSingle}>{data.name}</h2>
                             <CardSubtitle>{data.price}</CardSubtitle>
                         </div>
-                    </CardBody>
-                    <img className="prod-pic" src={Ben} alt="" />
-                    <CardBody>
                         <CardText className="my-4">{data.disc}</CardText>
                     </CardBody>
                 </Card>
+              </Col>
+              </Row>
             </div>
 
             //  <div key={index} className="d-flex flex-row justify-content-center flex-wrap">
