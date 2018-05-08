@@ -13,20 +13,18 @@ class App extends Component {
     showShoppingCart: false
 }
 
-
-
-updateAuth = (user)=>{
-      console.log("updateAuth user", user);
-      this.setState({
+updateAuth = (user)=> {
+  console.log("updateAuth user", user);
+  this.setState({
       authed: true,
       user: user
-  });
+});
 }
 
 signout = ()=> {
-console.log("signed out");
-this.setState({
-    authed: false
+  console.log("signed out");
+  this.setState({
+      authed: false
 });
 }
 
@@ -34,7 +32,7 @@ this.setState({
     console.log("USER",this.state.user);
     return (
       <div>
-        <Nav showShoppingCart={this.showShoppingCart} updateAuth={this.updateAuth} signout={this.signout} authed={this.state.authed} user={this.state.user.id}/>
+        <Nav showShoppingCart={this.showShoppingCart} updateAuth={this.updateAuth} signout={this.signout} authed={this.state.authed} user={this.state.user.id} seller={this.state.user.seller}/>
       </div>
     );
   }
