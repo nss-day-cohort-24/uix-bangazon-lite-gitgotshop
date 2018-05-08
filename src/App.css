@@ -167,11 +167,24 @@ img.round-circle{
 }
 
 .prod-pic {
-  margin-left: auto;
   margin-right: auto;
-  width: 70%;
-  height: 70%;
+  width: 60%;
+  height: 60%;
+}
 
+.flex-products {
+  display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
 }
 
 .fieldset{

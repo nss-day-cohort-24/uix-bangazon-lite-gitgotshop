@@ -7,8 +7,11 @@ class Home extends Component {
     render() {
         return (
             <div>
+           
                 <h1 className="gray-txt h3 text-center my-5 bold">Our Data-driven Products</h1>
-            <ProductComponent />
+                <div className="flex-products">
+                    <ProductComponent />
+                </div>
             </div>
         );
     }
