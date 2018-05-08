@@ -18,7 +18,7 @@ editStuff = (id) => {
         "disc": "Boston is Massachusetts’ capital. Founded in 1630, it’s one of the oldest cities in the U.S. "
     }
   
-    fetch('http://localhost:3000/products/', {
+    fetch('http://localhost:3000/products/2', {
       method: 'PUT', // or 'POST'
       body: JSON.stringify(data), // data can be `string` or {object}!
       headers: new Headers({
