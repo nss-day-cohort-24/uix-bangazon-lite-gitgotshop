@@ -152,13 +152,15 @@ nav input {
 .col-8{
   margin-top: 40px;
 }
-img.round-circle{
-  width: 200px;
-  height: 220px;
+img{
+  max-width: 200px;
+  max-height: 220px;
   margin-top: 40px;
+  border-radius: 5px;
 }
 #Upload-photo{
   margin-left:98px;
+  margin-top: 98px;
 }
 /* Single Product Page */
 /* .prod-overview {
