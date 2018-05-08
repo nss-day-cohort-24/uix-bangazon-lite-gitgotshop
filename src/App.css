@@ -181,3 +181,9 @@ img.round-circle{
 div.text-center.paym{
   margin-top: 25px;
 }
+
+
+.readMore:hover{
+  color: #c4114b;
+  text-decoration: underline;
+}
