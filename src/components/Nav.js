@@ -44,7 +44,7 @@ class Nav extends Component {
                                             <Route path='/Profile' component={Profile} />
                                             {/* <Route path='/Seller' component={Seller} user={this.props.user}/> */}
                                             <Route path='/Seller' render={(props) => <Seller user={this.props.user} />} />
-                                            <Route path='/Cart' component={Cart} />
+                                            <Route path='/Cart' render={(props) => <Cart user={this.props.user} />} />
                                             <Route path="/Products" render={(props) => <Products user={this.props.user} />} />                                            
                                             <Route path="/SingleProduct" component={SingleProduct} />
                                         </div>
@@ -75,7 +75,7 @@ class Nav extends Component {
                                             <Route path='/Profile' component={Profile} />
                                             {/* <Route path='/Seller' component={Seller} user={this.props.user}/> */}
                                             <Route path='/Seller' render={(props) => <Seller user={this.props.user} />} />
-                                            <Route path='/Cart' component={Cart} />
+                                            <Route path='/Cart' render={(props) => <Cart user={this.props.user} />} />
                                             <Route path="/Products" render={(props) => <Products user={this.props.user} />} />                                            
                                             <Route path="/SingleProduct" component={SingleProduct} />
                                         </div>
@@ -101,7 +101,7 @@ class Nav extends Component {
                                     <div>
                                         <Route exact path='/' component={Home} />
                                         <Route path='/Profile' component={Profile} />
-                                        <Route path='/Cart' component={Cart} />
+                                        <Route path='/Cart' render={(props) => <Cart user={1} />} /> 
                                         <Route path="/Products" render={(props) => <Products user={1} />} />
                                         <Route path="/SingleProduct" component={SingleProduct} />
                                     </div>
