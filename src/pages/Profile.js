@@ -12,7 +12,8 @@ constructor(props) {
   super(props);
   this.state =
    {
-    firstname: '',
+     
+    firstName: '',
     lastName:'',
     phone:'',
     address1:'',
@@ -28,6 +29,8 @@ constructor(props) {
    this.handleImageChange = this.handleImageChange.bind(this);
   this.handleChange = this.handleChange.bind(this);
   this.handleSubmit= this.handleSubmit.bind(this);
+  this.getprofile = this.getprofile.bind(this);
+  this.addUserProfile=this.addUserProfile.bind(this)
 }
 handleImageChange(e) {
     e.preventDefault();
@@ -57,8 +60,47 @@ console.log("user", event.target.name);
 
 handleSubmit(event) {
 console.log("some thing",this.state);
-       this.state
+       this.state,
+this.addUserProfile()
 }
+getprofile() {
+    fetch('http://localhost:3000/profile')
+      .then((response) => response.json())
+      .then((responseJson) => {
+        console.log("i got you server", responseJson);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }
+
+
+  addUserProfile(name){
+    let userProfileData = {
+      "firstName":this.state.firstName,
+      "lastName":this.state.lastName,
+      "phone":this.state.phone,
+      "address1":this.state.address1,
+      "address2":this.state.address2,
+      "zipCode":this.state.zipCode,
+      "cardNumber":this.state.cardNumber,
+      "cardExpiry":this.state.cardExpiry,
+      "cardCVC":this.state.cardCVC,
+      "imagePreviewUrl":this.state.imagePreviewUrl
+    }
+
+    console.log("profile to database");
+
+    fetch('http://localhost:3000/Profile', {
+      method: 'POST', // or 'PUT'
+      body: JSON.stringify(userProfileData), // data can be `string` or {object}!
+      headers: new Headers({
+        'Content-Type': 'application/json'
+      })
+    }).then(res => res.json())
+    .catch(error => console.error('sorry Error try to send it again', error))
+    .then(response => console.log('Successfully posted to data base', response));
+  }
 
 render() {
     let {imagePreviewUrl} = this.state;
@@ -110,14 +152,13 @@ render() {
                                 <p><label htmlFor="cardCVC"><input type="tel" className="form-control" name="cardCVC" placeholder="CVC" autoComplete="cc-csc" value={this.state.value} onChange={this.handleChange} required/></label></p>
                         </div>
                      </div>
-             
+
                <button className="btn-red mr-4 " link="" name="Submit" type="button" onClick={this.handleSubmit}>Submit</button>
-                
+
             </form>
         </div>
 
     </div>
-
 </div>
 <div className = "col-xs-3 col-md-3">
 
@@ -132,49 +173,3 @@ render() {
 
 
 export default Profile;
-
-
-// export default class Profile extends React.Component {
-//     state = {
-//         firstName: "",
-//         lastName: "",
-//         username: "",
-//         email: "",
-//         password: ""
-//     };
-
-//     change = e => {
-//         this
-//             .props
-//             .onChange({
-//                 [e.target.name]: e.target.value
-//             });
-//         this.setState({
-//             [e.target.name]: e.target.value
-//         });
-//     };
-
-//     onSubmit = e => {
-//         e.preventDefault();
-//         // this.props.onSubmit(this.state);
-//         this.setState({firstName: "", lastName: "", username: "", email: "", password: ""});
-//         this
-//             .props
-//             .onChange({firstName: "", lastName: "", username: "", email: "", password: ""});
-//     };
-
-//     render() {
-//         return (
-//             <form>
-//                 <input
-//                     name="firstName"  placeholder="First name" value={this.state.firstName}  onChange={e => this.change(e)}/>
-//                 <br/>
-//                 <input   name="lastName"  placeholder="Last name"  value={this.state.lastName} onChange={e => this.change(e)}/>
-//                 <br/>
-             
-//                 <br/>
-//                 <button onClick={e => this.onSubmit(e)}>Submit</button>
-//             </form>
-//         );
-//     }
-// }
