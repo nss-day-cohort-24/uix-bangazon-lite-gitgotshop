@@ -68,14 +68,17 @@ class Cart extends Component {
 
         let cartData = data.map((data, index) => (
 
-            <Card>
-                <CardBody key={index} className="my-4">
-                    <div>
-                        <h2 id={data.id} className="my-2 readMore">{data.name}</h2>
-                        <h3>{data.price}</h3>
+            <div style={{ borderBottom: "2px solid black", marginBottom: "5px" }} key={index} className="container">
+                        <div className="row">
+                            <div className="col text-left">
+                                <h2 id={data.id} className="m-2">{data.name}</h2>
+                            </div>
+                            <div className="col text-right">
+                                <h3 className="m-2">{data.price}</h3>
+                            </div>
+                        </div>
                     </div>
-                </CardBody>
-            </Card>
+                    
 
 
         ))
@@ -84,7 +87,29 @@ class Cart extends Component {
             <div>
                 <h1 className="gray-txt h3 text-center my-5 bold">Your Shopping Cart</h1>
                 {newVar}
-                <div className="island">{cartData}</div>
+                <div>
+                    <div>{cartData}</div>
+                </div>
+                <div>
+                    <div className="mx-auto subtotal-overview">
+                        <div className="d-flex subtotal">
+                            <div className="d-flex row mx-0 subtotal-price">
+                                <div className="bodyText">subtotal</div>
+                                <div className="bodyText">price</div>
+                            </div>
+                            <div className="d-flex row mx-0 subtotal-price subtotal-break">
+                                <div className="bodyText">taxes</div>
+                                <div className="bodyText">price</div>
+                            </div>
+                            <div className="d-flex row mx-0 subtotal-price">
+                                <div className="bodyText">total</div>
+                                <div className="bodyText">price</div>
+                            </div>
+                            <button class="btn-red mt-5 mb-5 checkout" link="" >Checkout</button>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }

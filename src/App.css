@@ -222,3 +222,7 @@ div.text-center.paym{
 .edit-photo {
   justify-content: end;
 }
+
+.body-margin {
+  width: 70%;
+}
