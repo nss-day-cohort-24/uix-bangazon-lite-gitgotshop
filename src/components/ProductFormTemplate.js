@@ -71,7 +71,7 @@ openModal() {
     this.setState({isModalOpen: true})
 }
 closeModal() {
-    this.setState({ isModalOpen: false})
+    this.setState({ isModalOpen: false}, this.props.reload());
 }
 }
 
