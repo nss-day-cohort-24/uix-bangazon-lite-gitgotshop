@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
 import { Container, Card, CardImg, CardText, CardBody, CardLink, CardSubtitle, Row, Col } from 'reactstrap';
-import ProductCard from '../components/ProductCard.js';
 import Button from '../components/Button.js';
 
 
@@ -36,6 +35,14 @@ class Product extends Component {
         componentDidMount() {
             console.log("did mount");
             this.getProductData();
+        }
+
+        // passProduct(){
+        //     console.log('pass product function working');
+        // }
+
+        printSingle(){
+            console.log("trying to print single product");
         }
     
         getAnotherClicked(e) {
@@ -93,12 +100,12 @@ class Product extends Component {
                         productsLoaded: true,
                         objResult: result
                     });
-                    console.log("product data object: ", this.setState.objResult);
+                    console.log("product data object: ", this.objResult);
                 },
                 (error) => {
                     this.setState({
                         isLoaded: true,
-                        error: error
+                        error: true
                     });
                     console.log("ERROR HERE");
                 })
@@ -209,5 +216,12 @@ class Product extends Component {
     }
 }
 }
-
-export default Product;
+    // }else if(this.printSingle){
+    //     return(
+    //     <div>
+    //         <h1>THIS WILL BE A PRODUCT</h1>
+    //     </div>
+    //     )
+    // }
+// }
+export default Product

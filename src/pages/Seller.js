@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import MakeProduct from '../components/newProduct.js';
-import ProductCard from '../components/ProductCard.js';
+// import ProductCard from '../components/ProductCard.js';
 import Ben from '../img/Products/Ben.png';
 import { Jumbotron, Container } from 'reactstrap';
 import EditButton from '../components/EditButton.js';
@@ -98,7 +98,7 @@ class Seller extends Component {
                   <Container> 
                       <h2>Make a New Product</h2>
                       <h4>Click the Button below to post new data to sell!</h4>
-                    <MakeProduct />
+                    <MakeProduct user={this.props.user}/>
                   </Container>  
                  </Jumbotron>
                     <h3 className="mt-3 text-center">My Story Inventory</h3>
