@@ -190,8 +190,8 @@ class Product extends Component {
         return(
             <div>
                 {console.log("single prod render", singleProduct)}
-            <button class="btn-blue" onClick={this.printAll}>Back</button>
-            <h1 className="gray-txt h3 text-center my-5 bold">Ben Atkins</h1>
+            <button className="btn-blue margin-left mb-0" onClick={this.printAll}>Back</button>
+            <h1 className="gray-txt h3 text-center my-5 bold mt-0">{singleProduct.name}</h1>
             <div className="d-flex mx-auto prod-overview">
                 <img className="prod-pic" src={singleProduct.picture} alt="" />
                 <div className="ml-5">
