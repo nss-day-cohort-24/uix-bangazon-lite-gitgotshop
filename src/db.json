@@ -150,7 +150,6 @@
       "price": "$7,500",
       "userId": 13,
       "id": 16
-<<<<<<< HEAD
     },
     {
       "name": "Nashville, TN",
@@ -193,8 +192,6 @@
       "name": "Boston, MA",
       "price": "$8,000",
       "id": 24
-=======
->>>>>>> master
     }
   ],
   "Wishlist": [
