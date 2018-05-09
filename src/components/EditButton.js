@@ -25,7 +25,6 @@ editStuff = () => {
     let data = {
         "name": this.refs.cityName.value,
         "picture": this.props.picture,
-        "product": this.refs.product.value,
         "sellerID": this.props.user,
         "data": this.props.data,
         "price": this.refs.price.value,
