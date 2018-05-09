@@ -13,7 +13,8 @@ function ProductCard(props) {
             <div className="d-flex flex-row">
                 <div className="my-4 justify-content-center">
                     <img className="w-75" src={props.src} alt="" />
-                    <Link to={props.link}><h3 className="my-2">Read More</h3></Link>
+                    <Link to={props.link}>
+                    <h3 className="my-2">Read More</h3></Link>
                 </div>
                 <div className="">
                     <br />

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import ProductCard from '../components/ProductCard.js';
-import City from '../img/Cities/Boston.jpg';
+// import City from '../img/Cities/Boston.jpg';
 import Button from '../components/Button.js';
 
 class Product extends Component {
@@ -20,7 +20,7 @@ class Product extends Component {
                     name: "",
                     price: ""
                 }
-            }
+            };
             this.getAnotherClicked=this.getAnotherClicked.bind(this);
             this.printSingle = this.printSingle.bind(this);
             this.printAll = this.printAll.bind(this);
@@ -65,7 +65,7 @@ class Product extends Component {
                     this.setState({
                         printSingle: true,
                         singleProduct: productArray[i]
-                    })
+                    });
                 }
             }
             
@@ -74,7 +74,7 @@ class Product extends Component {
         printAll() {
             this.setState({
                 printSingle: false
-            })
+            });
         }
 
         getProductData() {
@@ -94,7 +94,7 @@ class Product extends Component {
                         error: error
                     });
                     console.log("ERROR HERE");
-                })
+                });
         }
         
         // prod needs to set state
@@ -107,7 +107,7 @@ class Product extends Component {
             "name": singleProd.name,
             "price": singleProd.price,
             "userId": this.props.user
-        }
+        };
         fetch('http://localhost:3000/Cart', {
             method: 'POST', // or 'PUT'
             body: JSON.stringify(data), // data can be `string` or {object}!
@@ -127,7 +127,7 @@ class Product extends Component {
             "name": singleProd.name,
             "price": singleProd.price,
             "userId": this.props.user
-        }
+        };
         fetch('http://localhost:3000/Wishlist', {
             method: 'POST', // or 'PUT'
             body: JSON.stringify(data), // data can be `string` or {object}!

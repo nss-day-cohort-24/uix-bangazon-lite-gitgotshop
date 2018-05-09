@@ -18,8 +18,8 @@ class SingleProduct extends Component {
                         <h3>$3,000</h3>
                         <p className="my-4">This is a temporary fix. You can't pave over concrete for long term results. The big work is still in progress to redo 440 entirely.</p>
                         <div className="d-flex flex-row">
-                            <Button class="btn-red mr-2" link="" name="Add to cart" />
-                            <Button class="btn-blue ml-2" link="" name="Add to wishlist" />
+                            <Button className="btn-red mr-2" link="" name="Add to cart" />
+                            <Button className="btn-blue ml-2" link="" name="Add to wishlist" />
                         </div>                        
                     </div>
                 </div>

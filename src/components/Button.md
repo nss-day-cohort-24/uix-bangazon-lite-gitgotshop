@@ -1,3 +1,3 @@
 ```js
-<Button class="btn-red" link="" name="name" />
+<Button className="btn-red" link="" name="name" />
 ```
