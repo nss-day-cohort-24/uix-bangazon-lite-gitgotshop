@@ -45,7 +45,7 @@ class Nav extends Component {
                                             {/* <Route path='/Seller' component={Seller} user={this.props.user}/> */}
                                             <Route path='/Seller' render={(props) => <Seller user={this.props.user} />} />
                                             <Route path='/Cart' component={Cart} />
-                                            <Route path="/Products" component={Products} />
+                                            <Route path="/Products" render={(props) => <Products user={this.props.user} />} />                                            
                                             <Route path="/SingleProduct" component={SingleProduct} />
                                         </div>
                                     </div>
@@ -76,7 +76,7 @@ class Nav extends Component {
                                             {/* <Route path='/Seller' component={Seller} user={this.props.user}/> */}
                                             <Route path='/Seller' render={(props) => <Seller user={this.props.user} />} />
                                             <Route path='/Cart' component={Cart} />
-                                            <Route path="/Products" component={Products} />
+                                            <Route path="/Products" render={(props) => <Products user={this.props.user} />} />                                            
                                             <Route path="/SingleProduct" component={SingleProduct} />
                                         </div>
                                     </div>
@@ -102,7 +102,7 @@ class Nav extends Component {
                                         <Route exact path='/' component={Home} />
                                         <Route path='/Profile' component={Profile} />
                                         <Route path='/Cart' component={Cart} />
-                                        <Route path="/Products" component={Products} />
+                                        <Route path="/Products" render={(props) => <Products user={1} />} />
                                         <Route path="/SingleProduct" component={SingleProduct} />
                                     </div>
                                 </div>
