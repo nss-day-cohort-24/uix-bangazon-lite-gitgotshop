@@ -80,17 +80,6 @@
       "disc": "San Francisco is a hilly city surrounded by the Pacific Ocean and San Francisco Bay.",
       "id": 3,
       "seller": "yes"
-
-    },
-    {
-      "name": "Chicago",
-      "product": "",
-      "sellerID": 13,
-      "price": "$11,000",
-      "disc": "The windy City of the North",
-      "data": "City Data",
-      "picture": "./Cities/Chicago.jpg",
-      "id": 8
     }
   ],
   "Cart": [

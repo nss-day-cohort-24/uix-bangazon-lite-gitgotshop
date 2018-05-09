@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './NewProduct.css';
-import { Button, Form, Modal } from 'reactstrap';
+import { Button, Form, FormGroup, Input, Modal } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 
 /**
@@ -22,24 +21,23 @@ class ProductFormTemplate extends React.Component {
         let data = {
           "name": this.refs.cityName.value,
           "product": "" ,
-          "sellerID": this.props.user,
+          "sellerID": 0,
           "price": this.refs.price.value,
-          "disc": this.refs.desc.value,
-          "data": this.refs.data.value,
-          "picture": "./Cities/Boston.jpg"
+          "desc": this.refs.desc.value,
+          "data": this.refs.data.value
         }
         console.log("DATA BUILDER", data);
     
     
-        fetch('http://localhost:3000/Products', {
-          method: 'POST', // or 'PUT'
-          body: JSON.stringify(data), // data can be `string` or {object}!
-          headers: new Headers({
-            'Content-Type': 'application/json'
-          })
-        }).then(res => res.json())
-        .catch(error => console.error('Error:', error))
-        .then(response => console.log('Success:', response));
+        // fetch('http://localhost:3000/Products', {
+        //   method: 'POST', // or 'PUT'
+        //   body: JSON.stringify(data), // data can be `string` or {object}!
+        //   headers: new Headers({
+        //     'Content-Type': 'application/json'
+        //   })
+        // }).then(res => res.json())
+        // .catch(error => console.error('Error:', error))
+        // .then(response => console.log('Success:', response));
       }
 
     render(){ 
