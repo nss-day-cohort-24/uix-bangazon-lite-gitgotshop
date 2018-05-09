@@ -7,15 +7,16 @@ import {
 } from 'react-router-dom';
 import EditButton from './EditButton.js';
 
-
+/**
+ * An individual product, as listed on the main Products page. 'Read More' can be linked to a Product Detail page. 
+ */
 
 function ProductCard(props) {
         return (
             <div className="d-flex flex-row">
                 <div className="my-4 justify-content-center">
                     <img className="w-75" src={props.src} alt="" />
-                    <Link to={props.link}><h3 className="my-2">Read More</h3></Link>
-                    <EditButton />
+                    <h3 className="my-2">Read More</h3>                
                 </div>
                 <div className="">
                     <br />
@@ -29,3 +30,4 @@ function ProductCard(props) {
 
 export default ProductCard;
 
+// delete?
