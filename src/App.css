@@ -167,13 +167,23 @@ img.round-circle{
 }
 
 .prod-pic {
-  width: 40%;
-  height: 40%;
+  margin-right: auto;
+  width: 60%;
+  height: 60%;
+}
 
+.card-width{
+  width: 380px !important;
+}
+
+.island {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2em;
 }
 
 .fieldset{
-   padding-top: 5%;
+  padding-top: 5%;
   border-radius: 5px;
 }
 

@@ -6,7 +6,7 @@ components: 'src/components/**/*.js',
             linkHover: 'skyblue'
     },
     fontFamily: {
-        base: '""Arial""'
+        base: '"Arial'
     }
 }
 }; 

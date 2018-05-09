@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MakeProduct from '../components/NewProduct.js';
+import MakeProduct from '../components/newProduct.js';
 import ProductCard from '../components/ProductCard.js';
 import Ben from '../img/Products/Ben.png';
 import { Jumbotron, Container } from 'reactstrap';
@@ -33,6 +33,7 @@ class Seller extends Component {
         ))
         return(
             <div>
+                <h1 className="gray-txt h3 text-center my-5 bold">My Store Inventory</h1>
              <Jumbotron fluid>
               <Container> 
                   <h2>Make a New Product</h2>
@@ -40,7 +41,6 @@ class Seller extends Component {
                 <MakeProduct />
               </Container>  
              </Jumbotron>
-                <h3 className="mt-3 text-center">My Story Inventory</h3>
                 <div>{productDataObject}</div>
                 
             </div>
@@ -49,3 +49,5 @@ class Seller extends Component {
 }
 
 export default Seller;
+
+// delete?
