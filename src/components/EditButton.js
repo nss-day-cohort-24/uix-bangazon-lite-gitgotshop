@@ -32,17 +32,15 @@ editStuff = () => {
         "disc": this.refs.desc.value
     }
   
-    // fetch(`http://localhost:3000/products/${this.props.id}`, {
-    //   method: 'PUT', // or 'POST'
-    //   body: JSON.stringify(data), // data can be `string` or {object}!
-    //   headers: new Headers({
-    //     'Content-Type': 'application/json'
-    //   })
-    // }).then(res => res.json())
-    // .catch(error => console.error('Error:', error))
-    // .then(response => console.log('Success:', response));
-    console.log("DATA BUILD", data);
-    console.log("PROPS", this.props);
+    fetch(`http://localhost:3000/products/${this.props.id}`, {
+      method: 'PUT', // or 'POST'
+      body: JSON.stringify(data), // data can be `string` or {object}!
+      headers: new Headers({
+        'Content-Type': 'application/json'
+      })
+    }).then(res => res.json())
+    .catch(error => console.error('Error:', error))
+    .then(response => console.log('Success:', response));
 }
     
 render(){ 
