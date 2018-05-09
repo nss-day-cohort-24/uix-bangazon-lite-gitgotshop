@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import MakeProduct from '../components/newProduct.js';
-import ProductCard from '../components/ProductCard.js';
+// import ProductCard from '../components/ProductCard.js';
 import Ben from '../img/Products/Ben.png';
 import { Jumbotron, Container } from 'reactstrap';
 import EditButton from '../components/EditButton.js';
