@@ -29,6 +29,14 @@ class Product extends Component {
             console.log("did mount");
             this.getProductData();
         }
+
+        // passProduct(){
+        //     console.log('pass product function working');
+        // }
+
+        printSingle(){
+            console.log("trying to print single product");
+        }
     
         getAnotherClicked(e) {
             console.log("getAnotherClicked", this.props);
@@ -79,12 +87,12 @@ class Product extends Component {
                         productsLoaded: true,
                         objResult: result
                     });
-                    console.log("product data object: ", this.setState.objResult);
+                    console.log("product data object: ", this.objResult);
                 },
                 (error) => {
                     this.setState({
                         isLoaded: true,
-                        error: error
+                        error: true
                     });
                     console.log("ERROR HERE");
                 })
@@ -195,5 +203,12 @@ class Product extends Component {
     }
 }
 }
-
-export default Product;
+    // }else if(this.printSingle){
+    //     return(
+    //     <div>
+    //         <h1>THIS WILL BE A PRODUCT</h1>
+    //     </div>
+    //     )
+    // }
+// }
+export default Product

@@ -5,15 +5,23 @@ import {
     Route,
     Link,
 } from 'react-router-dom';
+import SingleProduct from '../pages/SingleProduct';
 
 
+function printSingle(){
+    
 
-function ProductCard(props) {
+}
+
+function ProductCard(props){
+
+
+if(this.props.printSingle === false){
         return (
-            <div className="d-flex flex-row">
+            <div key={props.index } className="d-flex flex-row">
                 <div className="my-4 justify-content-center">
                     <img className="w-75" src={props.src} alt="" />
-                    <Link to={props.link}><h3 className="my-2">Read More</h3></Link>
+                    <h3 className="my-2" onClick={this.printSingle}>Read More</h3>
                 </div>
                 <div className="">
                     <br />
@@ -24,6 +32,7 @@ function ProductCard(props) {
             </div>
         );
     }
+}
 
 export default ProductCard;
 
