@@ -103,6 +103,25 @@ nav input {
   text-decoration: none;
 }
 
+#log-btn {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #c4114b;
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px 5px 10px;
+  border: solid white 1px;
+  text-decoration: none;
+}
+
+#log-btn:hover {
+  background-color: #ffffff;
+  color: #c4114b;
+  text-decoration: none;
+}
+
 .btn-white {
   -webkit-border-radius: 10;
   -moz-border-radius: 10;
