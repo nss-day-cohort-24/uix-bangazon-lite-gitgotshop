@@ -64,6 +64,7 @@ class Nav extends Component {
                             <div>
                                 <Route exact path='/' component={Home} />
                                 <Route path='/Profile' component={Profile} />
+                                 <Route path='/ProfileCard' component={ProfileCard} />
                                 {/* <Route path='/Seller' component={Seller} user={this.props.user}/> */}
                                 <Route path='/Seller' render={(props) => <Seller user={this.props.user} />} />
                                 <Route path='/Cart' component={Cart} />
