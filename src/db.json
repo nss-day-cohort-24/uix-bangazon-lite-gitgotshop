@@ -44,7 +44,7 @@
       "address": "794 Gusikowski Stream",
       "paymentOption": 83034,
       "paymentHistory": "",
-      "seller": false,
+      "seller": true,
       "favorites": "",
       "id": 16
     }
@@ -104,13 +104,8 @@
       "id": 17
     },
     {
-<<<<<<< HEAD
       "name": "San Fransisco, CA",
       "price": "$7,500",
-=======
-      "name": "Nashville, TN",
-      "price": "$5,000",
->>>>>>> master
       "id": 18
     },
     {
