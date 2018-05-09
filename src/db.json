@@ -134,6 +134,11 @@
       "price": "$7,000",
       "userId": 13,
       "id": 23
+    },
+    {
+      "name": "Boston, MA",
+      "price": "$8,000",
+      "id": 24
     }
   ],
   "Wishlist": [
