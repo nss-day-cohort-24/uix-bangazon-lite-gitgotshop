@@ -103,6 +103,25 @@ nav input {
   text-decoration: none;
 }
 
+#log-btn {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #c4114b;
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px 5px 10px;
+  border: solid white 1px;
+  text-decoration: none;
+}
+
+#log-btn:hover {
+  background-color: #ffffff;
+  color: #c4114b;
+  text-decoration: none;
+}
+
 .btn-white {
   -webkit-border-radius: 10;
   -moz-border-radius: 10;
@@ -167,13 +186,23 @@ img.round-circle{
 }
 
 .prod-pic {
-  width: 40%;
-  height: 40%;
+  margin-right: auto;
+  width: 60%;
+  height: 60%;
+}
 
+.card-width{
+  width: 380px !important;
+}
+
+.island {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2em;
 }
 
 .fieldset{
-   padding-top: 5%;
+  padding-top: 5%;
   border-radius: 5px;
 }
 
@@ -186,12 +215,7 @@ div.text-center.paym{
 .col-8{
   margin-top: 40px;
 }
-/* img{
-  max-width: 200px;
-  max-height: 220px;
-  margin-top: 40px;
-  border-radius: 5px;
-} */
+
 
 
 #Upload-photo{
@@ -205,23 +229,10 @@ div.text-center.paym{
   text-decoration: underline;
 }
 
-.col-8 {
-  margin-top: 40px;
-}
-
-img {
+#profile img {
   max-width: 200px;
   max-height: 220px;
   margin-top: 40px;
   border-radius: 5px;
 }
 
-#Upload-photo {
-  margin-left: 98px;
-  margin-top: 98px;
-}
-
-/* profile-card */
-.col-xs-6.col-md-4{
-  /* border:1px solid rgb(240, 237, 237); */
-}

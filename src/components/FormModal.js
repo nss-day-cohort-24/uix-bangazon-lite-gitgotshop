@@ -1,6 +1,10 @@
 import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Container, Row, Col } from 'reactstrap';
 
+/**
+ * Clicking 'Sign In' launches a modal with inputs for 'Username' and 'Password', as well as a 'Submit' button.
+ */
+
 class FormModal extends React.Component {
   constructor(props) {
     super(props);
@@ -47,7 +51,7 @@ class FormModal extends React.Component {
   render() {
     return (
       <div className="form-modal">
-        <Button id="log-btn" className="mx-2 btn-white" onClick={this.toggle}><a href="#">{this.props.buttonLabel}Sign In</a></Button>
+        <a  id="log-btn" className="mx-2" onClick={this.toggle} href="#">{this.props.buttonLabel}Sign In</a>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} id="log-modal">
           <ModalHeader toggle={this.toggle} className="modal-edges">Sign In</ModalHeader>
           <ModalBody>
