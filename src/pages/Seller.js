@@ -4,6 +4,7 @@ import ProductCard from '../components/ProductCard.js';
 import Ben from '../img/Products/Ben.png';
 import { Jumbotron, Container } from 'reactstrap';
 import EditButton from '../components/EditButton.js';
+import { Button } from 'reactstrap';
 
 class Seller extends Component {
     constructor(props){
@@ -18,6 +19,7 @@ class Seller extends Component {
         }
         this.printSingle = this.printSingle.bind(this);
         this.editPage = this.editPage.bind(this);
+        this.printAll = this.printAll.bind(this);
     }
 
     componentDidMount() {
@@ -45,6 +47,13 @@ class Seller extends Component {
                 })
             }
         }
+    }
+
+    printAll(){
+        this.setState({
+            printSingle: false,
+            printEditSingle: false
+        })
     }
 
     editPage(event){  
@@ -100,6 +109,7 @@ class Seller extends Component {
             let singleProduct = this.state.singleProduct;
             return(
                 <div>
+                    <Button onClick={this.printAll}>Back</Button>
                     <h1 className="gray-txt h3 text-center my-5 bold">Ben Atkins</h1>
                     <div className="d-flex mx-auto prod-overview">
                         <img className="prod-pic" src={singleProduct.picture} alt="" />
@@ -114,7 +124,10 @@ class Seller extends Component {
         } else if (!this.state.printSingle && this.state.printEditSingle) {
             let singleEditProduct = this.state.singleEditProduct;
             return (
-                <EditButton data={singleEditProduct.data} user={this.props.user} id={singleEditProduct.id} name={singleEditProduct.name} price={singleEditProduct.price} picture={singleEditProduct.picture} product={singleEditProduct.product} desc={singleEditProduct.disc}/>
+                <div>
+                    <Button onClick={this.printAll}>Back</Button>
+                    <EditButton data={singleEditProduct.data} user={this.props.user} id={singleEditProduct.id} name={singleEditProduct.name} price={singleEditProduct.price} picture={singleEditProduct.picture} product={singleEditProduct.product} desc={singleEditProduct.disc} />
+                </div>
             )
         }
     }

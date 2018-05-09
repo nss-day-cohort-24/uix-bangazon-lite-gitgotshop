@@ -22,15 +22,15 @@ deleteStuff = () => {
 }
 
 editStuff = () => {
-    // let data = {
-    //     "name": this.refs.cityName.value,
-    //     "picture": this.props.picture,
-    //     "product": this.refs.product.value,
-    //     "sellerID": this.props.user,
-    //     "data": this.props.data,
-    //     "price": this.refs.price.value,
-    //     "disc": this.refs.desc.value
-    // }
+    let data = {
+        "name": this.refs.cityName.value,
+        "picture": this.props.picture,
+        "product": this.refs.product.value,
+        "sellerID": this.props.user,
+        "data": this.props.data,
+        "price": this.refs.price.value,
+        "disc": this.refs.desc.value
+    }
   
     // fetch(`http://localhost:3000/products/${this.props.id}`, {
     //   method: 'PUT', // or 'POST'
@@ -41,19 +41,18 @@ editStuff = () => {
     // }).then(res => res.json())
     // .catch(error => console.error('Error:', error))
     // .then(response => console.log('Success:', response));
-    // console.log("DATA BUILD", data);
-    console.log("DATA TEST", this.refs);
+    console.log("DATA BUILD", data);
+    console.log("PROPS", this.props);
 }
     
 render(){ 
     return(
         <div>
             <Form>
-                {/* <Input ref="cityName" type="text" defaultValue={this.props.name}/>
-                <Input ref="price" type="text" defaultValue={this.props.price}/>
-                <Input ref="product" type="text" defaultValue={this.props.product}/>
-                <Input ref="desc" type="text" defaultValue={this.props.desc}/> */}
-                <Input ref="testing" type="text"/> 
+                <input ref="cityName" type="text" defaultValue={this.props.name}/>
+                <input ref="price" type="text" defaultValue={this.props.price}/>
+                <input ref="product" type="text" defaultValue={this.props.product}/>
+                <input ref="desc" type="text" defaultValue={this.props.desc}/>
                 <Button onClick={this.deleteStuff}>Remove</Button> 
                 <Button onClick={this.editStuff}>Save Changes</Button>  
             </Form>
