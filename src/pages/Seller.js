@@ -98,7 +98,7 @@ class Seller extends Component {
                   <Container> 
                       <h2>Make a New Product</h2>
                       <h4>Click the Button below to post new data to sell!</h4>
-                    <MakeProduct />
+                    <MakeProduct user={this.props.user}/>
                   </Container>  
                  </Jumbotron>
                     <h3 className="mt-3 text-center">My Story Inventory</h3>
