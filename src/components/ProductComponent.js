@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import { Container, Card, CardImg, CardText, CardBody, CardLink, CardSubtitle, Row, Col } from 'reactstrap';
-import ProductCard from '../components/ProductCard.js';
+// import ProductCard from '../components/ProductCard.js';
 import Button from '../components/Button.js';
 
 
