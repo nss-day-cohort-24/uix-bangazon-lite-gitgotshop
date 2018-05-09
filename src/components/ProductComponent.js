@@ -15,6 +15,11 @@ class Product extends Component {
                 error: null,
                 data: {},
                 printSingle: false,
+                singleProduct: [],
+                prodObj : {
+                    name: "",
+                    price: ""
+                }
             }
             this.getAnotherClicked=this.getAnotherClicked.bind(this);
             this.printSingle = this.printSingle.bind(this);
@@ -56,18 +61,21 @@ class Product extends Component {
     
 
         printSingle(event){
+            
             var productArray = this.state.objResult;
             var productID = event.target.id;
-
+            
             for(var i = 0; i < productArray.length; i++){
                 if(productArray[i].id === parseInt(productID)){
-                    console.log("matched productID to event target ID");
+                    // console.log("productArray", productArray[i]);
+                    // console.log("matched productID to event target ID");
                     this.setState({
                         printSingle: true,
                         singleProduct: productArray[i]
                     })
                 }
             }
+            
         }
 
         getProductData() {
@@ -89,7 +97,49 @@ class Product extends Component {
                     console.log("ERROR HERE");
                 })
         }
-    
+        
+        // prod needs to set state
+        // seller id needs to become seller id
+    addCart(singleProd) {
+        console.log("this.props.user", this.props.user);
+
+
+        let data = {
+            "name": singleProd.name,
+            "price": singleProd.price,
+            "userId": this.props.user
+        }
+        fetch('http://localhost:3000/Cart', {
+            method: 'POST', // or 'PUT'
+            body: JSON.stringify(data), // data can be `string` or {object}!
+            headers: new Headers({
+                'Content-Type': 'application/json'
+            })
+        }).then(res => res.json())
+            .catch(error => console.error('Error:', error))
+            .then(response => console.log('Success:', response));
+
+        
+    }
+            
+    addWishlist(singleProd) {
+        
+        let data = {
+            "name": singleProd.name,
+            "price": singleProd.price,
+            "userId": this.props.user
+        }
+        fetch('http://localhost:3000/Wishlist', {
+            method: 'POST', // or 'PUT'
+            body: JSON.stringify(data), // data can be `string` or {object}!
+            headers: new Headers({
+                'Content-Type': 'application/json'
+            })
+        }).then(res => res.json())
+            .catch(error => console.error('Error:', error))
+            .then(response => console.log('Success:', response));
+
+        }
     
     
         render() {
@@ -114,6 +164,7 @@ class Product extends Component {
                     <div className="my-4 justify-content-center">
                         <img className="w-75" src={Ben} alt="" />
                         <h3 id={data.id} className="my-2 readMore" onClick={this.printSingle}>Read More</h3>
+                        
                     </div>
                     <div className="">
                         <br />
@@ -130,8 +181,10 @@ class Product extends Component {
             <div>{productDataObject}</div>
         )
     }else if(productsLoaded && printSingle){
+
         return(
-        <div>
+            <div>
+                {console.log("single prod render", singleProduct)}
             <h1 className="gray-txt h3 text-center my-5 bold">Ben Atkins</h1>
             <div className="d-flex mx-auto prod-overview">
                 <img className="prod-pic" src={Ben} alt="" />
@@ -140,8 +193,8 @@ class Product extends Component {
                     <h3>{singleProduct.price}</h3>
                     <p className="my-4">{singleProduct.disc}</p>
                     <div className="d-flex flex-row">
-                        <Button class="btn-red mr-2" link="" name="Add to cart" />
-                        <Button class="btn-blue ml-2" link="" name="Add to wishlist" />
+                        <button class="btn-red mr-2" id={singleProduct.id} onClick={() => this.addCart(singleProduct)} name="Add to cart" />
+                        <button class="btn-blue ml-2" id={singleProduct.id} onClick={() => this.addWishlist(singleProduct)} name="Add to wishlist" />
                     </div>                        
                 </div>
             </div>
