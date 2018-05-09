@@ -104,14 +104,41 @@
       "id": 17
     },
     {
+<<<<<<< HEAD
       "name": "San Fransisco, CA",
       "price": "$7,500",
+=======
+      "name": "Nashville, TN",
+      "price": "$5,000",
+>>>>>>> master
       "id": 18
     },
     {
       "name": "Nashville, TN",
       "price": "$5,000",
       "id": 19
+    },
+    {
+      "name": "Nashville, TN",
+      "price": "$7,000",
+      "userId": 1,
+      "id": 20
+    },
+    {
+      "name": "Nashville, TN",
+      "price": "$7,000",
+      "id": 21
+    },
+    {
+      "name": "Nashville, TN",
+      "price": "$7,000",
+      "id": 22
+    },
+    {
+      "name": "Nashville, TN",
+      "price": "$7,000",
+      "userId": 13,
+      "id": 23
     }
   ],
   "Wishlist": [
@@ -144,6 +171,28 @@
       "name": "Nashville, TN",
       "price": "$5,000",
       "id": 18
+    },
+    {
+      "name": "Nashville, TN",
+      "price": "$7,000",
+      "userId": 1,
+      "id": 19
+    },
+    {
+      "name": "Nashville, TN",
+      "price": "$7,000",
+      "id": 20
+    },
+    {
+      "name": "Nashville, TN",
+      "price": "$7,000",
+      "id": 21
+    },
+    {
+      "name": "Nashville, TN",
+      "price": "$7,000",
+      "userId": 13,
+      "id": 22
     }
   ]
 }

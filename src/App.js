@@ -29,7 +29,7 @@ signout = ()=> {
 }
 
   render() {
-    console.log("USER",this.state.user);
+    console.log("USER",this.state.user.id);
     return (
       <div>
         <Nav showShoppingCart={this.showShoppingCart} updateAuth={this.updateAuth} signout={this.signout} authed={this.state.authed} user={this.state.user.id} seller={this.state.user.seller}/>
