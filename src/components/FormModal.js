@@ -1,6 +1,10 @@
 import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Container, Row, Col } from 'reactstrap';
 
+/**
+ * Clicking 'Sign In' launches a modal with inputs for 'Username' and 'Password', as well as a 'Submit' button.
+ */
+
 class FormModal extends React.Component {
   constructor(props) {
     super(props);

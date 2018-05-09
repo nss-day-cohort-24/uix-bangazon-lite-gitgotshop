@@ -23,20 +23,46 @@
       "seller": false,
       "favorites": "",
       "id": 14
+    },
+    {
+      "username": "Shanie",
+      "password": "UZj3y9het0zI_ei",
+      "phone": "793-541-3505",
+      "email": "Madison_Steuber17@yahoo.com",
+      "address": "2751 Lockman Mews",
+      "paymentOption": 98843,
+      "paymentHistory": "",
+      "seller": false,
+      "favorites": "",
+      "id": 15
+    },
+    {
+      "username": "Kolby",
+      "password": "G5FyutVJoNUAD6m",
+      "phone": "006-322-0909",
+      "email": "Norene.Sipes@gmail.com",
+      "address": "794 Gusikowski Stream",
+      "paymentOption": 83034,
+      "paymentHistory": "",
+      "seller": false,
+      "favorites": "",
+      "id": 16
     }
   ],
   "Products": [
     {
       "name": "Nashville, TN",
+      "picture": "./Cities/Nashville.jpg",
       "product": "EthZeCm4nVXnWsU",
-      "userId": "345-803-2588",
+      "sellerID": 13,
       "data": "Velda_Witting@gmail.com",
-      "price": "$5,000",
+      "price": "$7,000",
       "disc": "Nashville is the capital of the U.S. state of Tennessee and home to Vanderbilt University. ",
       "id": 1
     },
     {
       "name": "Boston, MA",
+      "picture": "./Cities/Boston.jpg",
       "product": "DU7DGCT82zHc9X9",
       "userId": "511-715-3988",
       "data": "Laurianne67@gmail.com",
@@ -46,6 +72,7 @@
     },
     {
       "name": "San Fransisco, CA",
+      "picture": "./Cities/SanFran.jpg",
       "product": "G1NP4Wb61lLYxaH",
       "userId": "155-866-3797",
       "data": "Johathan.Rutherford@yahoo.com",
@@ -70,6 +97,21 @@
       "price": "$7,500",
       "userId": 13,
       "id": 16
+    },
+    {
+      "name": "Nashville, TN",
+      "price": "$5,000",
+      "id": 17
+    },
+    {
+      "name": "San Fransisco, CA",
+      "price": "$7,500",
+      "id": 18
+    },
+    {
+      "name": "Nashville, TN",
+      "price": "$5,000",
+      "id": 19
     }
   ],
   "Wishlist": [
@@ -97,6 +139,11 @@
       "price": "$7,500",
       "userId": 13,
       "id": 17
+    },
+    {
+      "name": "Nashville, TN",
+      "price": "$5,000",
+      "id": 18
     }
   ]
 }
