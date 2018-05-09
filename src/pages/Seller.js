@@ -125,8 +125,8 @@ class Seller extends Component {
             let singleEditProduct = this.state.singleEditProduct;
             return (
                 <div>
-                    <Button onClick={this.printAll}>Back</Button>
                     <EditButton data={singleEditProduct.data} user={this.props.user} id={singleEditProduct.id} name={singleEditProduct.name} price={singleEditProduct.price} picture={singleEditProduct.picture} product={singleEditProduct.product} desc={singleEditProduct.disc} />
+                    <Button className="btn-red" onClick={this.printAll}>Back</Button>
                 </div>
             )
         }
