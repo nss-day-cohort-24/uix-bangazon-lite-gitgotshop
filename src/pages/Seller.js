@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MakeProduct from '../components/newProduct.js';
+import MakeProduct from '../components/NewProduct.js';
 import ProductCard from '../components/ProductCard.js';
 import Ben from '../img/Products/Ben.png';
 import { Jumbotron, Container } from 'reactstrap';
@@ -75,6 +75,7 @@ class Seller extends Component {
     render() {
         if (!this.state.printSingle && !this.state.printEditSingle){
             let objResult = this.state.userProducts;
+            console.log("this.state")
             let productDataObject = objResult.map((data, index) => (
                 <div key={index} className="d-flex flex-row justify-content-center flex-wrap">
                     <div className="d-flex flex-row">
@@ -98,7 +99,7 @@ class Seller extends Component {
                   <Container> 
                       <h2>Make a New Product</h2>
                       <h4>Click the Button below to post new data to sell!</h4>
-                    <MakeProduct />
+                    <MakeProduct user={this.props.user} />
                   </Container>  
                  </Jumbotron>
                     <h3 className="mt-3 text-center">My Story Inventory</h3>
