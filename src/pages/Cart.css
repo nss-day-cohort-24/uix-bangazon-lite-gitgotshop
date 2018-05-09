@@ -1,0 +1,27 @@
+.subtotal-overview {
+  width: 45%;
+}
+
+.subtotal-price {
+  justify-content: space-between;
+}
+
+.subtotal {
+  flex-direction: column;
+  float: right;
+  width: 45%;
+}
+
+.subtotal-break {
+  border-bottom: solid 1px #595b5c;
+}
+
+.checkout {
+  float: right;
+}
+
+.bodyText {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  color: #595b5c;
+}

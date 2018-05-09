@@ -214,3 +214,11 @@ div.text-center.paym{
   color: #c4114b;
   text-decoration: underline;
 }
+
+.margin-left {
+  margin-left: 10%;
+}
+
+.edit-photo {
+  justify-content: end;
+}
