@@ -218,3 +218,7 @@ div.text-center.paym{
 .margin-left {
   margin-left: 10%;
 }
+
+.edit-photo {
+  justify-content: end;
+}
