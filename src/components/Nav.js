@@ -63,7 +63,7 @@ class Nav extends Component {
                                             </div>
                                             
                                             <div className="align-items-center">
-                                                <NavLink className="mx-2 btn-white" to='#'>Become a Seller</NavLink>
+                                                <NavLink className="mx-2 btn-white" to='#' onClick={this.props.becomeSeller}>Become a Seller</NavLink>
                                                 <NavLink className="mx-2 btn-white" to='/Products'>Products</NavLink>
                                                 <NavLink className="mx-2 btn-white" to='/Profile'>Profile</NavLink>
                                                 <a className="mx-2 btn-white" href="" onClick={this.props.signout}>Sign out</a>
