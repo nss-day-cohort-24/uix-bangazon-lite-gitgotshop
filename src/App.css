@@ -215,12 +215,7 @@ div.text-center.paym{
 .col-8{
   margin-top: 40px;
 }
-/* img{
-  max-width: 200px;
-  max-height: 220px;
-  margin-top: 40px;
-  border-radius: 5px;
-} */
+
 
 
 #Upload-photo{
@@ -234,10 +229,17 @@ div.text-center.paym{
   text-decoration: underline;
 }
 
-.margin-left {
-  margin-left: 10%;
+#profile img {
+  max-width: 200px;
+  max-height: 220px;
+  margin-top: 40px;
+  border-radius: 5px;
 }
 
+
+label{
+  font-weight: bold;
+}
 .edit-photo {
   justify-content: end;
 }

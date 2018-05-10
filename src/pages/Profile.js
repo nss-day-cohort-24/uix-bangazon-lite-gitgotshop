@@ -2,167 +2,174 @@ import React, { Component } from 'react';
 import '../App.css';
 import main1 from '../img/avatar.png';
 import Button from '../components/Button.js';
+
+
+
+
+
 class Profile extends Component {
-    render() {
+constructor(props) {
+  super(props);
+  this.state =
+   {
+     
+    firstName: '',
+    lastName:'',
+    phone:'',
+    address1:'',
+    address2:'',
+    zipCode:'',
+    cardNumber:'',
+    cardExpiry:'',
+    cardCVC:'',
+    file : '',
+    imagePreviewUrl : '',
+    state:''
+  };
+   this.handleImageChange = this.handleImageChange.bind(this);
+  this.handleChange = this.handleChange.bind(this);
+  this.handleSubmit= this.handleSubmit.bind(this);
+  this.getprofile = this.getprofile.bind(this);
+  this.addUserProfile=this.addUserProfile.bind(this)
+}
+handleImageChange(e) {
+    e.preventDefault();
+
+    let reader = new FileReader();
+    let file = e.target.files[0];
+
+     reader.onloadend=()=>{
+      this.setState({
+        file: file,
+        imagePreviewUrl: reader.result
+      });
+    };
+     reader.readAsDataURL(file);
+  }
+
+
+
+handleChange(event) {
+console.log("user", event.target.name);
+  this.setState({
+      [event.target.name]:event.target.value
+    });
+  console.log("change",event.target.value);
+
+}
+
+handleSubmit(event) {
+console.log("some thing",this.state);
+       this.state,
+this.addUserProfile()
+}
+getprofile() {
+    fetch('http://localhost:3000/profile')
+      .then((response) => response.json())
+      .then((responseJson) => {
+        console.log("i got you server", responseJson);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }
+
+
+  addUserProfile(name){
+    let userProfileData = {
+      "firstName":this.state.firstName,
+      "lastName":this.state.lastName,
+      "phone":this.state.phone,
+      "address1":this.state.address1,
+      "address2":this.state.address2,
+      "zipCode":this.state.zipCode,
+      "cardNumber":this.state.cardNumber,
+      "cardExpiry":this.state.cardExpiry,
+      "cardCVC":this.state.cardCVC,
+      "imagePreviewUrl":this.state.imagePreviewUrl
+    }
+
+    console.log("profile to database");
+
+    fetch('http://localhost:3000/Profile', {
+      method: 'POST', // or 'PUT'
+      body: JSON.stringify(userProfileData), // data can be `string` or {object}!
+      headers: new Headers({
+        'Content-Type': 'application/json'
+      })
+    }).then(res => res.json())
+    .catch(error => console.error('sorry Error try to send it again', error))
+    .then(response => console.log('Successfully posted to data base', response));
+  }
+
+render() {
+    let {imagePreviewUrl} = this.state;
+    let $imagePreview = null;
+    if (imagePreviewUrl) {
+        $imagePreview = (<img src={imagePreviewUrl}/>);
+    }
+
         return (
-            <div>
-
-                <h1 className="gray-txt h3 text-center my-5 bold">Ben Atkins</h1>
-
-                <div className="container">
-                <div className="row">
-                    <div className="col-2">
-                    </div>
-                    <div className="col-3">
-                        <div>
-                            <img className="round-circle" src={main1} alt="photo"/>
-                        </div>
-                        <div className="mt-3">
-                            <input name="Upload photo" class="input-file" type="file"/>
-                        </div>
-                    </div>
-                    <div className="col-4">
-                        <input id="Name (Full name)" name="Name (Full name)" type="text" placeholder="First Name" class="form-control input-md"/>
-                        <input id="Father" name="Father" type="text" placeholder="Last Name" class="form-control mt-2"/>
-                        <input id="Phone number" name="Phone number" type="text" placeholder="Phone number " class="form-control mt-2"/>
-                        <input id="Permanent Address" name="Permanent Address" type="text" placeholder="Permanent Address" class="form-control mt-2"/>
-                        <input id="Permanent Address" name="Permanent Address" type="number" placeholder="zip-code" class="form-control mt-2"/>
-                        <input id="Permanent Address" name="Permanent Address" type="text" placeholder="state"class="form-control mt-2"/>
-                        <legend class="text mt-5">PAYMENT METHOD</legend>
-                        <input type="tel" class="form-control mt-2" name="cardNumber" placeholder="Valid Card Number" autocomplete="cc-number"requiautofocus/>
-                        <input type="tel" class="form-control mt-2" name="cardExpiry" placeholder="MM / YY" autocomplete="cc-exp" required/>
-                        <input type="tel" class="form-control mt-2 mb-4" name="cardCVC" placeholder="CVC" autocomplete="cc-csc" required/>
-                        <Button class="btn-red" link="" name="Submit" />
-
-                        
-                    </div>
-                    <div className="col-2">
-                    </div>
-                </div>
-                </div>
-
-{/* <div class = "container-fluid" > */}
-    {/* <div class="row">
-    <div class="col-xs-3 col-md-4 ">
-        <div class="col-sm-4 col-md-4 col-lg-4">
-            <div class="col-md-1">
-                <div class="col-md-2 hidden-xs">
-                    <div class="form-group">
-                        <div class="col-md-2">
-                            <input id="Upload-photo" name="Upload photo" class="input-file" type="file"/>
-                        </div>
-                        <label
-                            class="col-md-12 control-label text-center"
-                            for="Upload photo"
-                            accept=".jpg, .jpeg, .png">
-                        </label>
-                    </div>
-                </div>
+<div class="Profile">
+<div className = "container-fluid" >
+    <div className="row">
+    <div className="col-xs-3 col-md-5 ">
+         <div className="text-center">
+              {/* <img className="round-circle"  {$imagePreview}alt="photo"/>  */}
+              {$imagePreview}
+                <div className="form-group">
+                       <input id="Upload-photo" name="Upload photo" className="input-file" type="file"  onChange={this.handleImageChange}/>
+<label className = "col-md-8 control-label" htmlFor = "Upload photo" accept = ".jpg, .jpeg ,.png"></label>
             </div>
         </div>
-    </div> */}
-    {/* <div class="col-xs-6 col-md-4 ">
-        <div class="col-8 ">
-            <legend class="text-center">SIGN UP</legend>
-            <form class="form-horizontal">
-                <fieldset>
-                    <div class="form-group">
-                        <div class="col-md-8 p-2">
-                            <div class="input-group">
-                                <input id="Name (Full name)" name="Name (Full name)" type="text" placeholder="First Name" class="form-control input-md"/>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="col-md-8 p-2">
-                            <div class="input-group">
-                                <input id="Father" name="Father" type="text" placeholder="Last Name" class="form-control input-md"/>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="col-md-8 p-2">
-                            <div class="input-group">
-                                <div class="input-group-addon"></div>
-                                <input id="Phone number" name="Phone number" type="text" placeholder="Phone number " class="form-control input-md"/>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="col-sm-8 p-2">
-                            <input id="Permanent Address" name="Permanent Address" type="text" placeholder="Permanent Address" class="form-control input-md "/>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div class="form-group">
-                            <div class="col-sm-6 ">
-                                <input id="Permanent Address" name="Permanent Address" type="number" placeholder="zip-code" class="form-control input-md "/>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-6">
-                                <input id="Permanent Address" name="Permanent Address" type="text" placeholder="state"class="form-control input-md "/>
-                            </div>
-                        </div>
-                    </div>
-                </fieldset>
-            </form>
-
-        </div>
-        <div class="col-xs-4 col-md-8">
-            <legend class="text">PAYMENT METHOD</legend>
-            <form class="form-horizontal">
-                <fieldset>
-
-                    <div class="form-group">
-                        <div class="col-md-8 p-2">
-                            <div class="input-group">
-                             <div class="form-group">
-                                <label for="cardExpiry">
-                                    <span class="hidden-xs"></span>
-                                    <span class="visible-xs-inline">CARD NUMBER</span>
-                                </label>
-                                <input type="tel" class="form-control " name="cardNumber" placeholder="Valid Card Number" autocomplete="cc-number"requiautofocus/>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-8">
-                            <div class="form-group">
-                                <label for="cardExpiry">
-                                    <span class="hidden-xs"></span>
-                                    <span class="visible-xs-inline">EXPIRE DATE</span>
-                                </label>
-                                <input type="tel" class="form-control" name="cardExpiry" placeholder="MM / YY" autocomplete="cc-exp" required/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-8">
-                          <label for="cardCVC">CV CODE</label>
-                            <input type="tel" class="form-control" name="cardCVC" placeholder="CVC" autocomplete="cc-csc" required/>
-                        </div>
-                    </div>
-                     <div className="d-flex flex-row">
-                            <Button class="btn-red mr-4" link="" name="Submit" />
-                         
-                        </div>
-                </fieldset>
-            </form>
-        </div>
     </div>
+    <div className="col-xs-6 col-md-4 ">
+        <div className="col-8 ">
+            <legend className="text-center">SIGN UP</legend>
+            <form className="form-horizontal">
+                <p><label></label><input className="form-control" name="firstName"  placeholder="First Name"  value={this.state.value} onChange={this.handleChange}/></p>
+                <p><label></label><input className ="form-control" name="lastName" placeholder ="Last Name" value={this.state.value} onChange={this.handleChange}/></p>
+                <p><label></label><input className="form-control" name="phone"  placeholder="Phone Number" value={this.state.value} onChange={this.handleChange}/></p>
+                <p><label></label><input className="form-control" name="address1"  placeholder="Address Line 1" value={this.state.value} onChange={this.handleChange}/></p>
+                 <p><label></label><input className="form-control" name="address2" placeholder="Address Line 2" value={this.state.value} onChange={this.handleChange}/></p>
+            <div className="row">
+                     <div className="col-md-6">
+                          <p><label></label><input className="form-control"name="zip-code" id="zipCode" placeholder="Zip-code"required value={this.state.value} onChange={this.handleChange}/></p>
+                     </div>
+                         <div className="col-md-6">
+                              <p><label htmlFor="state"></label>
+                              <select className="form-control" name="state" value={this.value} onChange={this.handleChange}><option value="---">State</option><option value="Alabama">Alabama</option><option value="Alaska">Alaska</option><option value="Arizona">Arizona</option><option value="Arkansas">Arkansas</option><option value="California">California</option><option value="Colorado">Colorado</option><option value="Connecticut">Connecticut</option><option value="Delaware">Delaware</option><option value="District of Columbia">District of Columbia</option><option value="Florida">Florida</option><option value="Georgia">Georgia</option><option value="Guam">Guam</option><option value="Hawaii">Hawaii</option><option value="Idaho">Idaho</option><option value="Illinois">Illinois</option><option value="Indiana">Indiana</option><option value="Iowa">Iowa</option><option value="Kansas">Kansas</option><option value="Kentucky">Kentucky</option><option value="Louisiana">Louisiana</option><option value="Maine">Maine</option><option value="Maryland">Maryland</option><option value="Massachusetts">Massachusetts</option><option value="Michigan">Michigan</option><option value="Minnesota">Minnesota</option><option value="Mississippi">Mississippi</option><option value="Missouri">Missouri</option><option value="Montana">Montana</option><option value="Nebraska">Nebraska</option><option value="Nevada">Nevada</option><option value="New Hampshire">New Hampshire</option><option value="New Jersey">New Jersey</option><option value="New Mexico">New Mexico</option><option value="New York">New York</option><option value="North Carolina">North Carolina</option><option value="North Dakota">North Dakota</option><option value="Northern Marianas Islands">Northern Marianas Islands</option><option value="Ohio">Ohio</option><option value="Oklahoma">Oklahoma</option><option value="Oregon">Oregon</option><option value="Pennsylvania">Pennsylvania</option><option value="Puerto Rico">Puerto Rico</option><option value="Rhode Island">Rhode Island</option><option value="South Carolina">South Carolina</option><option value="South Dakota">South Dakota</option><option value="Tennessee">Tennessee</option><option value="Texas">Texas</option><option value="Utah">Utah</option><option value="Vermont">Vermont</option><option value="Virginia">Virginia</option><option value="Virgin Islands">Virgin Islands</option><option value="Washington">Washington</option><option value="West Virginia">West Virginia</option><option value="Wisconsin">Wisconsin</option><option value="Wyoming">Wyoming</option></select>
+                              </p>
+                        </div>
+             </div>
+                 <legend className="text">PAYMENT METHOD</legend>
+               <p><label><input type = "tel" className = "form-control " name = "cardNumber" placeholder = "Valid Card Number" autoComplete = "cc-number" required="autofocus" value={this.state.value} onChange={this.handleChange}/></label></p>
+                     <div className="row">
+                         <div className="col-md-5">
+                               <p><label><input type="tel" className="form-control" name="cardExpiry" placeholder="MM / YY" autoComplete="cc-exp" value={this.state.value} onChange={this.handleChange} required /></label></p>
+                          </div>
+                          <div className="col-md-6">
+                                <p><label htmlFor="cardCVC"><input type="tel" className="form-control" name="cardCVC" placeholder="CVC" autoComplete="cc-csc" value={this.state.value} onChange={this.handleChange} required/></label></p>
+                        </div>
+                     </div>
+
+               <button className="btn-red mr-4 " link="" name="Submit" type="button" onClick={this.handleSubmit}>Submit</button>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+<div className = "col-xs-3 col-md-3">
 
 </div>
-<div class = "col-xs-3 col-md-4"/> */}
-  
-{/* </div> */}
-//   </div>
+
+</div>
+</div>
+
         );
     }
 }
+
 
 export default Profile;

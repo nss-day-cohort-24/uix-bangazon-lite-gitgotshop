@@ -10,6 +10,7 @@ import Cart from '../pages/Cart.js';
 import Products from '../pages/Products.js';
 import FormModal from './FormModal';
 import Seller from '../pages/Seller.js';
+import ProfileCard from '../pages/ProfileCard';
 
 /**
  * Main site navigation. Loads a Search bar and 2 buttons (One to the 'Products' component, and the other to the 'Sign Up' modal.)
@@ -33,14 +34,14 @@ render() {
                             <div className="align-items-center">
                                 <NavLink className="mx-2 btn-white" to='/Seller'>My Inventory</NavLink>
                                 <NavLink className="mx-2 btn-white" to='/Products'>Products</NavLink>
-                                <NavLink className="mx-2 btn-white" to='/Profile'>Profile</NavLink>
+                                <NavLink className="mx-2 btn-white" to='/ProfileCard'>Profile</NavLink>
                                 <a className="mx-2 btn-white" href="" onClick={this.props.signout}>Sign out</a>
                                 <NavLink className="mx-2 cart" to='/Cart'><i class="fas fa-shopping-cart fa-lg"></i></NavLink>
                             </div>
                         </nav>
                         <div>
                             <Route exact path='/' component={Home} />
-                            <Route path='/Profile' component={Profile} />
+                            <Route path='/ProfileCard' render={(props) => <ProfileCard userProfile={this.props.userProfile} />} />
                             {/* <Route path='/Seller' component={Seller} user={this.props.user}/> */}
                             <Route path='/Seller' render={(props) => <Seller user={this.props.user} />} />
                             <Route path='/Cart' render={(props) => <Cart user={this.props.user} />} />
@@ -62,16 +63,16 @@ render() {
                             </div>
                             
                             <div className="align-items-center">
-                                <NavLink className="mx-2 btn-white" to='#'>Become a Seller</NavLink>
+                            <NavLink className="mx-2 btn-white" to='#' onClick={this.props.becomeSeller}>Become a Seller</NavLink>
                                 <NavLink className="mx-2 btn-white" to='/Products'>Products</NavLink>
-                                <NavLink className="mx-2 btn-white" to='/Profile'>Profile</NavLink>
+                                <NavLink className="mx-2 btn-white" to='/ProfileCard'>Profile</NavLink>
                                 <a className="mx-2 btn-white" href="" onClick={this.props.signout}>Sign out</a>
                                 <NavLink className="mx-2 cart" to='/Cart'><i class="fas fa-shopping-cart fa-lg"></i></NavLink>
                             </div>
                         </nav>
                         <div>
                             <Route exact path='/' component={Home} />
-                            <Route path='/Profile' component={Profile} />
+                            <Route path='/ProfileCard' render={(props) => <ProfileCard userProfile={this.props.userProfile} />} />
                             {/* <Route path='/Seller' component={Seller} user={this.props.user}/> */}
                             <Route path='/Seller' render={(props) => <Seller user={this.props.user} />} />
                             <Route path='/Cart' render={(props) => <Cart user={this.props.user} />} />
