@@ -138,16 +138,6 @@
       "data": "City data for Paradise City",
       "picture": "./Cities/Chicago.jpg",
       "id": 10
-    },
-    {
-      "name": "Sumter, SC",
-      "product": "",
-      "sellerID": 13,
-      "price": "2",
-      "disc": "Melissa Wheatley's hometown. It's not cool. ",
-      "data": "",
-      "picture": "./Cities/Chicago.jpg",
-      "id": 11
     }
   ],
   "Cart": [
@@ -179,58 +169,34 @@
     {
       "name": "Nashville, TN",
       "price": "$5,000",
-      "id": 19
+      "id": 17
     },
     {
       "name": "Nashville, TN",
       "price": "$7,000",
-      "userId": 1,
-      "id": 20
+      "id": 15
     },
     {
       "name": "Nashville, TN",
       "price": "$7,000",
-      "id": 21
+      "id": 16
     },
     {
       "name": "Nashville, TN",
       "price": "$7,000",
-      "id": 22
-    },
-    {
-      "name": "Nashville, TN",
-      "price": "$7,000",
-      "userId": 13,
+      "userId": 18,
       "id": 23
     },
     {
       "name": "Boston, MA",
       "price": "$8,000",
-      "id": 24
+      "id": 19
     },
     {
       "name": "Boston, MA",
       "price": "$8,000",
       "userId": 13,
-      "id": 25
-    },
-    {
-      "name": "Boston, MA",
-      "price": "$8,000",
-      "userId": 13,
-      "id": 26
-    },
-    {
-      "name": "Boston, MA",
-      "price": "$8,000",
-      "userId": 13,
-      "id": 27
-    },
-    {
-      "name": "Boston, MA",
-      "price": "$8,000",
-      "userId": 13,
-      "id": 28
+      "id": 15
     }
   ],
   "Wishlist": [
@@ -263,28 +229,6 @@
       "name": "Nashville, TN",
       "price": "$5,000",
       "id": 18
-    },
-    {
-      "name": "Nashville, TN",
-      "price": "$7,000",
-      "userId": 1,
-      "id": 19
-    },
-    {
-      "name": "Nashville, TN",
-      "price": "$7,000",
-      "id": 20
-    },
-    {
-      "name": "Nashville, TN",
-      "price": "$7,000",
-      "id": 21
-    },
-    {
-      "name": "Nashville, TN",
-      "price": "$7,000",
-      "userId": 13,
-      "id": 22
     }
   ]
 }

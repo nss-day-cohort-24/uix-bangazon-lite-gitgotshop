@@ -27,7 +27,7 @@ class FormModal extends React.Component {
     let user = this.state.user;
     let pass = this.state.pass;
 
-    fetch(`http://localhost:3000/users?username=${user}&&passsword=${pass}`)
+    fetch(`http://localhost:3000/users?username=${user}&&password=${pass}`)
       .then((data) => {
         // console.log('we made it here, gurlllll', user, pass);
         console.log("data", data);
