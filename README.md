@@ -10,6 +10,8 @@
     * This will allow access to the Faker information
 1. In a new terminal (not in `src/`), `npm start` to enter Minezy.
 
+***
+
 ### MINEZY.COM
 1. When you first enter into Minezy, you will see the main page which displays a large image, buttons in the navigation bar and a search bar.
 ![Minezy - navigation bar when signed in](public/readme/main.PNG "Minezy - your local data-driven marketing")
@@ -34,6 +36,7 @@
     * Inside this `ProductComponents.js` file is the `.map()` method, which loops through the json information and gathers specific information needed to render in the `render()` function.
 1. You may edit your profile by clicking 'Profile' or view items in your shopping cart by clicking the cart icon on the top right in the navigation bar.
 
+***
 
 ## DESIGN
 ### Personas
@@ -43,6 +46,7 @@ __Primary (Buyer)__: Cambridge Chad is the owner of a data mining/analysis organ
 ### Challenge Statement
 > How might we connect businesses in need of consumer data with established data-mining organizations in a simple, contract-less digital marketplace.
 
+*** 
 
 ## JSON SERVER DATA
 **Intermediary Table**
