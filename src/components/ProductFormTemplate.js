@@ -38,7 +38,7 @@ class ProductFormTemplate extends React.Component {
           })
         }).then(res => res.json())
         .catch(error => console.error('Error:', error))
-        .then(response => this.closeModal());
+        .then(response => console.log('Success:', response));
       }
 
     render(){ 
@@ -71,7 +71,7 @@ openModal() {
     this.setState({isModalOpen: true})
 }
 closeModal() {
-    this.setState({ isModalOpen: false}, this.props.reload());
+    this.setState({ isModalOpen: false})
 }
 }
 

@@ -80,6 +80,46 @@
       "disc": "San Francisco is a hilly city surrounded by the Pacific Ocean and San Francisco Bay.",
       "id": 3,
       "seller": "yes"
+    },
+    {
+      "name": "Paradise City ",
+      "product": "",
+      "sellerID": 13,
+      "price": "$11,000",
+      "disc": "Where the grass is green and the girls are pretty.",
+      "data": "City Date",
+      "picture": "./Cities/Chicago.jpg",
+      "id": 4
+    },
+    {
+      "name": "Chicago",
+      "product": "",
+      "sellerID": 13,
+      "price": "$15,000",
+      "disc": "The windy city! Home of the Cubs.",
+      "data": "City Data",
+      "picture": "./Cities/Chicago.jpg",
+      "id": 5
+    },
+    {
+      "name": "Akron, OH",
+      "product": "",
+      "sellerID": 13,
+      "price": "$8,000",
+      "disc": "Home of Lindsey and Lebron",
+      "data": "City Data",
+      "picture": "./Cities/Akron.jpg",
+      "id": 6
+    },
+    {
+      "name": "Madison",
+      "product": "",
+      "sellerID": 13,
+      "price": "$5,000",
+      "disc": "Madison is only 8.2 miles north at its closest point to downtown Nashville.",
+      "data": "City Data",
+      "picture": "./Cities/Madison.jpg",
+      "id": 7
     }
   ],
   "Cart": [
