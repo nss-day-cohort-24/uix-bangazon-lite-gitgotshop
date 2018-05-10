@@ -1,5 +1,5 @@
 
-![Minzy - your local data-driven marketing](public/Minezy_logo.png "Minzy - your local data-driven marketing")
+![Minezy - your local data-driven marketing](public/Minezy_logo.png "Minezy - your local data-driven marketing")
 # DATA-DRIVEN MARKETING
 
 ## HOW TO USE MINEZY
@@ -8,7 +8,8 @@
     * This installation will install node modules including Faker.js and Bootstrap
 1. CD into the `src/` folder, and type `json-server db.json`
     * This will allow access to the Faker information
-1. In a new terminal (not in `src/`), `npm start` to enter Minezy
+1. In a new terminal (not in `src/`), `npm start` to enter Minezy.
+
 ### MINEZY.COM
 1. When you first enter into Minezy, you will see the main page which displays a large image, buttons in the navigation bar and a search bar.
 1. Before making your way into searching for your necessities, please log-in. 
@@ -17,7 +18,8 @@
 1. To edit any of  your inventory products, click 'Edit Your Product' and change the information in the form fields. Once you are finished, click 'Save Changes'. 
 1. To see the changes  you've made, click the 'Back' button.
 1. To remove any inventory product, click 'Remove'.
-1. To buy a Minezy datasets, click either 'Lets Talk' or 'Products.
+1. To browse and buy Minezy datasets, click either 'Lets Talk' or 'Products.
+1. You may edit your profile by clicking 'Profile' or view items in your shopping cart by clicking the cart icon on the top right in the navigation bar.
 
 
 ## DESIGN
@@ -26,7 +28,7 @@ __Primary (Seller)__: Holly Ivanka is a 30-something CEO of a small crafts busin
 
 __Primary (Buyer)__: Cambridge Chad is the owner of a data mining/analysis organization that specializes in the collection of bulk data. His organization has done well selling to larger businesses seeking customer information, but now he’s interested in expanding his base and catering to new startup businesses that have little to no experience in marketing or targeting potential customers.
 ### Challenge Statement
->>>> How might we connect businesses in need of consumer data with established data-mining organizations in a simple, contract-less digital marketplace.
+> How might we connect businesses in need of consumer data with established data-mining organizations in a simple, contract-less digital marketplace.
 
 
 ## JSON SERVER DATA
