@@ -236,3 +236,6 @@ div.text-center.paym{
   border-radius: 5px;
 }
 
+label{
+  font-weight: bold;
+}

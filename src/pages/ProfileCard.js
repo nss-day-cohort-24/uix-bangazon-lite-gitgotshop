@@ -5,34 +5,32 @@ import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 
 class ProfileCard extends Component{
-    constructor(props) {
-      super(props);
-
-    this.viewProfile = this.viewProfile.bind(this);
-    }
-
-viewProfile(){
-      fetch(`http://localhost:3000/users`, {
-        method: 'GET', // or 'bring some data'
-        }).then(res => res.json())
-      .catch(error => console.error('Error:', error))
-      .then(response => console.log('Success:', response));
-    }
 
     render(){
         return(
-            <div className="ProfileCard container-fluid row">
-                <div className="col-sm-4">
+            <div className="Profile">
+            <div className = "container-fluid" >
+                <div className="row mt-3">
+                <div className="col-3">
+                  <img src={this.props.userProfile.avatar} alt={this.props.userProfile.username} />
                 </div>
-                <div className="col-sm-6">
-                    <h2 className="text-center">Profile</h2>
-                    <h3>Name:-<span><em> Million</em></span></h3>
-                    <h3>Phone Number:-<span><em> Million</em></span></h3>
-                    <h3>Address1:-<span> <em>Million</em></span></h3>
+                <div className="col-auto">
+                    <legend>{this.props.userProfile.username}'s Profile</legend>
+                    <p><label>Name:&nbsp;</label>{this.props.userProfile.username}</p>
+                    <p><label>Email:&nbsp;</label>{this.props.userProfile.email}</p>
+                    <p><label>Phone Number:&nbsp;</label>
+                    {this.props.userProfile.phone}</p>
+                    <p><label>Address:&nbsp;</label>{this.props.userProfile.address}</p>
+                    <legend>Payment Method</legend>
+                    <p><label>Card on File:&nbsp;</label>xxxxxxxxxxx{this.props.userProfile.paymentOption}</p>
+        
+                <button className="btn-red" link="" name="Submit" type="button">Edit</button>
                 </div>
-                <div className="col-sm-2">right</div>
+                </div>
             </div>
-        );
-    }
- }
+            </div>
+                    );
+                }
+            }
+            
   export default ProfileCard;

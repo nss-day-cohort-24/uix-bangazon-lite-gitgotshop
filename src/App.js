@@ -66,7 +66,7 @@ becomeSeller = () => {
     console.log("USER",this.state.user);
     return (
       <div>
-        <Nav showShoppingCart={this.showShoppingCart} updateAuth={this.updateAuth} becomeSeller={this.becomeSeller} signout={this.signout} authed={this.state.authed} user={this.state.user.id} seller={this.state.user.seller}/>
+        <Nav showShoppingCart={this.showShoppingCart} updateAuth={this.updateAuth} becomeSeller={this.becomeSeller} signout={this.signout} authed={this.state.authed} user={this.state.user.id} seller={this.state.user.seller} userProfile={this.state.user}/>
       </div>
     );
   }

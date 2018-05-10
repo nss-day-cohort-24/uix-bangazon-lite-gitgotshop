@@ -10,6 +10,7 @@
       "paymentHistory": "",
       "seller": true,
       "favorites": "",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/martip07/128.jpg",
       "id": 13
     },
     {
@@ -22,6 +23,7 @@
       "paymentHistory": "",
       "seller": false,
       "favorites": "",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/tweetubhai/128.jpg",
       "id": 14
     },
     {
@@ -34,6 +36,7 @@
       "paymentHistory": "",
       "seller": true,
       "favorites": "",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/artem_kostenko/128.jpg",
       "id": 15
     },
     {
@@ -46,6 +49,7 @@
       "paymentHistory": "",
       "seller": true,
       "favorites": "",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/grrr_nl/128.jpg",
       "id": 16
     },
     {
@@ -58,6 +62,7 @@
       "paymentHistory": "",
       "seller": false,
       "favorites": "",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/de_ascanio/128.jpg",
       "id": 17
     },
     {
@@ -70,6 +75,7 @@
       "paymentHistory": "",
       "seller": true,
       "favorites": "",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/peachananr/128.jpg",
       "id": 18
     }
   ],
