@@ -10,8 +10,6 @@
     * This will allow access to the Faker information
 1. In a new terminal (not in `src/`), `npm start` to enter Minezy.
 
-***
-
 ### MINEZY.COM
 1. When you first enter into Minezy, you will see the main page which displays a large image, buttons in the navigation bar and a search bar.
 ![Minezy - navigation bar when signed in](public/readme/main.PNG "Minezy - your local data-driven marketing")
