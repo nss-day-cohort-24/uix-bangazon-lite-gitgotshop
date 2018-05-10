@@ -117,7 +117,7 @@ class Seller extends Component {
             return(
                 <div>
                     <Button onClick={this.printAll}>Back</Button>
-                    <h1 className="gray-txt h3 text-center my-5 bold">Ben Atkins</h1>
+                   
                     <div className="d-flex mx-auto prod-overview">
                         <img className="prod-pic" src={singleProduct.picture} alt="" />
                         <div className="ml-5">

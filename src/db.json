@@ -83,11 +83,10 @@
     {
       "name": "Nashville, TN",
       "picture": "./Cities/Nashville.jpg",
-      "product": "EthZeCm4nVXnWsU",
-      "sellerID": "13",
+      "sellerID": 13,
       "data": "Velda_Witting@gmail.com",
       "price": "$5,000",
-      "disc": "Nashville is the capital of the U.S. state of Tennessee and home to Vanderbilt University. ",
+      "disc": "Nashville is the capital of the U.S. state of Tennessee and home to Vanderbilt University and Belmont University. ",
       "id": 1
     },
     {
@@ -139,6 +138,16 @@
       "data": "City data for Paradise City",
       "picture": "./Cities/Chicago.jpg",
       "id": 10
+    },
+    {
+      "name": "Sumter, SC",
+      "product": "",
+      "sellerID": 13,
+      "price": "2",
+      "disc": "Melissa Wheatley's hometown. It's not cool. ",
+      "data": "",
+      "picture": "./Cities/Chicago.jpg",
+      "id": 11
     }
   ],
   "Cart": [
