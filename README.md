@@ -3,10 +3,21 @@
 # DATA-DRIVEN MARKETING
 
 ## HOW TO USE MINEZY
+### INSTALL
 1. Inside your terminal, type and enter `npm install`
     * This installation will install node modules including Faker.js and Bootstrap
-1. MORE HERE
-1. MORE HERE
+1. CD into the `src/` folder, and type `json-server db.json`
+    * This will allow access to the Faker information
+1. In a new terminal (not in `src/`), `npm start` to enter Minezy
+### MINEZY.COM
+1. When you first enter into Minezy, you will see the main page which displays a large image, buttons in the navigation bar and a search bar.
+1. Before making your way into searching for your necessities, please log-in. 
+1. If you have chosen to become a product sellar, once logged-in the navigation changes slightly to view your Inventory Products.
+1. To see your product inventory, click 'My Inventory'. Here, you will see the option to add more products to your inventory and a gallery of your own products.
+1. To edit any of  your inventory products, click 'Edit Your Product' and change the information in the form fields. Once you are finished, click 'Save Changes'. 
+1. To see the changes  you've made, click the 'Back' button.
+1. To remove any inventory product, click 'Remove'.
+1. To buy a Minezy datasets, click either 'Lets Talk' or 'Products.
 
 
 ## DESIGN
