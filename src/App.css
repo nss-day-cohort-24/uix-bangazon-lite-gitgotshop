@@ -236,6 +236,14 @@ div.text-center.paym{
   border-radius: 5px;
 }
 
+
 label{
   font-weight: bold;
+}
+.edit-photo {
+  justify-content: end;
+}
+
+.body-margin {
+  width: 70%;
 }
