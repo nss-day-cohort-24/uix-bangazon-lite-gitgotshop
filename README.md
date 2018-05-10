@@ -21,6 +21,17 @@
 1. To see the changes  you've made, click the 'Back' button.
 1. To remove any inventory product, click 'Remove'.
 1. To browse and buy Minezy datasets, click either 'Lets Talk' or 'Products.
+    * This functionality comes from the `ProductComponents.js` file. A function called `getProductData()` fetches information stored in the db.json file in the Products object
+    * ```getProductData() {
+            fetch("http://localhost:3000/Products")
+            .then(res => res.json())
+            .then(
+                (result) => {
+                    this.setState({
+                        productsLoaded: true,
+                        objResult: result
+                    });```
+    * Inside this `ProductComponents.js` file is the `.map()` method, which loops through the json information and gathers specific information needed to render in the `render()` function.
 1. You may edit your profile by clicking 'Profile' or view items in your shopping cart by clicking the cart icon on the top right in the navigation bar.
 
 
