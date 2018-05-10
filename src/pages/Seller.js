@@ -108,7 +108,7 @@ class Seller extends Component {
                     <MakeProduct reload={this.printAll} user={this.props.user}/>
                   </Container>  
                  </Jumbotron>
-                    <h3 className="mt-3 text-center">My Story Inventory</h3>
+                    <h1 className="gray-txt h3 text-center my-5 bold">My Store Inventory</h1>
                     <div>{productDataObject}</div>
                 </div>
             )

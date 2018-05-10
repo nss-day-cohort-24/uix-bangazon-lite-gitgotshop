@@ -239,3 +239,11 @@ div.text-center.paym{
 label{
   font-weight: bold;
 }
+
+.edit-photo {
+  justify-content: end;
+}
+/* 
+.body-margin {
+  width: 70%;
+} */
