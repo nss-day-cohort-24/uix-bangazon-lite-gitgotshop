@@ -23,6 +23,7 @@ class Seller extends Component {
     }
 
     componentDidMount() {
+        console.log("DID MOUNT SELLER");
         fetch(`http://localhost:3000/Products?sellerID=${this.props.user}`)
         .then((data) => {
           return data.json();
@@ -50,9 +51,15 @@ class Seller extends Component {
     }
 
     printAll(){
-        this.setState({
-            printSingle: false,
-            printEditSingle: false
+        fetch(`http://localhost:3000/Products?sellerID=${this.props.user}`)
+        .then((data) => {
+          return data.json();
+        }).then((userArray) => {
+            this.setState({
+                userProducts: userArray,
+                printSingle: false,
+                printEditSingle: false
+            })
         })
     }
 
@@ -98,7 +105,7 @@ class Seller extends Component {
                   <Container> 
                       <h2>Make a New Product</h2>
                       <h4>Click the Button below to post new data to sell!</h4>
-                    <MakeProduct user={this.props.user}/>
+                    <MakeProduct reload={this.printAll} user={this.props.user}/>
                   </Container>  
                  </Jumbotron>
                     <h3 className="mt-3 text-center">My Story Inventory</h3>

@@ -15,7 +15,7 @@ class MakeProduct extends Component {
 
       render() {
         return (
-            <ProductFormTemplate user={this.props.user}/>
+            <ProductFormTemplate reload={this.props.reload} user={this.props.user}/>
         );
       }
     }
